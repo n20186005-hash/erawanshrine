@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://erawanshrine.org/th/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/terms-of-service/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/terms-of-service/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/terms-of-service/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/cookie-settings/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/cookie-settings/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/cookie-settings/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

@@ -1,0 +1,788 @@
+{
+  "meta": {
+    "title": "Thao Maha Brahma (Erawan Shrine) — Guide to Bangkok's Four-Faced Brahma Shrine",
+    "description": "Guide to Thao Maha Brahma (Erawan Shrine / 四面佛), the four-faced Brahma shrine at Ratchadamri, Bangkok — history, legends, worship customs, getting there and visiting hours"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "history": "History",
+      "guide": "Visit Guide",
+      "food": "Food",
+      "gallery": "Gallery",
+      "reviews": "Reviews",
+      "map": "Map"
+    }
+  },
+  "hero": {
+    "eyebrow": "Four-Faced Brahma Shrine · Bangkok",
+    "titleMain": "Thao Maha Brahma",
+    "titleAccent": "Erawan Shrine",
+    "subtitle": "Thao Maha Brahma (Erawan Shrine / 四面佛) is a four-faced Brahma shrine at the Ratchadamri intersection — a center of faith and belief that has stood for over 60 years in the heart of Bangkok",
+    "rating": "4.7",
+    "reviewCount": "6,888",
+    "category": "Sacred Shrine",
+    "badge": "Bangkok · Ratchadamri",
+    "cta1": "Plan your visit",
+    "cta2": "View photos",
+    "viewLocation": "View on Google Maps",
+    "boardCategory": "Four-Faced Brahma Shrine",
+    "boardTitle": "Thao Maha Brahma (Erawan Shrine)",
+    "boardEn": "THAO MAHA BRAHMA · ERAVAN SHRINE",
+    "plannerTitle": "Weather & light today",
+    "plannerNote": "Updated with live weather at Thao Maha Brahma (Erawan Shrine)",
+    "liveWeather": "Live",
+    "loading": "Loading weather…",
+    "weatherError": "Weather unavailable",
+    "goldenHourLabel": "Golden hour (AM)",
+    "sunsetLabel": "Sunset",
+    "blueHourLabel": "Blue hour",
+    "sunsetIndexLabel": "Today's sunset index",
+    "sunsetIndexDefault": "Clear · golden-light chance ~85%",
+    "goldenChanceLabel": "Golden-light chance",
+    "crowdWarningLabel": "Best time",
+    "defaultTip": "06:00–09:00 and 18:00–22:00 are least crowded",
+    "lightCaption": "Times calculated from the shrine's actual coordinates (13.7443°N, 100.5397°E)",
+    "coordsLabel": "PGVR+P5 Bangkok",
+    "defaultTemp": "32°",
+    "defaultCond": "Hot & humid / partly cloudy",
+    "defaultWind": "8 km/h",
+    "defaultGolden": "06:10 – 07:30",
+    "defaultSunset": "18:35",
+    "defaultBlue": "18:55 – 19:25"
+  },
+  "about": {
+    "label": "About",
+    "heading": "What is Thao Maha Brahma (Erawan Shrine)?",
+    "lead": "A four-faced Brahma shrine in central Bangkok believed to answer prayers for career, love, health and study",
+    "paragraph1": "Thao Maha Brahma (Erawan Shrine) stands at the corner of Ratchadamri and Phloen Chit roads, Pathum Wan, opposite CentralWorld and the Grand Hyatt Erawan. It was built in 1956 during the construction of the Erawan Hotel to dispel misfortunes that struck the project.",
+    "paragraph2": "The Brahma image is plaster over a wooden core, gilded in gold. The four faces represent creation, prosperity, protection and benevolence. Today it is one of Thailand's most famous sacred sites, free to visit daily 06:00–22:00.",
+    "quote": "Built as an act of faith, it has stood for over 60 years in the heart of the capital",
+    "quoteAuthor": "Shrine caretaker",
+    "stats": [
+      {
+        "value": "1956",
+        "label": "Year built"
+      },
+      {
+        "value": "4.7",
+        "label": "Visitor rating"
+      },
+      {
+        "value": "Free",
+        "label": "No entry fee"
+      }
+    ],
+    "highlights": [
+      {
+        "tag": "01",
+        "title": "Four faces",
+        "desc": "Each face brings a different blessing; devotees pray at each face in turn"
+      },
+      {
+        "tag": "02",
+        "title": "Dance troupes",
+        "desc": "When a wish comes true, devotees hire traditional dance troupes as thanks"
+      },
+      {
+        "tag": "03",
+        "title": "City center",
+        "desc": "At Ratchadamri intersection, easily reached by BTS Chit Lom and surrounding malls"
+      }
+    ],
+    "editorTip": {
+      "tag": "Editor's tip",
+      "text": "Come at dawn or in the evening to avoid heat and crowds. 18:00–20:00 has beautiful light and several dance troupes performing together",
+      "ctaLabel": "See visit guide"
+    }
+  },
+  "rituals": {
+    "label": "Worship",
+    "heading": "Worship customs & offerings",
+    "quote": "With a focused mind and sincere faith, what you truly wish for shall come to pass",
+    "intro": "Worship at Thao Maha Brahma follows long-standing traditions — the offerings, the clockwise walk and the dance troupes all carry meaning. Here is a basic guide for first-time visitors.",
+    "stepsTitle": "Steps of worship",
+    "steps": [
+      {
+        "order": "1",
+        "title": "Light 3 incense, joss powder, 1 pair of candles",
+        "desc": "Buy offerings at the stall, light 3 incense sticks with joss powder and candles, and calm your mind"
+      },
+      {
+        "order": "2",
+        "title": "Walk clockwise around the shrine",
+        "desc": "Circle the shrine to the right (clockwise) and pause to pray at each face respectfully"
+      },
+      {
+        "order": "3",
+        "title": "Pray at each face",
+        "desc": "Each face represents a different blessing; make a separate wish at each one"
+      },
+      {
+        "order": "4",
+        "title": "Hire a dance troupe (when granted)",
+        "desc": "When a wish is fulfilled, devotees hire a dance troupe to perform as an act of gratitude"
+      }
+    ],
+    "offeringsTitle": "Common offerings",
+    "offerings": [
+      {
+        "title": "Flowers (jasmine, ylang, rose)",
+        "desc": "Fragrant flowers are the basic sacred offering, often made into garlands"
+      },
+      {
+        "title": "Incense, candles & joss powder",
+        "desc": "3 incense sticks and a candle pair are used for prayer; joss powder is sprinkled"
+      },
+      {
+        "title": "Fruit & ceremonial items",
+        "desc": "Seasonal fruit and other items are placed on the offering table"
+      },
+      {
+        "title": "Red cloth & donations",
+        "desc": "Red cloth and donations are commonly offered for good fortune"
+      }
+    ],
+    "danceTitle": "Dance troupes for the deity",
+    "dance": "Dance troupes are hired to perform for the deity. When a wish is granted, devotees return to hire a troupe in gratitude. Some troupes have dozens of performers and several perform together in the evening, creating a beautiful and festive atmosphere.",
+    "tipsTitle": "Worship etiquette",
+    "tips": [
+      "Dress modestly and remove hats while praying",
+      "Walk clockwise; never go against the direction",
+      "Avoid photographing people mid-prayer without permission",
+      "Silence your phone and keep quiet",
+      "No eating or smoking within the shrine area"
+    ]
+  },
+  "history": {
+    "label": "History",
+    "heading": "History & legends of Thao Maha Brahma (Erawan Shrine)",
+    "intro": "From Hindu deity worship absorbed into Thai Brahmin rituals, this shrine grew from a small corner into a symbol of Bangkok",
+    "blocks": [
+      {
+        "title": "Origins (1956)",
+        "text": "During construction of the Erawan Hotel several fatal accidents occurred. A Brahmin priest was consulted and a Brahma shrine was built in front of the hotel for good fortune; the misfortunes then ceased."
+      },
+      {
+        "title": "The four-faced belief",
+        "text": "The four faces represent creation, long life, prosperity and protection. Worshippers walk clockwise and pray at each face in turn."
+      },
+      {
+        "title": "The 1994 incident",
+        "text": "A mentally ill man smashed the image with a hammer; an angry crowd killed him. The original was preserved in a museum and a replica was made."
+      },
+      {
+        "title": "The current image",
+        "text": "After a 2006 attack, a new bronze-and-gold image replaced the plaster one for durability, and it remains open for worship to this day."
+      }
+    ],
+    "legend": {
+      "title": "The legend of its sacredness",
+      "text": "It is said that those who pray with sincere faith and have their wishes granted often return to give thanks with dance troupes. This belief made the shrine one of Asia's most famous wish-making sites, especially among visitors from China, Hong Kong, Singapore and Taiwan."
+    },
+    "didYouKnow": {
+      "title": "Did you know?",
+      "text": "Although Brahma is a Hindu deity, the shrine is maintained by Thai Brahmin ritual and is revered equally by Buddhists and Hindus."
+    },
+    "folklore": {
+      "title": "Tales from the elders",
+      "tale": "It is said Brahma is the creator god, so people offer flowers, scents and dance to show gratitude.",
+      "shrineTitle": "The shrine today",
+      "shrine": "When life succeeds, they speak of the merit made at this shrine, and return to pray again and again."
+    }
+  },
+  "guide": {
+    "label": "Visit Guide",
+    "heading": "Plan your visit & info",
+    "lead": "Essential information for planning your trip, safety and getting there and back",
+    "twoZone": {
+      "title": "Two ways to visit",
+      "intro": "Choose what suits you — a casual stop or a dedicated prayer visit",
+      "difficultyLabel": "Level:",
+      "items": [
+        {
+          "name": "Casual visit",
+          "suits": "Tourists / photographers",
+          "difficulty": "★",
+          "note": "15–30 min",
+          "desc": "View the image, take photos and buy flowers to offer on the spot, no preparation needed"
+        },
+        {
+          "name": "Devoted prayer",
+          "suits": "Believers",
+          "difficulty": "★★",
+          "note": "30–60 min",
+          "desc": "Prepare flowers, incense, candles and joss powder; walk clockwise and pray at each face"
+        }
+      ]
+    },
+    "scamTip": {
+      "tag": "⚠ Beware of scams",
+      "text": "Some people approach offering 'lucky strings' or press for donations. Buy offerings only from the stall in front of the shrine and never share personal details."
+    },
+    "hours": {
+      "tag": "🕑",
+      "time": "06:00 – 22:00",
+      "items": [
+        {
+          "label": "Daily (incl. public holidays)",
+          "value": "06:00–22:00"
+        }
+      ]
+    },
+    "fees": {
+      "tag": "💰",
+      "title": "Costs",
+      "items": [
+        {
+          "title": "Entry",
+          "desc": "Free — no entry fee"
+        },
+        {
+          "title": "Offerings at the stall",
+          "desc": "Flowers, incense, candles from ~20 baht"
+        },
+        {
+          "title": "Dance troupe",
+          "desc": "Hireable from ~2,000 baht up"
+        }
+      ]
+    },
+    "transport": {
+      "tag": "🚆",
+      "title": "Getting there",
+      "items": [
+        {
+          "title": "BTS Chit Lom",
+          "desc": "Exit 1, ~5 min walk to the shrine"
+        },
+        {
+          "title": "MRT subway",
+          "desc": "Lumphini station, then bus or taxi"
+        },
+        {
+          "title": "Car / taxi",
+          "desc": "Set destination to Erawan Shrine near CentralWorld"
+        }
+      ]
+    },
+    "photography": {
+      "title": "Photography",
+      "intro": "Tips for beautiful shots of the image and dance troupes",
+      "timesTitle": "Good light windows",
+      "times": [
+        {
+          "period": "Morning 06:00–09:00",
+          "desc": "Soft light, few people, calm atmosphere"
+        },
+        {
+          "period": "Evening 17:30–19:00",
+          "desc": "Best golden light for the image and dance"
+        },
+        {
+          "period": "Night 20:00+",
+          "desc": "Pretty lights, good for long exposure"
+        }
+      ],
+      "spotsTitle": "Photo spots",
+      "spots": [
+        {
+          "name": "In front of shrine",
+          "view": "Clear view of the gilded image",
+          "tip": "Keep distance, use standard lens"
+        },
+        {
+          "name": "CentralWorld upper level",
+          "view": "Wide view of shrine and intersection",
+          "tip": "Use zoom for details"
+        },
+        {
+          "name": "Low angle by offering table",
+          "view": "Flowers and incense in foreground",
+          "tip": "Don't block people praying"
+        }
+      ],
+      "settingsTitle": "Camera / phone settings",
+      "settings": [
+        {
+          "style": "Golden hour",
+          "camera": "RAW, warm white balance",
+          "phone": "PRO mode, WB ~5000K"
+        },
+        {
+          "style": "Night",
+          "camera": "Tripod, 1/15s",
+          "phone": "Night mode, stabilize"
+        },
+        {
+          "style": "Dance groups",
+          "camera": "Aperture f/4, ISO 800",
+          "phone": "Record video instead"
+        }
+      ],
+      "tipsTitle": "Cautions",
+      "tips": [
+        "Turn off flash to avoid disturbing prayers",
+        "Ask permission before photographing people",
+        "Respect the sacred area; don't step on the shrine base"
+      ],
+      "viewLabel": "View:",
+      "tipLabel": "Tip:",
+      "cameraLabel": "Camera:",
+      "phoneLabel": "Phone:"
+    },
+    "bestTime": {
+      "title": "Best time to visit",
+      "intro": "Open daily, but times of day differ greatly in weather and atmosphere",
+      "seasons": [
+        {
+          "tag": "Morning",
+          "months": "06:00–09:00",
+          "name": "Quietest",
+          "desc": "Cooler and uncrowded, ideal for peaceful prayer"
+        },
+        {
+          "tag": "Evening",
+          "months": "18:00–22:00",
+          "name": "Liveliest",
+          "desc": "Beautiful light and several dance troupes performing together"
+        },
+        {
+          "tag": "Midday",
+          "months": "10:00–17:00",
+          "name": "Hot & crowded",
+          "desc": "Very hot with heavy crowds and little shade"
+        }
+      ]
+    },
+    "safety": {
+      "title": "Safety",
+      "items": [
+        {
+          "title": "Watch your bag",
+          "desc": "Crowded area has pickpockets; keep valuables secure"
+        },
+        {
+          "title": "Dress modestly",
+          "desc": "Not as strict as a temple, but dress respectfully at a religious site"
+        },
+        {
+          "title": "Cross carefully",
+          "desc": "The shrine is at a major intersection; use safe crossings"
+        },
+        {
+          "title": "Beat the heat",
+          "desc": "Midday is very hot; rest in nearby mall shade"
+        }
+      ]
+    },
+    "hazeSeason": {
+      "tag": "🌫 Air quality (Jan–Mar)",
+      "text": "Early in the year Bangkok may face PM2.5 from burning and traffic. Those sensitive to dust should wear a mask and check the AQI before leaving."
+    },
+    "emergency": {
+      "title": "Emergency numbers",
+      "intro": "Keep these numbers handy for emergencies",
+      "items": [
+        {
+          "title": "Tourist Police",
+          "value": "1155"
+        },
+        {
+          "title": "Emergency / Police",
+          "value": "191"
+        },
+        {
+          "title": "Ambulance",
+          "value": "1669"
+        },
+        {
+          "title": "Tourism hotline",
+          "value": "1672"
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "intro": "The shrine is at street level and easy to access",
+      "items": [
+        {
+          "title": "Ramped pavements",
+          "desc": "Ramps and even ground; wheelchairs can access"
+        },
+        {
+          "title": "Parking",
+          "desc": "Park at CentralWorld, Gaysorn Village or nearby hotels"
+        },
+        {
+          "title": "Restrooms",
+          "desc": "Use restrooms inside the nearby shopping malls"
+        },
+        {
+          "title": "Elderly friendly",
+          "desc": "Open space with seating and shade from surrounding trees"
+        }
+      ]
+    },
+    "faqTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "q": "Is entry free?",
+        "a": "Entry is free, but offerings and dance troupes cost as chosen"
+      },
+      {
+        "q": "What are the hours?",
+        "a": "Open daily 06:00–22:00, good for both morning stops and evening prayer"
+      },
+      {
+        "q": "What can I pray for?",
+        "a": "Each face is believed to answer career, love, health and study; pray separately at each"
+      },
+      {
+        "q": "How do I get there?",
+        "a": "BTS Chit Lom Exit 1 is a ~5 min walk, or take a car/taxi to CentralWorld"
+      },
+      {
+        "q": "What should I wear?",
+        "a": "Not as strict as temples, but dress modestly and remove hats while praying"
+      }
+    ],
+    "nearby": {
+      "title": "Nearby",
+      "cta": "Learn more",
+      "items": [
+        {
+          "name": "CentralWorld",
+          "desc": "Major mall with many restaurants and shops",
+          "url": "https://www.centralworld.co.th/"
+        },
+        {
+          "name": "Gaysorn Village",
+          "desc": "Upscale community mall next door, walkable",
+          "url": "https://www.gaysorn.com/"
+        },
+        {
+          "name": "Big C Ratchadamri",
+          "desc": "Supermarket and budget eateries",
+          "url": "https://www.bigc.co.th/"
+        },
+        {
+          "name": "Ratchaprasong",
+          "desc": "BTS Chit Lom–Phloen Chit junction with surrounding shops",
+          "url": "https://en.wikipedia.org/wiki/Ratchaprasong"
+        }
+      ]
+    }
+  },
+  "food": {
+    "label": "Food around the shrine",
+    "heading": "Restaurants & snacks near Thao Maha Brahma",
+    "lead": "Surrounded by malls and eateries at every level, from cheap snacks to fine dining",
+    "dishes": [
+      {
+        "tag": "Food court",
+        "name": "Upper-floor food courts",
+        "price": "~100–300 baht",
+        "desc": "CentralWorld and Gaysorn have affordable, tasty food courts"
+      },
+      {
+        "tag": "Street food",
+        "name": "Street food on Ratchadamri",
+        "price": "~40–120 baht",
+        "desc": "Curry, noodle and fresh-fruit stalls open all day"
+      },
+      {
+        "tag": "Café",
+        "name": "Cafés & bakeries",
+        "price": "~80–250 baht",
+        "desc": "Cafés in Gaysorn are good for a cool break"
+      },
+      {
+        "tag": "Buffet",
+        "name": "Hotel buffets",
+        "price": "~1,200+ baht",
+        "desc": "Grand Hyatt Erawan offers international buffets"
+      }
+    ],
+    "quote": {
+      "text": "Don't eat in front of the image and respect those praying — that is the visitor's graceful etiquette",
+      "author": "Guide editor"
+    }
+  },
+  "gallery": {
+    "heading": "Gallery of Thao Maha Brahma (Erawan Shrine)",
+    "intro": "Scenes, the image, rituals and dance troupes at the four-faced Brahma shrine",
+    "historicalNote": "All images are general shrine scenes for education and travel guidance.",
+    "credits": "Photos from visitors and open sources — see references at the end.",
+    "alts": [
+      "Gilded Thao Maha Brahma image in the evening light",
+      "The revered four-faced Brahma image",
+      "Lighting incense and candles in ritual around the shrine",
+      "Flowers and offerings on the offering table",
+      "A traditional dance troupe performing for the deity",
+      "Devotees in Thai dress joining the ceremony",
+      "Flickering candlelight in the evening",
+      "Incense smoke rising to the sky",
+      "A high view of the shrine and circumambulation area",
+      "People coming to pray throughout the day",
+      "Fine gold filigree on the image",
+      "Tying red cloth as an offering",
+      "Visitors taking photos with the shrine",
+      "Mother-of-pearl art on the shrine roof",
+      "A quiet corner for meditation inside the shrine",
+      "Greenery around the shrine in the city center",
+      "Night view of the shrine and surrounding lights"
+    ],
+    "viewLocation": "View on Google Maps"
+  },
+  "reviews": {
+    "label": "Reviews",
+    "heading": "Voices of visitors",
+    "intro": "Experiences from tourists and devotees who have prayed at Thao Maha Brahma (Erawan Shrine)",
+    "disclaimer": "Reviews are visitor experiences compiled as guidance, not official endorsement",
+    "declaration": "We are a non-profit educational guide with no stake in any business",
+    "featured": [
+      {
+        "text": "I come every year at Chinese New Year; the atmosphere is sacred and the dance troupes are always beautiful",
+        "source": "Somchai Wongsuwan · Bangkok"
+      },
+      {
+        "text": "非常灵验的许愿地，四面分别代表不同愿望，绕圈祈福很有仪式感",
+        "source": "Lin Wei · Shanghai"
+      }
+    ],
+    "items": [
+      {
+        "text": "First visit; impressed by the gilded image, staff were kind",
+        "rating": "4.5",
+        "name": "Anong · Chiang Mai",
+        "date": "2025-12"
+      },
+      {
+        "text": "A must-visit spiritual spot in Bangkok. The dance troupes are mesmerizing.",
+        "rating": "5.0",
+        "name": "James Carter · London",
+        "date": "2025-11"
+      },
+      {
+        "text": "Crowded in the evening but the light is gorgeous for photos",
+        "rating": "4.5",
+        "name": "Piyawat · Bangkok",
+        "date": "2026-01"
+      },
+      {
+        "text": "許願很靈，還願時請了舞蹈團，現場氣氛莊嚴又熱鬧",
+        "rating": "5.0",
+        "name": "Mei Chen · Taipei",
+        "date": "2025-10"
+      },
+      {
+        "text": "Free and easy to reach, but very hot at midday",
+        "rating": "4.0",
+        "name": "Somchai · Nakhon Pathom",
+        "date": "2025-09"
+      },
+      {
+        "text": "Conveniently located next to CentralWorld, easy to combine with shopping.",
+        "rating": "4.5",
+        "name": "Sarah Lim · Singapore",
+        "date": "2025-12"
+      },
+      {
+        "text": "夜のライトアップが美しく、踊りの奉納も見応えがあった",
+        "rating": "4.5",
+        "name": "Kenji Tanaka · Tokyo",
+        "date": "2026-02"
+      },
+      {
+        "text": "Brought my child to pray for studies; safe and pleasant atmosphere",
+        "rating": "5.0",
+        "name": "Napas · Samut Prakan",
+        "date": "2026-03"
+      }
+    ],
+    "viewLocation": "View on Google Maps"
+  },
+  "mapSection": {
+    "label": "Map & directions",
+    "heading": "Visit Thao Maha Brahma (Erawan Shrine)",
+    "lead": "At the Ratchadamri intersection, Pathum Wan, Bangkok — easy by rail or road",
+    "stats": [
+      {
+        "tag": "Hours",
+        "value": "06:00–22:00",
+        "sub": "Open daily"
+      },
+      {
+        "tag": "Entry",
+        "value": "Free",
+        "sub": "No entry fee"
+      },
+      {
+        "tag": "Rail",
+        "value": "BTS Chit Lom",
+        "sub": "Exit 1, 5 min walk"
+      }
+    ],
+    "address": "494 Ratchadamri Rd, Lumphini, Pathum Wan, Bangkok 10330",
+    "plusCode": "PGVR+P5 Bangkok",
+    "coords": "13.7443° N, 100.5397° E"
+  },
+  "footer": {
+    "brand": {
+      "name": "Thao Maha Brahma (Erawan Shrine)",
+      "tagline": "Four-Faced Brahma Shrine in central Bangkok"
+    },
+    "about": "A non-profit educational guide sharing the history, legends and worship customs of Thao Maha Brahma (Erawan Shrine)",
+    "navTitle": "Menu",
+    "navItems": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "History",
+        "href": "#history"
+      },
+      {
+        "label": "Visit Guide",
+        "href": "#guide"
+      },
+      {
+        "label": "Worship",
+        "href": "#rituals"
+      },
+      {
+        "label": "Food",
+        "href": "#food"
+      },
+      {
+        "label": "Gallery",
+        "href": "#gallery"
+      },
+      {
+        "label": "Reviews",
+        "href": "#reviews"
+      }
+    ],
+    "noteTitle": "Note",
+    "note": "Information may change; please verify the latest hours and costs before traveling",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "Sources",
+    "sourcesNote": "Compiled from open sources and on-site research",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookie Settings",
+    "disclaimerLead": "This site is for educational purposes",
+    "unofficial": "Not the official website of Thao Maha Brahma (Erawan Shrine)",
+    "dataSource": "Weather: Open-Meteo · coordinates 13.7443, 100.5397",
+    "copyright": "© 2026 Thao Maha Brahma Guide. All rights reserved."
+  },
+  "sources": {
+    "label": "Sources & references",
+    "heading": "Sources & references",
+    "intro": "Information on this page is compiled from open sources and on-site research. Report errors via email.",
+    "photoTitle": "Key references",
+    "photoItems": [
+      {
+        "text": "Tourism Authority of Thailand",
+        "url": "https://www.tourismthailand.org/",
+        "linkLabel": "Visit"
+      },
+      {
+        "text": "Wikipedia — Erawan Shrine",
+        "url": "https://en.wikipedia.org/wiki/Erawan_Shrine",
+        "linkLabel": "Read"
+      },
+      {
+        "text": "Pathum Wan District Office",
+        "url": "https://www.bangkok.go.th/pathumwan",
+        "linkLabel": "Visit"
+      }
+    ],
+    "factTitle": "Quick facts",
+    "factText": "Built in 1956; the current image is bronze gilded in gold. Free entry 06:00–22:00 daily. One of Thailand's most famous sacred sites.",
+    "correctionTitle": "Found an error?",
+    "correctionText": "If you find an error or want to add information, please let us know by email below.",
+    "correctionMailto": "mailto:info@erawanshrine.org",
+    "correctionCta": "Report",
+    "copyright": "© 2026 Thao Maha Brahma Guide"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: July 2026",
+      "sections": [
+        {
+          "h": "Information we collect",
+          "p": "This site does not collect personal data directly, except what you submit in a form (if any)"
+        },
+        {
+          "h": "Cookies",
+          "p": "We use cookies to remember your language and improve your experience"
+        },
+        {
+          "h": "Contact",
+          "p": "For questions, contact us at info@erawanshrine.org"
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "updated": "Last updated: July 2026",
+      "sections": [
+        {
+          "h": "Usage",
+          "p": "Content is for education; information may be incomplete or outdated"
+        },
+        {
+          "h": "Copyright",
+          "p": "All content belongs to the authors unless another source is stated"
+        },
+        {
+          "h": "Liability",
+          "p": "Users are responsible for their own travel decisions"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Settings",
+      "updated": "Last updated: July 2026",
+      "intro": "We use cookies to remember your language and improve your experience on the site",
+      "consent": "Using this site means you accept the use of cookies as described below",
+      "save": "Save settings",
+      "rejectAll": "Reject all",
+      "categories": [
+        {
+          "h": "Essential cookies",
+          "status": "Always on",
+          "active": true,
+          "p": "Required for the site to work, e.g. remembering your language",
+          "sub": "Cannot be disabled",
+          "subStatus": "Required"
+        },
+        {
+          "h": "Analytics cookies",
+          "status": "Optional",
+          "active": false,
+          "p": "Help us understand usage to improve content",
+          "sub": "Anonymous",
+          "subStatus": "Off"
+        },
+        {
+          "h": "Marketing cookies",
+          "status": "Optional",
+          "active": false,
+          "p": "Used for relevant content (none on this site currently)",
+          "sub": "Not in use",
+          "subStatus": "Off"
+        }
+      ]
+    }
+  }
+}
