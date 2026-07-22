@@ -264,6 +264,14 @@
         {
           "title": "Car / taxi",
           "desc": "Set destination to Erawan Shrine near CentralWorld"
+        },
+        {
+          "title": "From Suvarnabhumi Airport (BKK)",
+          "desc": "Take the Airport Rail Link (ARL) to Phaya Thai station, transfer to the BTS Sukhumvit Line, and alight at Chit Lom station (Exit 1)."
+        },
+        {
+          "title": "From Don Mueang Airport (DMK)",
+          "desc": "Take the A1 bus to BTS Mo Chit, transfer to the BTS Sukhumvit Line, and alight at Chit Lom station; or take a taxi via tollway."
         }
       ]
     },
