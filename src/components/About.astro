@@ -16,6 +16,11 @@ const about = messages.about;
         <p class="text-lg text-teak font-medium">{about.lead}</p>
         <p>{about.paragraph1}</p>
         <p>{about.paragraph2}</p>
+        {about.neutrality && (
+          <div class="mt-4 p-4 rounded-xl bg-gold/10 border border-gold/20 text-teak text-sm">
+            <span class="font-bold mr-1">💡 客观提示：</span>{about.neutrality}
+          </div>
+        )}
         <blockquote class="border-l-4 border-gold pl-5 italic text-teak font-display text-xl my-6">
           “{about.quote}”
           <footer class="text-sm not-italic text-ink/60 mt-2">— {about.quoteAuthor}</footer>

@@ -67,6 +67,16 @@ const weatherMap = Object.fromEntries(
         </a>
       </div>
 
+      {hero.quickNav && (
+        <div class="mt-5 flex flex-wrap items-center gap-2">
+          {hero.quickNav.map((nav: { label: string; href: string }) => (
+            <a href={nav.href} class="text-xs md:text-sm bg-teakDeep/60 border border-gold/30 text-ivory/90 px-4 py-1.5 rounded-full hover:bg-gold/20 hover:text-goldBright transition-colors backdrop-blur-sm">
+              {nav.label}
+            </a>
+          ))}
+        </div>
+      )}
+
       <div class="mt-8 flex flex-wrap items-center gap-5 text-sm text-ivory/80">
         <span class="stars text-lg">★ {hero.rating}</span>
         <span>{hero.reviewCount} Google</span>

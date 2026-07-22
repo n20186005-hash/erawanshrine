@@ -42,7 +42,7 @@ const googleMapsEmbed = siteConfig.googleMapsEmbed.replace(
           <p><span class="text-gold font-semibold">🌐 </span>{map.coords}</p>
         </div>
         <div class="grid grid-cols-2 gap-3">
-          {map.stats.slice(1).map((s) => (
+          {map.stats.slice(1).map((s: any) => (
             <div class="rounded-xl bg-teak text-ivory p-4">
               <div class="text-xs text-ivory/60 uppercase tracking-wider">{s.tag}</div>
               <div class="font-display text-xl text-goldBright mt-1">{s.value}</div>
@@ -50,6 +50,12 @@ const googleMapsEmbed = siteConfig.googleMapsEmbed.replace(
             </div>
           ))}
         </div>
+        {map.rWalkTip && (
+          <div class="rounded-xl bg-gold/10 text-teak p-4 mt-4 border border-gold/30">
+            <p class="font-bold text-sm">{map.rWalkTip.title}</p>
+            <p class="text-xs mt-1 leading-relaxed">{map.rWalkTip.desc}</p>
+          </div>
+        )}
       </div>
 
       <div class="rounded-2xl overflow-hidden border border-gold/30 h-[320px] md:h-full min-h-[360px]">

@@ -6,7 +6,7 @@ export const siteConfig = {
     zh: '四面佛（爱侣湾神坛）',
   },
   nameLocal: 'ศาลท้าวมหาพรหมเอราวัณ', // 当地（泰文）名称
-  domain: 'https://erawanshrine.org',
+  domain: process.env.CURRENT_SITE_DOMAIN ? `https://${process.env.CURRENT_SITE_DOMAIN}` : 'https://erawanshrine.org',
 
   phone: '+6622528750',
   phoneDisplay: '+66 2 252 8750',

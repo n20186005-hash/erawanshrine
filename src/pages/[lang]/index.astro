@@ -6,8 +6,11 @@ import Hero from '../../components/Hero.astro';
 import About from '../../components/About.astro';
 import Ecosystem from '../../components/Ecosystem.astro';
 import History from '../../components/History.astro';
-  import Guide from '../../components/Guide.astro';
-  import Sources from '../../components/Sources.astro';
+import Inscriptions from '../../components/Inscriptions.astro';
+import Guide from '../../components/Guide.astro';
+import InteractiveGuide from '../../components/InteractiveGuide.astro';
+import OfficialSignage from '../../components/OfficialSignage.astro';
+import Sources from '../../components/Sources.astro';
   import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
@@ -27,8 +30,11 @@ const { lang, messages } = await getI18n(Astro.url);
   <main>
     <Hero lang={lang} messages={messages} />
     <About messages={messages} />
+    <OfficialSignage messages={messages} />
     <Ecosystem messages={messages} />
+    <InteractiveGuide messages={messages} />
     <History messages={messages} />
+    <Inscriptions messages={messages} />
     <Guide messages={messages} />
     <Food messages={messages} />
     <Gallery messages={messages} />

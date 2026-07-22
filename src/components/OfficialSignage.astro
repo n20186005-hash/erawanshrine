@@ -1,0 +1,71 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const data = messages.officialSignage;
+if (!data) return null;
+---
+
+<section id="official-signage" class="py-16 bg-white text-ink border-t border-teak/10">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-10">
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-teak">{data.label}</h2>
+    </div>
+
+    <!-- Warnings -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      {data.warnings.map((w: any) => (
+        <div class="bg-red-50 border-l-4 border-red-600 p-5 rounded-r-xl">
+          <div class="flex items-center gap-2">
+            <span class="text-red-600 text-xl">🔴</span>
+            <h3 class="font-bold text-red-900 text-lg">{w.title}</h3>
+          </div>
+          <p class="mt-2 text-red-800/80 text-sm">{w.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 mb-10">
+      <!-- Dance Rates -->
+      <div class="bg-ivory rounded-2xl p-6 border border-gold/20 shadow-sm">
+        <h3 class="font-display text-2xl text-teak mb-4 border-b border-gold/20 pb-3">{data.danceRates.title}</h3>
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          {data.danceRates.rates.map((r: any) => (
+            <div class="bg-white p-3 rounded-lg border border-teak/10 flex justify-between items-center">
+              <span class="font-medium text-ink">{r.dancers}</span>
+              <span class="text-gold font-bold">{r.price}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-xs text-ink/60 bg-teak/5 p-3 rounded-lg">💡 {data.danceRates.note}</p>
+      </div>
+
+      <!-- Elephant Rates -->
+      <div class="bg-ivory rounded-2xl p-6 border border-gold/20 shadow-sm">
+        <h3 class="font-display text-2xl text-teak mb-4 border-b border-gold/20 pb-3">{data.elephantRates.title}</h3>
+        <div class="space-y-2">
+          {data.elephantRates.rates.map((r: any) => (
+            <div class="bg-white p-3 rounded-lg border border-teak/10 flex justify-between items-center">
+              <div>
+                <span class="font-medium text-ink block">{r.size}</span>
+                <span class="text-xs text-ink/50">{r.note}</span>
+              </div>
+              <span class={`font-bold ${r.price === '严格禁止带入' ? 'text-red-600' : 'text-gold'}`}>{r.price}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Foundation Info -->
+    <div class="bg-teak text-ivory p-6 rounded-2xl text-sm leading-relaxed mb-6">
+      <p class="font-semibold mb-2">🔰 伊拉旺四面神基金会提示：</p>
+      <p>{data.foundationInfo}</p>
+    </div>
+    <div class="bg-green-50 text-green-900 p-6 rounded-2xl text-sm leading-relaxed border border-green-200">
+      <p class="font-semibold mb-2">🌿 环保参拜倡议：</p>
+      <p>{data.ecoNote}</p>
+    </div>
+  </div>
+</section>
