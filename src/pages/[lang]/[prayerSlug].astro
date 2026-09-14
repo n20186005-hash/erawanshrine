@@ -1,0 +1,385 @@
+---
+import { languagesList, htmlLang, getI18n } from '../../i18n/ui';
+import { pageSlug, pageUrl } from '../../i18n/pages';
+import { entity } from '../../i18n/entity';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import MobileQuickBar from '../../components/MobileQuickBar.astro';
+
+/**
+ * 「经文与参拜指南」二级页。
+ *
+ * 为什么独立成页而不是并入首页：搜索意图与首页不同。首页承接的是观光/交通意图
+ * （开放时间、BTS 怎么走、门票），本页承接的是虔诚参拜意图
+ * （心咒、正确拜法、四面分别求什么、还愿流程），两者混在一起会互相稀释主题。
+ * 路径按各语言检索习惯命名：/th/katha/、/en/mantra/、/zh/mantra/。
+ */
+export async function getStaticPaths() {
+  return languagesList.map((lang) => ({
+    params: { lang, prayerSlug: pageSlug.prayer[lang] },
+  }));
+}
+
+const { lang, messages } = await getI18n(Astro.url);
+const p = messages.prayer;
+const origin = siteConfig.domain;
+const selfUrl = pageUrl(origin, 'prayer', lang);
+const homeUrl = pageUrl(origin, 'home', lang);
+
+/** 面包屑：首页 → 经文与参拜指南 */
+const breadcrumbs = [
+  { name: entity.fullName, url: homeUrl },
+  { name: p.breadcrumb, url: selfUrl },
+];
+
+/** HowTo：把参拜流程标记为可展开的步骤式富媒体摘要 */
+const howToJsonLd = {
+  '@type': 'HowTo',
+  '@id': `${selfUrl}#howto`,
+  name: p.steps.heading,
+  description: p.steps.intro,
+  inLanguage: htmlLang[lang],
+  totalTime: 'PT30M',
+  step: p.steps.items.map((s: any) => ({
+    '@type': 'HowToStep',
+    position: Number(s.order),
+    name: s.title,
+    text: s.desc,
+    url: `${selfUrl}#step-${s.order}`,
+  })),
+};
+
+/** Article：声明本页是围绕同一实体（景点）撰写的专题内容页 */
+const articleJsonLd = {
+  '@type': 'Article',
+  '@id': `${selfUrl}#article`,
+  headline: p.hero.title,
+  description: p.meta.description,
+  inLanguage: htmlLang[lang],
+  mainEntityOfPage: { '@id': `${selfUrl}#webpage` },
+  isPartOf: { '@id': `${origin}/#website` },
+  about: { '@id': `${origin}/#attraction` },
+  publisher: { '@id': `${origin}/#attraction` },
+};
+---
+
+<BaseLayout
+  lang={lang}
+  title={p.meta.title}
+  description={p.meta.description}
+  messages={messages}
+  pageType="article"
+  page="prayer"
+  faqs={p.faqs}
+  breadcrumbs={breadcrumbs}
+  extraJsonLd={[howToJsonLd, articleJsonLd]}
+  ogType="article"
+>
+  <Header lang={lang} messages={messages} page="prayer" />
+
+  <main class="bg-white text-ink">
+    <!-- Hero -->
+    <section class="bg-teak pt-28 pb-14 text-ivory">
+      <div class="mx-auto max-w-4xl px-5">
+        <a
+          href={homeUrl}
+          class="inline-flex items-center gap-2 text-sm text-goldBright hover:text-gold transition-colors"
+        >
+          <span aria-hidden="true">⬅️</span>
+          {p.hero.backHome}
+        </a>
+
+        <p class="mt-6 font-hand text-lg text-gold">{p.hero.eyebrow}</p>
+        <h1 class="mt-2 font-display text-3xl leading-tight text-goldBright md:text-5xl">
+          {p.hero.title}
+        </h1>
+        <p class="mt-5 max-w-2xl leading-relaxed text-ivory/80">{p.hero.subtitle}</p>
+
+        <dl class="mt-8 grid gap-4 sm:grid-cols-3">
+          {p.facts.map((f: any) => (
+            <div class="rounded-xl border border-gold/25 bg-teakDeep/60 px-4 py-3">
+              <dt class="text-xs uppercase tracking-wider text-gold">{f.label}</dt>
+              <dd class="mt-1 text-sm font-semibold text-ivory">{f.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <!-- 页内导航 -->
+    <nav aria-label={p.tocLabel} class="border-b border-teak/10 bg-ivory">
+      <div class="mx-auto max-w-4xl px-5 py-4">
+        <span class="text-xs uppercase tracking-wider text-teak/60">{p.tocLabel}</span>
+        <ul class="mt-2 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          {p.toc.map((t: any) => (
+            <li>
+              <a href={t.href} class="text-teak underline-offset-4 hover:text-gold hover:underline">
+                {t.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 1. 经文 -->
+    <section id="chant" class="scroll-mt-20 border-b border-teak/10 py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <p class="text-xs uppercase tracking-wider text-gold">{p.chant.label}</p>
+        <h2 class="mt-2 font-display text-2xl text-teak md:text-3xl">{p.chant.heading}</h2>
+        <p class="mt-4 leading-relaxed text-ink/75">{p.chant.intro}</p>
+
+        <div class="mt-8 space-y-8">
+          {p.chant.blocks.map((b: any) => (
+            <article class="rounded-2xl border border-gold/25 bg-ivory p-6">
+              <h3 class="font-display text-xl text-teak">{b.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/70">{b.desc}</p>
+
+              {b.lines ? (
+                <>
+                  <div class="mt-5 mb-2 flex justify-between text-xs uppercase tracking-wider text-teak/50">
+                    <span>{p.chant.labels.thai}</span>
+                    <span>{p.chant.labels.roman}</span>
+                  </div>
+                  <ol class="space-y-2">
+                    {b.lines.map((ln: any, i: number) => (
+                      <li
+                        lang="th"
+                        class="flex flex-col gap-1 rounded-lg border border-teak/10 bg-white px-4 py-2.5 text-lg leading-loose sm:flex-row sm:items-baseline sm:gap-4"
+                      >
+                        <span class="text-xs text-teak/40 sm:w-5">{i + 1}</span>
+                        <span class="font-semibold text-teak">{ln.thai}</span>
+                        <span lang={lang} class="text-sm text-ink/55 sm:ml-auto sm:text-right">
+                          {ln.roman}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              ) : (
+                <div class="mt-5 overflow-hidden rounded-xl border border-teak/10 bg-white">
+                  <div class="border-b border-teak/10 px-4 py-4">
+                    <div class="text-xs uppercase tracking-wider text-teak/50">
+                      {p.chant.labels.thai}
+                    </div>
+                    <p lang="th" class="mt-1 text-lg font-semibold leading-loose text-teak md:text-xl">
+                      {b.thai}
+                    </p>
+                  </div>
+                  <div class="px-4 py-4">
+                    <div class="text-xs uppercase tracking-wider text-teak/50">
+                      {p.chant.labels.roman}
+                    </div>
+                    <p class="mt-1 leading-relaxed text-ink/80">{b.roman}</p>
+                  </div>
+                </div>
+              )}
+
+              {b.pronunciationNote && (
+                <p class="mt-3 rounded-lg bg-teak/5 px-4 py-3 text-xs leading-relaxed text-ink/60">
+                  💡 {b.pronunciationNote}
+                </p>
+              )}
+
+              <dl class="mt-4 divide-y divide-teak/10 rounded-xl border border-teak/10 bg-white text-sm">
+                {b.pronunciation && (
+                  <div class="grid gap-1 px-4 py-3 sm:grid-cols-[7rem_1fr] sm:gap-4">
+                    <dt class="text-xs uppercase tracking-wider text-teak/50 sm:pt-0.5">
+                      {p.chant.labels.pronunciation}
+                    </dt>
+                    <dd class="leading-relaxed text-ink/80">{b.pronunciation}</dd>
+                  </div>
+                )}
+                <div class="grid gap-1 px-4 py-3 sm:grid-cols-[7rem_1fr] sm:gap-4">
+                  <dt class="text-xs uppercase tracking-wider text-teak/50 sm:pt-0.5">
+                    {p.chant.labels.meaning}
+                  </dt>
+                  <dd class="leading-relaxed text-ink/80">{b.meaning}</dd>
+                </div>
+                <div class="grid gap-1 px-4 py-3 sm:grid-cols-[7rem_1fr] sm:gap-4">
+                  <dt class="text-xs uppercase tracking-wider text-teak/50 sm:pt-0.5">
+                    {p.chant.labels.repeat}
+                  </dt>
+                  <dd class="font-semibold text-gold">{b.repeat}</dd>
+                </div>
+              </dl>
+            </article>
+          ))}
+        </div>
+
+        <p class="mt-6 rounded-xl bg-teak/5 px-5 py-4 text-xs leading-relaxed text-ink/60">
+          {p.chant.note}
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. 四面顺序 -->
+    <section id="faces" class="scroll-mt-20 border-b border-teak/10 bg-ivory py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <p class="text-xs uppercase tracking-wider text-gold">{p.faces.label}</p>
+        <h2 class="mt-2 font-display text-2xl text-teak md:text-3xl">{p.faces.heading}</h2>
+        <p class="mt-4 leading-relaxed text-ink/75">{p.faces.intro}</p>
+
+        <ol class="mt-8 space-y-4">
+          {p.faces.items.map((f: any) => (
+            <li class="flex gap-4 rounded-2xl border border-gold/25 bg-white p-5">
+              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teak font-display text-ivory">
+                {f.order}
+              </span>
+              <div>
+                <h3 class="font-display text-lg text-teak">{f.position}</h3>
+                <p class="mt-1 text-sm font-semibold text-gold">
+                  {p.faces.focusLabel} · {f.focus}
+                </p>
+                <p class="mt-1.5 text-sm leading-relaxed text-ink/70">{f.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <p class="mt-6 rounded-xl bg-teak/5 px-5 py-4 text-sm leading-relaxed text-ink/70">
+          💡 {p.faces.tip}
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. 参拜流程 -->
+    <section id="steps" class="scroll-mt-20 border-b border-teak/10 py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <p class="text-xs uppercase tracking-wider text-gold">{p.steps.label}</p>
+        <h2 class="mt-2 font-display text-2xl text-teak md:text-3xl">{p.steps.heading}</h2>
+        <p class="mt-4 leading-relaxed text-ink/75">{p.steps.intro}</p>
+
+        <ol class="mt-8 space-y-5">
+          {p.steps.items.map((s: any) => (
+            <li id={`step-${s.order}`} class="flex scroll-mt-20 gap-4">
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold text-sm font-bold text-gold">
+                {s.order}
+              </span>
+              <div>
+                <h3 class="font-semibold text-teak">{s.title}</h3>
+                <p class="mt-1 text-sm leading-relaxed text-ink/70">{s.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. 供品与还愿 -->
+    <section id="offerings" class="scroll-mt-20 border-b border-teak/10 bg-ivory py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <p class="text-xs uppercase tracking-wider text-gold">{p.offerings.label}</p>
+        <h2 class="mt-2 font-display text-2xl text-teak md:text-3xl">{p.offerings.heading}</h2>
+
+        <h3 class="mt-8 font-display text-lg text-teak">{p.offerings.setTitle}</h3>
+        <div class="mt-3 overflow-x-auto rounded-2xl border border-gold/25 bg-white">
+          <table class="w-full text-sm">
+            <thead class="bg-teak text-ivory">
+              <tr>
+                <th scope="col" class="px-4 py-3 text-left font-semibold">
+                  {p.offerings.columns.item}
+                </th>
+                <th scope="col" class="px-4 py-3 text-left font-semibold whitespace-nowrap">
+                  {p.offerings.columns.spec}
+                </th>
+                <th scope="col" class="px-4 py-3 text-left font-semibold">
+                  {p.offerings.columns.note}
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-teak/10">
+              {p.offerings.set.map((r: any) => (
+                <tr>
+                  <th scope="row" class="px-4 py-3 text-left font-semibold text-teak">
+                    {r.item}
+                  </th>
+                  <td class="whitespace-nowrap px-4 py-3 font-semibold text-gold">{r.spec}</td>
+                  <td class="px-4 py-3 leading-relaxed text-ink/70">{r.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6 grid gap-5 md:grid-cols-2">
+          <div class="rounded-2xl border border-gold/25 bg-white p-5">
+            <h3 class="font-display text-lg text-teak">🐘 {p.offerings.elephantTitle}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink/70">{p.offerings.elephantNote}</p>
+          </div>
+          <div class="rounded-2xl border border-gold/25 bg-white p-5">
+            <h3 class="font-display text-lg text-teak">💃 {p.offerings.danceTitle}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink/70">{p.offerings.danceNote}</p>
+            <p class="mt-3 text-xs leading-relaxed text-ink/55">{p.offerings.danceFlow}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 禁忌与礼仪 -->
+    <section id="taboos" class="scroll-mt-20 border-b border-teak/10 py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <p class="text-xs uppercase tracking-wider text-gold">{p.taboos.label}</p>
+        <h2 class="mt-2 font-display text-2xl text-teak md:text-3xl">{p.taboos.heading}</h2>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          {p.taboos.items.map((t: any) => (
+            <div class="rounded-xl border-l-4 border-red-500 bg-red-50 p-5">
+              <h3 class="font-semibold text-red-900">{t.title}</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-red-900/80">{t.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section id="faq" class="scroll-mt-20 border-b border-teak/10 bg-ivory py-14">
+      <div class="mx-auto max-w-4xl px-5">
+        <h2 class="font-display text-2xl text-teak md:text-3xl">{p.faqHeading}</h2>
+
+        <div class="mt-8 space-y-3">
+          {p.faqs.map((f: any) => (
+            <details class="group rounded-xl border border-gold/25 bg-white px-5 py-4">
+              <summary class="cursor-pointer font-semibold text-teak marker:content-none">
+                {f.q}
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-ink/75">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 返回主页 -->
+    <section class="bg-teakDeep py-14 text-ivory">
+      <div class="mx-auto max-w-4xl px-5 text-center">
+        <h2 class="font-display text-2xl text-goldBright md:text-3xl">{p.cta.homeTitle}</h2>
+        <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-ivory/75">{p.cta.homeDesc}</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a
+            href={homeUrl}
+            class="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-teak transition-colors hover:bg-goldBright"
+          >
+            <span aria-hidden="true">⬅️</span>
+            {p.cta.homeLabel}
+          </a>
+          <a
+            href={siteConfig.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-full border border-gold/50 px-6 py-3 text-sm font-semibold text-goldBright transition-colors hover:bg-gold/10"
+          >
+            {p.cta.mapLabel}
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} messages={messages} />
+  <MobileQuickBar messages={messages} hoursHref={`${homeUrl}#map`} />
+</BaseLayout>

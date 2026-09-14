@@ -2,61 +2,190 @@
 import '../styles/global.css';
 import { siteConfig } from '../config';
 import { htmlLang, languagesList, type Lang } from '../i18n/ui';
+import { entity, breadcrumbTrail } from '../i18n/entity';
+import { pageAlternates, type PageKey } from '../i18n/pages';
 
 interface Props {
   lang: Lang;
   title: string;
   description: string;
   messages: Record<string, any>;
+  /**
+   * attraction：景点主页面（可索引，含地理面包屑 + 主页 FAQ）
+   * article：二级内容页（可索引，含自有面包屑 + 自有 FAQ + 附加结构化数据）
+   * legal：隐私 / 条款 / Cookie 等法务页（noindex）
+   */
+  pageType?: 'attraction' | 'article' | 'legal';
+  /** 站点页面标识，决定 hreflang 指向哪些同页多语言地址（见 i18n/pages.ts） */
+  page?: PageKey;
+  /** 覆盖默认 FAQ —— 二级内容页应输出与自身主题匹配的问答 */
+  faqs?: { q: string; a: string }[];
+  /** 覆盖默认面包屑（需给绝对地址） */
+  breadcrumbs?: { name: string; url?: string }[];
+  /** 追加到 JSON-LD @graph 的节点，例如 HowTo / Article */
+  extraJsonLd?: Record<string, unknown>[];
+  ogType?: 'website' | 'article';
 }
-const { lang, title, description, messages } = Astro.props;
-const canonical = `${siteConfig.domain}/${lang}/`;
+const {
+  lang,
+  title,
+  description,
+  messages,
+  pageType = 'attraction',
+  page = 'home',
+  faqs: faqsProp,
+  breadcrumbs: breadcrumbsProp,
+  extraJsonLd = [],
+  ogType = 'website',
+} = Astro.props;
+const isIndexable = pageType !== 'legal';
+const origin = siteConfig.domain;
+/** 当前语言的景点主页绝对地址 */
+const langHome = `${origin}/${lang}/`;
+/**
+ * canonical 必须指向「当前页」而不是语言首页。
+ * 此前固定写成 `${domain}/${lang}/`，导致法务页把自己的排名与收录信号
+ * 全部指向首页（Search Console 中政策/条款页异常高排名即由此而来）。
+ * Astro 为目录式静态输出，故站内路径统一保留结尾斜杠。
+ */
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = `${origin}${pathname}`;
+const attractionId = `${origin}/#attraction`;
+const websiteId = `${origin}/#website`;
+const webpageId = `${canonical}#webpage`;
 
-const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
+const faqs: { q: string; a: string }[] =
+  faqsProp ?? (messages && messages.guide && Array.isArray(messages.guide.faqs) ? messages.guide.faqs : []);
 
-const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
-    name: siteConfig.name[lang],
-    description,
-    image: `${siteConfig.domain}${siteConfig.ogImage}`,
-    url: canonical,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
-      addressCountry: 'TH',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: siteConfig.coords.lat,
-      longitude: siteConfig.coords.lng,
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.rating,
-      reviewCount: siteConfig.reviewCount.replace(/,/g, ''),
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        opens: siteConfig.openingHours.opens,
-        closes: siteConfig.openingHours.closes,
-      },
-    ],
-    sameAs: siteConfig.sameAs,
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  },
+/**
+ * 面包屑：二级内容页由页面显式传入（首页 → 当前页），
+ * 主页沿用「景点 → 城市 → 省 → 国家」的地理层级链。
+ */
+const crumbs: { name: string; url?: string }[] =
+  breadcrumbsProp && breadcrumbsProp.length
+    ? breadcrumbsProp
+    : breadcrumbTrail.map((name, i) => ({
+        name,
+        ...(i === breadcrumbTrail.length - 1 ? { url: canonical } : {}),
+      }));
+
+// 供结构化数据使用的绝对图片地址（主视觉 + 画廊前两张）
+const schemaImages = [
+  `${origin}${siteConfig.ogImage}`,
+  `${origin}/gallery/${siteConfig.galleryPrefix}2.jpg`,
+  `${origin}/gallery/${siteConfig.galleryPrefix}3.jpg`,
 ];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      // PlaceOfWorship：明确「宗教场所」实体类型，与 TouristAttraction 并列表述
+      '@type': ['TouristAttraction', 'PlaceOfWorship'],
+      '@id': attractionId,
+      name: entity.fullName,
+      // 别名覆盖 Search Console 中各语言真实搜索写法（含简体/繁体/TL 转写）
+      alternateName: [
+        entity.shortName,
+        `${entity.city} ${entity.fullName}`,
+        entity.localName,
+        siteConfig.name[lang],
+        ...entity.aliases,
+      ].filter((v, i, arr) => arr.indexOf(v) === i),
+      description,
+      url: langHome,
+      telephone: siteConfig.phone,
+      image: schemaImages,
+      isAccessibleForFree: true,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: entity.streetAddress,
+        addressLocality: entity.city,
+        addressRegion: entity.province,
+        postalCode: entity.postalCode,
+        addressCountry: entity.countryCode,
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: entity.latitude,
+        longitude: entity.longitude,
+      },
+      hasMap: entity.mapsShareUrl,
+      // 评分与评价数（同步自 Google 地图，与页面展示一致）
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: siteConfig.rating,
+        bestRating: 5,
+        worstRating: 1,
+        // siteConfig.reviewCount 是 "7,001" 这类展示字符串，结构化数据需纯数字
+        reviewCount: Number(siteConfig.reviewCount.replace(/[^0-9]/g, '')),
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+          opens: siteConfig.openingHours.opens,
+          closes: siteConfig.openingHours.closes,
+        },
+      ],
+      sameAs: siteConfig.sameAs,
+      isPartOf: { '@id': websiteId },
+      // 始终指向语言首页的 WebPage：法务页的 webpageId 指向条款本身，
+      // 若用它会导致「景点实体的主页面是隐私政策」这种矛盾表述。
+      mainEntityOfPage: { '@id': `${langHome}#webpage` },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      url: `${origin}/`,
+      name: siteConfig.name[lang],
+      inLanguage: htmlLang[lang],
+      about: { '@id': attractionId },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': webpageId,
+      url: canonical,
+      name: title,
+      description,
+      inLanguage: htmlLang[lang],
+      isPartOf: { '@id': websiteId },
+      about: { '@id': attractionId },
+      primaryImageOfPage: { '@type': 'ImageObject', url: schemaImages[0] },
+    },
+    // 面包屑与 FAQ 仅输出在可索引页面上：法务页已 noindex，
+    // 输出这些节点只会让结构化数据与页面实际定位不符
+    ...(isIndexable
+      ? [
+          {
+            '@type': 'BreadcrumbList',
+            '@id': `${canonical}#breadcrumb`,
+            itemListElement: crumbs.map((c, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: c.name,
+              ...(c.url ? { item: c.url } : {}),
+            })),
+          },
+          ...(faqs.length
+            ? [
+                {
+                  '@type': 'FAQPage',
+                  '@id': `${canonical}#faq`,
+                  mainEntity: faqs.map((f: { q: string; a: string }) => ({
+                    '@type': 'Question',
+                    name: f.q,
+                    acceptedAnswer: { '@type': 'Answer', text: f.a },
+                  })),
+                },
+              ]
+            : []),
+        ]
+      : []),
+    // 页面自带的附加结构化数据（HowTo / Article 等）
+    ...extraJsonLd,
+  ],
+};
 ---
 
 <!doctype html>
@@ -64,21 +193,68 @@ const jsonLd = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href={siteConfig.ogImage} />
+
+    <!-- Title / Meta Description：全称 + 城市 + 域名含义 -->
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content={htmlLang[lang]} />
+    {/* 法务页 noindex：停止抢占首页排名与消耗抓取预算，但保留链接权重传递 */}
+    {isIndexable ? (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    ) : (
+      <meta name="robots" content="noindex, follow" />
+    )}
+    <meta name="author" content={`${entity.fullName} Visitor Guide`} />
+
+    <!-- 地理实体绑定（本地 SEO） -->
+    <meta name="geo.region" content={entity.geoRegion} />
+    <meta name="geo.placename" content={`${entity.city}, ${entity.country}`} />
+    <meta name="geo.position" content={`${entity.latitude};${entity.longitude}`} />
+    <meta name="ICBM" content={`${entity.latitude}, ${entity.longitude}`} />
+    <meta name="theme-color" content={siteConfig.themeColor} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={siteConfig.name[lang]} />
+    <meta property="og:locale" content={htmlLang[lang].replace('-', '_')} />
+    {languagesList.filter((l) => l !== lang).map((l) => (
+      <meta property="og:locale:alternate" content={htmlLang[l].replace('-', '_')} />
+    ))}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${siteConfig.domain}${siteConfig.ogImage}`} />
+    <meta property="og:image" content={`${origin}${siteConfig.ogImage}`} />
+    <meta property="og:image:alt" content={`${entity.fullName} in ${entity.city}`} />
     <meta property="og:url" content={canonical} />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    {languagesList.map((l) => (
-      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
-    ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/th/`} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${origin}${siteConfig.ogImage}`} />
+    <meta name="twitter:image:alt" content={`${entity.fullName} in ${entity.city}`} />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content={siteConfig.name[lang]} />
+    <meta name="application-name" content={siteConfig.name[lang]} />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" type="image/jpeg" href={siteConfig.ogImage} />
+    {/*
+      hreflang 指向「同一页面的其他语言版本」，而不是各语言首页。
+      此前固定写成 ${origin}/${l}/，导致 /th/katha/ 这类二级页无法被正确
+      识别为 /zh/mantra/ 的泰文版本。法务页已 noindex，不输出 hreflang。
+    */}
+    {isIndexable &&
+      pageAlternates(origin, page).map((alt) => (
+        <link rel="alternate" hreflang={htmlLang[alt.lang]} href={alt.href} />
+      ))}
+    {isIndexable && (
+      <link rel="alternate" hreflang="x-default" href={pageAlternates(origin, page)[0].href} />
+    )}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,18 +262,25 @@ const jsonLd = [
       href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Sarabun:wght@300;400;500;600;700&family=Charm:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP" is:inline></script>
-    <script is:inline>
+    <!-- Google tag (gtag.js) — GA4 -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.ga4Id}`} is:inline></script>
+    <script is:inline define:vars={{ ga4Id: siteConfig.ga4Id }}>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-HXM22WWPKP');
+      gtag('config', ga4Id);
     </script>
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   </head>
   <body class="grain">
     <slot />
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
+    </script>
   </body>
 </html>

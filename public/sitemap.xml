@@ -7,6 +7,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,6 +17,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -25,52 +27,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://erawanshrine.org/th/privacy-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://erawanshrine.org/th/katha/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://erawanshrine.org/en/privacy-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://erawanshrine.org/en/mantra/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://erawanshrine.org/zh/privacy-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/th/terms-of-service/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/en/terms-of-service/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/zh/terms-of-service/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/th/cookie-settings/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/en/cookie-settings/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://erawanshrine.org/zh/cookie-settings/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://erawanshrine.org/zh/mantra/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

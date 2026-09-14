@@ -32,6 +32,9 @@ check*.js
 *.tmp
 tmp/
 
+# ---- 浏览器自动化产物 ----
+.playwright-cli/
+
 # ---- 编辑器 / 系统 ----
 .vscode/
 .idea/

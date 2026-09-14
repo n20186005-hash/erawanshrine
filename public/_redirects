@@ -1,1 +1,18 @@
-/  /th/  302
+# 域名统一：www → 非 www（301 永久重定向）
+# 站点唯一规范域名为 https://erawanshrine.org
+# 说明：Search Console 数据显示 www 与非 www 同时被收录且权重分散，
+#       统一后将 www.erawanshrine.org 的全部权重 301 归并到规范域名。
+# 语法兼容 Cloudflare Pages 与 Netlify 的 _redirects 文件。
+https://www.erawanshrine.org/*  https://erawanshrine.org/:splat  301
+
+# 结尾斜杠统一：Search Console 中出现「带斜杠 / 不带斜杠」两套 URL 同时收录，
+# 统一到带斜杠形式，与 canonical 保持一致（避免同页被判定为重复内容）。
+/th/privacy-policy    /th/privacy-policy/    301
+/en/privacy-policy    /en/privacy-policy/    301
+/zh/privacy-policy    /zh/privacy-policy/    301
+/th/terms-of-service  /th/terms-of-service/  301
+/en/terms-of-service  /en/terms-of-service/  301
+/zh/terms-of-service  /zh/terms-of-service/  301
+/th/cookie-settings   /th/cookie-settings/   301
+/en/cookie-settings   /en/cookie-settings/   301
+/zh/cookie-settings   /zh/cookie-settings/   301

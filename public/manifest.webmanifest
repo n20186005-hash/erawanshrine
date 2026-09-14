@@ -1,0 +1,53 @@
+{
+  "id": "/",
+  "name": "Thao Maha Brahma (Erawan Shrine) — Visitor Guide",
+  "short_name": "Erawan Shrine",
+  "description": "Visitor guide to The Shrine of Erawan (四面佛 / ศาลท้าวมหาพรหมเอราวัณ) in Bangkok — history, worship customs, opening hours, location map and travel tips.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#071a1c",
+  "theme_color": "#0d2a2e",
+  "lang": "th",
+  "dir": "auto",
+  "categories": ["travel", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Visit Guide",
+      "short_name": "Guide",
+      "url": "/en/#guide"
+    },
+    {
+      "name": "Map & Directions",
+      "short_name": "Map",
+      "url": "/en/#map"
+    },
+    {
+      "name": "Reviews",
+      "short_name": "Reviews",
+      "url": "/en/#reviews"
+    }
+  ]
+}

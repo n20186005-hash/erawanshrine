@@ -8,14 +8,66 @@ export const siteConfig = {
   nameLocal: 'ศาลท้าวมหาพรหมเอราวัณ', // 当地（泰文）名称
   domain: process.env.CURRENT_SITE_DOMAIN ? `https://${process.env.CURRENT_SITE_DOMAIN}` : 'https://erawanshrine.org',
 
+  // ============================================================
+  // SEO 实体绑定变量表（Entity Binding）
+  // 仅需替换以下字段即可复用到其它单景点站点
+  // ============================================================
+  entity: {
+    domainName: 'erawanshrine.org', // {{DOMAIN_NAME}}
+    fullName: 'The Shrine of Erawan', // {{ATTRACTION_FULL_NAME}}
+    shortName: 'Erawan Shrine', // {{ATTRACTION_SHORT_NAME}}
+    localName: 'ศาลท้าวมหาพรหมเอราวัณ', // 当地官方名称
+    city: 'Bangkok', // {{CITY_NAME}}
+    province: 'Bangkok', // {{STATE_PROVINCE}}
+    country: 'Thailand', // {{COUNTRY_NAME}}
+    countryCode: 'TH', // {{COUNTRY_CODE_2LETTER}}
+    postalCode: '10330', // {{POSTAL_CODE}}
+    latitude: 13.7443, // {{LATITUDE}}
+    longitude: 100.5397, // {{LONGITUDE}}
+    streetAddress: '494 Ratchadamri Rd, Lumphini, Pathum Wan',
+    geoRegion: 'TH-10', // Bangkok ISO 3166-2
+    mapsShareUrl: 'https://maps.app.goo.gl/ECtrKVPgRqdk2fdM9', // {{MAPS_SHARE_URL}}
+    nearbyLandmarks: ['CentralWorld', 'Gaysorn Village'], // {{NEARBY_LANDMARK_1}} / {{NEARBY_LANDMARK_2}}
+    govtTourismUrl: 'https://www.tourismthailand.org/', // {{GOVT_TOURISM_URL}}
+    category: 'Shrine',
+    // 别名（用于 JSON-LD alternateName）：覆盖各语言下用户真实的搜索写法。
+    // 数据来源：Search Console 近 3 个月「热门查询项目」报表。
+    aliases: [
+      'Thao Maha Brahma', // 官方英文名（曝光最高，排名 9.14）
+      'Thao Maha Phrom',
+      'Brahma Shrine',
+      'Erawan Shrine Bangkok',
+      'ศาลพระพรหมเอราวัณ',
+      'พระพรหมเอราวัณ',
+      'ท้าวมหาพรหม',
+      '四面佛',
+      '爱侣湾四面佛',
+      '愛侶灣四面佛',
+      '曼谷四面佛',
+    ],
+  },
+
   phone: '+6622528750',
   phoneDisplay: '+66 2 252 8750',
 
+  // 评分与评价数（同步自 Google 地图用户评价）
   rating: 4.7,
-  reviewCount: '6,888',
+  reviewCount: '7,001',
+  reviewSyncMonth: '2026-09', // 评分 / 评价数同步月份（ISO）
+  reviewSyncLabel: {
+    th: 'กันยายน 2026',
+    en: 'September 2026',
+    zh: '2026 年 9 月',
+  },
 
   // 实际坐标（用于天气 / 日落 API 与地图嵌入）—— 四面佛（Erawan Shrine，曼谷叻猜南蒂路）
   coords: { lat: 13.7443, lng: 100.5397 },
+
+  // 景点地理类型（决定天气模块的场景化建议侧重）
+  // city 城市人文 | seaside 海边 | mountain 山地峡谷 | river 漂流河湖
+  // forest 森林草原 | cave 溶洞 | desert 沙漠戈壁
+  // 四面佛位于曼谷市中心，属城市人文 → 侧重体感温度 / 城市热岛防暑，无特殊环境风险
+  weatherScene: 'city' as 'city' | 'seaside' | 'mountain' | 'river' | 'forest' | 'cave' | 'desert',
 
   // 统一 Google Maps 链接（首屏 / 照片 / 评价 / 页脚 共 4 处 + JSON-LD sameAs）
   mapsUrl: 'https://maps.app.goo.gl/ECtrKVPgRqdk2fdM9',
@@ -23,10 +75,13 @@ export const siteConfig = {
   // 地图嵌入（MapSection iframe，使用用户提供的四面佛 Google Maps 嵌入代码）
   googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968585.7137442343!2d95.66252571250001!3d13.744343700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed00cedd871%3A0x30fa1bb9eee21654!2z5Zub6Z2i5L2b!5e0!3m2!1szh-CN!2sus!4v1784686045200!5m2!1szh-CN!2sus',
 
-  // 结构化数据 sameAs（权威资料页）
+  // 结构化数据 sameAs（第三方权威资料页）
+  // 注意：不再包含本站自身域名——sameAs 用于指向「他处」描述同一实体的资料，
+  //       指向自身域名既无效，也会与页脚「非官方网站」声明相互矛盾。
   sameAs: [
     'https://maps.app.goo.gl/ECtrKVPgRqdk2fdM9',
     'https://en.wikipedia.org/wiki/Erawan_Shrine',
+    'https://www.tourismthailand.org/',
   ],
 
   address: '494 Ratchadamri Rd, Lumphini, Pathum Wan, Bangkok 10330, Thailand',
@@ -78,5 +133,19 @@ export const siteConfig = {
       name: { th: 'สำนักงานเขตปทุมวัน', en: 'Pathum Wan District Office', zh: '巴吞旺县公所' },
       url: 'https://www.bangkok.go.th/pathumwan',
     },
+    {
+      name: {
+        th: 'มูลนิธิทุนท่านท้าวมหาพรหม',
+        en: 'Than Tao Mahaprom Foundation (shrine operator)',
+        zh: '伊拉旺四面神基金会（神坛管理机构）',
+      },
+      url: 'https://en.wikipedia.org/wiki/Erawan_Shrine',
+    },
   ],
+
+  // GA4 测量 ID
+  ga4Id: 'G-HXM22WWPKP',
+
+  // PWA 主题色
+  themeColor: '#0d2a2e',
 };

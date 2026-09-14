@@ -8,8 +8,8 @@ const { messages } = Astro.props;
 const reviews = messages.reviews;
 const mapsUrl = siteConfig.mapsUrl;
 
-const stars = (r: string) => {
-  const n = Math.round(parseFloat(r));
+const stars = (r: string | number) => {
+  const n = Math.max(0, Math.min(5, Math.round(typeof r === 'string' ? parseFloat(r) : r)));
   return '★'.repeat(n) + '☆'.repeat(5 - n);
 };
 ---
@@ -23,12 +23,21 @@ const stars = (r: string) => {
     <div class="mt-8 flex flex-wrap items-center gap-4">
       <span class="stars text-2xl">{stars(siteConfig.rating)}</span>
       <span class="font-display text-2xl text-goldBright">{siteConfig.rating}</span>
+      <span class="text-ivory/70">({siteConfig.reviewCount})</span>
       <span class="text-ivory/70">{reviews.disclaimer}</span>
     </div>
-    <p class="mt-2 text-xs text-ivory/50">{reviews.declaration}</p>
+    <p class="mt-2 text-xs text-ivory/50">
+      {reviews.syncNote}<a
+        href={mapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-goldBright underline-offset-2 hover:underline"
+      >{reviews.syncLink}</a>
+    </p>
+    <p class="mt-1 text-xs text-ivory/50">{reviews.declaration}</p>
 
     <div class="grid md:grid-cols-2 gap-4 mt-8">
-      {reviews.featured.map((f) => (
+      {reviews.featured.map((f: { text: string; source: string }) => (
         <div class="rounded-2xl bg-teak/60 border border-gold/20 p-6 italic font-display text-lg">
           “{f.text}”
           <div class="not-italic text-sm text-goldBright mt-3">{f.source}</div>
@@ -37,7 +46,7 @@ const stars = (r: string) => {
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-      {reviews.items.map((r) => {
+      {reviews.items.map((r: { text: string; rating: string; name: string; date: string }) => {
         // Parse tag format like "[最佳美食: 船面] text"
         let tag = '';
         let content = r.text;
@@ -64,7 +73,7 @@ const stars = (r: string) => {
     </div>
 
     <div class="mt-10 text-center">
-      <a href={mapsUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-ivory border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
+      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-ivory border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
         {reviews.viewLocation}
       </a>
     </div>

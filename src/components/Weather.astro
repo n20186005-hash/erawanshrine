@@ -1,0 +1,462 @@
+---
+import { siteConfig } from '../config';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { lang, messages } = Astro.props;
+const w = messages.weather;
+const hero = messages.hero;
+const scene = siteConfig.weatherScene;
+
+// Full weather-code labels (all languages); only the current language is shipped per page.
+const WEATHER_CODES: Record<number, Record<string, { t: string; s: string }>> = {
+  0: { th: { t: 'ท้องฟ้าโปร่งใส', s: 'แดดจัด' }, en: { t: 'Clear sky', s: 'Sunny' }, zh: { t: '晴空', s: '晴' } },
+  1: { th: { t: 'โปร่งโล่ง', s: 'ส่วนใหญ่โปร่ง' }, en: { t: 'Mainly clear', s: 'Mostly clear' }, zh: { t: '少云', s: '少云' } },
+  2: { th: { t: 'มีเมฆบางส่วน', s: 'มีเมฆบางส่วน' }, en: { t: 'Partly cloudy', s: 'Partly cloudy' }, zh: { t: '局部多云', s: '局部多云' } },
+  3: { th: { t: 'เมฆมาก', s: 'เมฆมาก' }, en: { t: 'Overcast', s: 'Overcast' }, zh: { t: '阴', s: '阴' } },
+  45: { th: { t: 'หมอก', s: 'หมอก' }, en: { t: 'Fog', s: 'Fog' }, zh: { t: '雾', s: '雾' } },
+  48: { th: { t: 'หมอกแข็ง', s: 'หมอก' }, en: { t: 'Rime fog', s: 'Fog' }, zh: { t: '雾凇', s: '雾' } },
+  51: { th: { t: 'ฝนปรอยเล็กน้อย', s: 'ฝนปรอย' }, en: { t: 'Light drizzle', s: 'Drizzle' }, zh: { t: '小毛毛雨', s: '毛毛雨' } },
+  53: { th: { t: 'ฝนปรอยปานกลาง', s: 'ฝนปรอย' }, en: { t: 'Drizzle', s: 'Drizzle' }, zh: { t: '毛毛雨', s: '毛毛雨' } },
+  55: { th: { t: 'ฝนปรอยหนัก', s: 'ฝนปรอย' }, en: { t: 'Dense drizzle', s: 'Drizzle' }, zh: { t: '浓毛毛雨', s: '毛毛雨' } },
+  61: { th: { t: 'ฝนตกเล็กน้อย', s: 'ฝนตก' }, en: { t: 'Light rain', s: 'Rain' }, zh: { t: '小雨', s: '雨' } },
+  63: { th: { t: 'ฝนตกปานกลาง', s: 'ฝนตก' }, en: { t: 'Rain', s: 'Rain' }, zh: { t: '中雨', s: '雨' } },
+  65: { th: { t: 'ฝนตกหนัก', s: 'ฝนตก' }, en: { t: 'Heavy rain', s: 'Rain' }, zh: { t: '大雨', s: '雨' } },
+  71: { th: { t: 'หิมะตกเล็กน้อย', s: 'หิมะ' }, en: { t: 'Light snow', s: 'Snow' }, zh: { t: '小雪', s: '雪' } },
+  73: { th: { t: 'หิมะตกปานกลาง', s: 'หิมะ' }, en: { t: 'Snow', s: 'Snow' }, zh: { t: '中雪', s: '雪' } },
+  75: { th: { t: 'หิมะตกหนัก', s: 'หิมะ' }, en: { t: 'Heavy snow', s: 'Snow' }, zh: { t: '大雪', s: '雪' } },
+  80: { th: { t: 'ฝนตกเป็นระยะ', s: 'ฝนตก' }, en: { t: 'Rain showers', s: 'Showers' }, zh: { t: '阵雨', s: '阵雨' } },
+  81: { th: { t: 'ฝนตกเป็นระยะปานกลาง', s: 'ฝนตก' }, en: { t: 'Rain showers', s: 'Showers' }, zh: { t: '阵雨', s: '阵雨' } },
+  82: { th: { t: 'ฝนตกเป็นระยะหนัก', s: 'ฝนตก' }, en: { t: 'Violent showers', s: 'Showers' }, zh: { t: '强阵雨', s: '阵雨' } },
+  95: { th: { t: 'พายุฝนฟ้าคะนอง', s: 'ฟ้าคะนอง' }, en: { t: 'Thunderstorm', s: 'Storm' }, zh: { t: '雷阵雨', s: '雷雨' } },
+  96: { th: { t: 'พายุฝนฟ้าคะนองลูกเห็บ', s: 'ฟ้าคะนอง' }, en: { t: 'Thunderstorm', s: 'Storm' }, zh: { t: '雷阵雨', s: '雷雨' } },
+  99: { th: { t: 'พายุฝนฟ้าคะนองลูกเห็บหนัก', s: 'ฟ้าคะนอง' }, en: { t: 'Severe thunderstorm', s: 'Storm' }, zh: { t: '强雷阵雨', s: '雷雨' } },
+};
+const weatherMap = Object.fromEntries(
+  Object.entries(WEATHER_CODES).map(([k, v]) => [k, v[lang] ?? v.en])
+);
+
+const WEEKDAYS: Record<string, string[]> = {
+  th: ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'],
+  en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  zh: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+};
+const weekdays = WEEKDAYS[lang] ?? WEEKDAYS.en;
+
+// 仅传当前语言所需的文案，避免整包 i18n 进入客户端
+const T = {
+  feelsLike: w.feelsLike,
+  rainChance: w.rainChance,
+  windLabel: w.windLabel,
+  windLevel: w.windLevel,
+  uvLabel: w.uvLabel,
+  humidityLabel: w.humidityLabel,
+  today: w.today,
+  live: w.live,
+  error: w.error,
+  outfitTitle: w.outfitTitle,
+  playTitle: w.playTitle,
+  packTitle: w.packTitle,
+  goldenChanceLabel: hero.goldenChanceLabel,
+  uvLevels: [w.uv0, w.uv1, w.uv2, w.uv3],
+  rules: w.rules,
+  playRules: w.playRules,
+  packRules: w.packRules,
+  alerts: w.alerts,
+  alertsNature: w.alertsNature,
+};
+---
+
+<div class="weather-card rounded-2xl p-5 text-ivory shadow-2xl">
+  <div class="flex items-center justify-between gap-2">
+    <span class="text-ivory/70 text-sm">{w.title}</span>
+    <span id="weather-status" class="shrink-0 text-xs text-ivory/55">{w.loading}</span>
+  </div>
+
+  <!-- 风险提醒（置顶，优先级最高，有预警才显示） -->
+  <div id="weather-risk" class="hidden mt-3 rounded-xl bg-red-500/20 border border-red-400/50 px-4 py-3">
+    <p class="text-xs font-semibold tracking-wide text-red-200">⚠️ {w.riskTitle}</p>
+    <ul id="risk-list" class="mt-1 space-y-1 text-sm text-red-50"></ul>
+  </div>
+  <p id="weather-safe" class="hidden mt-3 text-xs text-emerald-200/80">✓ {w.noRisk}</p>
+
+  <div id="weather-body">
+    <div class="flex items-center justify-between mt-2">
+      <span id="cur-icon" class="text-2xl">🌦️</span>
+      <span class="text-xs text-ivory/55">{hero.plannerNote}</span>
+    </div>
+    <div class="mt-1 flex items-end gap-3">
+      <span id="cur-temp" class="font-display text-5xl font-semibold text-goldBright">{hero.defaultTemp}</span>
+      <div class="pb-1">
+        <div id="cur-cond" class="text-sm">{hero.defaultCond}</div>
+        <div class="text-xs text-ivory/60">💨 <span id="cur-wind">{hero.defaultWind}</span></div>
+      </div>
+    </div>
+
+    <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+      <div class="rounded-lg bg-ivory/10 px-3 py-2">
+        <div class="text-ivory/55">{w.feelsLike}</div>
+        <div id="cur-feels" class="text-sm font-semibold text-ivory">—</div>
+      </div>
+      <div class="rounded-lg bg-ivory/10 px-3 py-2">
+        <div class="text-ivory/55">{w.rainChance}</div>
+        <div id="cur-rain" class="text-sm font-semibold text-ivory">—</div>
+      </div>
+      <div class="rounded-lg bg-ivory/10 px-3 py-2">
+        <div class="text-ivory/55">{w.uvLabel}</div>
+        <div id="cur-uv" class="text-sm font-semibold text-ivory">—</div>
+      </div>
+      <div class="rounded-lg bg-ivory/10 px-3 py-2">
+        <div class="text-ivory/55">{w.humidityLabel}</div>
+        <div id="cur-humidity" class="text-sm font-semibold text-ivory">—</div>
+      </div>
+    </div>
+
+    <!-- 7 日预报 -->
+    <div class="mt-4 pt-4 border-t border-gold/20">
+      <p class="text-xs uppercase tracking-wide text-ivory/70">{w.forecastTitle}</p>
+      <div id="forecast" class="mt-2 grid grid-cols-7 gap-1 text-center text-[11px]"></div>
+    </div>
+
+    <!-- 出行建议 / 游玩安排 / 随身物品（条件触发，动态渲染） -->
+    <div id="advice" class="mt-4 pt-4 border-t border-gold/20 space-y-3"></div>
+
+    <!-- 日落观赏指数 -->
+    <div class="mt-4 rounded-xl bg-gold/15 border border-gold/30 px-4 py-3">
+      <div class="flex items-center justify-between gap-2">
+        <span class="text-xs uppercase tracking-wide text-ivory/70">☀️ {hero.sunsetIndexLabel}</span>
+      </div>
+      <p id="sunset-index" class="mt-1 font-display text-base font-semibold text-goldBright">{hero.sunsetIndexDefault}</p>
+    </div>
+
+    <!-- 光线计划（保留原有：黄金时刻 / 日落 / 蓝调 / 建议时段） -->
+    <div class="mt-4 pt-4 border-t border-gold/20">
+      <p class="font-hand text-gold text-lg">{hero.plannerTitle}</p>
+      <p class="text-xs text-ivory/60 mt-0.5">{hero.plannerNote}</p>
+      <div class="mt-3 space-y-2 text-sm">
+        <div class="flex justify-between"><span class="text-ivory/70">{hero.goldenHourLabel}</span><span id="golden-time" class="font-semibold text-goldBright">{hero.defaultGolden}</span></div>
+        <div class="flex justify-between"><span class="text-ivory/70">{hero.sunsetLabel}</span><span id="sunset-time" class="font-semibold text-goldBright">{hero.defaultSunset}</span></div>
+        <div class="flex justify-between"><span class="text-ivory/70">{hero.blueHourLabel}</span><span id="blue-time" class="font-semibold text-goldBright">{hero.defaultBlue}</span></div>
+        <div class="flex justify-between"><span class="text-ivory/70">{hero.crowdWarningLabel}</span><span class="font-semibold text-ivory">{hero.defaultTip}</span></div>
+      </div>
+      <p class="text-[11px] text-ivory/50 mt-2">{hero.lightCaption}</p>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ lat: siteConfig.coords.lat, lon: siteConfig.coords.lng, scene, weatherMap, weekdays, T }}>
+  (function () {
+    const LAT = lat, LON = lon;
+    const el = (id) => document.getElementById(id);
+
+    function weatherText(code, mode) {
+      const e = weatherMap[code] || weatherMap[3];
+      return mode === 'short' ? e.s : e.t;
+    }
+
+    function iconFor(code) {
+      if (code === 0) return '☀️';
+      if (code <= 2) return '🌤️';
+      if (code === 3) return '☁️';
+      if (code === 45 || code === 48) return '🌫️';
+      if (code >= 51 && code <= 57) return '🌦️';
+      if (code >= 61 && code <= 67) return '🌧️';
+      if (code >= 71 && code <= 77) return '❄️';
+      if (code >= 80 && code <= 82) return '🌦️';
+      if (code >= 95) return '⛈️';
+      return '🌡️';
+    }
+
+    // 风力等级（蒲福风级，按 km/h 换算）
+    function beaufort(kmh) {
+      const t = [1, 6, 12, 20, 29, 39, 50, 62, 75, 89, 103, 118];
+      let b = 0;
+      for (let i = 0; i < t.length; i++) if (kmh >= t[i]) b = i + 1;
+      return b;
+    }
+
+    function uvLevel(uv) {
+      if (uv < 3) return 0;
+      if (uv < 6) return 1;
+      if (uv < 8) return 2;
+      return 3;
+    }
+
+    function precipLevel(code) {
+      if (code >= 95) return 'thunder';
+      if ((code >= 63 && code <= 67) || (code >= 81 && code <= 82)) return 'heavy';
+      if ((code >= 51 && code <= 57) || code === 61 || code === 80) return 'light';
+      return 'none';
+    }
+
+    function goldenChance(code) {
+      if (code === 0) return 95;
+      if (code <= 2) return 85;
+      if (code === 3) return 60;
+      if (code === 45 || code === 48) return 50;
+      if (code >= 51 && code <= 67) return 30;
+      if (code >= 71 && code <= 82) return 35;
+      if (code >= 95) return 15;
+      return 70;
+    }
+
+    function uniq(arr) {
+      return arr.filter((v, i) => Boolean(v) && arr.indexOf(v) === i);
+    }
+
+    // 气象预警文案（按景点地理类型取词：城市 vs 自然场景）
+    function alertText(key) {
+      if (scene !== 'city' && T.alertsNature && T.alertsNature[key]) return T.alertsNature[key];
+      return T.alerts[key];
+    }
+
+    // 条件触发建议引擎：只返回满足条件的条目，不满足的整块不展示
+    function buildAdvice(d) {
+      const alerts = [], outfit = [], play = [], pack = [];
+      const R = T.rules, P = T.playRules, K = T.packRules;
+      const code = d.code;
+      const level = precipLevel(code);
+      const rainProb = d.rainProb || 0;
+      const uv = d.uv || 0;
+      const windB = beaufort(d.windMax || 0);
+
+      // 🌂 降水
+      if (rainProb >= 60) {
+        outfit.push(R.rainLikely);
+        play.push(P.rainLikely);
+        pack.push(K.umbrella);
+      }
+      if (level === 'light') {
+        outfit.push(R.rainLight);
+        play.push(P.rainLight);
+        pack.push(K.foldingUmbrella);
+      }
+      if (level === 'heavy') {
+        alerts.push(alertText('rainHeavy'));
+        play.push(P.rainHeavy);
+        pack.push(K.rainCoat);
+      }
+      if (level === 'thunder') {
+        alerts.push(alertText('thunder'));
+        play.push(P.thunder);
+        pack.push(K.rainCoat);
+      }
+
+      // 🌞 高温 & 紫外线
+      if (d.tMax != null && d.tMax >= 32) {
+        outfit.push(R.heat);
+        play.push(P.heat);
+        pack.push(K.heat);
+      }
+      if (uv >= 5) {
+        outfit.push(R.uv);
+        pack.push(K.uv);
+      }
+
+      // ❄️ 低温 / 降温
+      if (d.tMax != null && d.tMin != null && (d.tMax - d.tMin) > 8) outfit.push(R.tempSwing);
+      if (d.tMax != null && d.tMax <= 10) {
+        outfit.push(R.cold);
+        pack.push(K.cold);
+      }
+
+      // 💨 风力
+      if (windB >= 7) {
+        alerts.push(alertText('windHigh'));
+        play.push(P.windHigh);
+      } else if (windB >= 5) {
+        outfit.push(R.windMid);
+        play.push(P.windMid);
+        pack.push(K.windMid);
+      }
+
+      // ☁️ 晴天 / 阴天
+      if (code === 0 || code === 1) {
+        outfit.push(R.sunny);
+        play.push(P.sunny);
+      } else if (code === 2 || code === 3) {
+        outfit.push(R.cloudy);
+        play.push(P.cloudy);
+      }
+
+      // 🌫️ 雾 / 霾
+      if (code === 45 || code === 48) {
+        alerts.push(alertText('fog'));
+        play.push(P.fog);
+        pack.push(K.fog);
+      }
+
+      // 🚨 极端高温预警
+      if (d.tMax != null && d.tMax >= 40) alerts.push(T.alerts.heat);
+
+      return { alerts: uniq(alerts), outfit: uniq(outfit), play: uniq(play), pack: uniq(pack) };
+    }
+
+    function renderAdvice(d) {
+      const host = el('advice');
+      if (!host) return;
+      host.innerHTML = '';
+      const groups = [
+        { title: T.outfitTitle || '', icon: '👕', items: d.outfit },
+        { title: T.playTitle || '', icon: '🗺️', items: d.play },
+        { title: T.packTitle || '', icon: '🎒', items: d.pack },
+      ];
+      groups.forEach((g) => {
+        if (!g.items.length) return;
+        const block = document.createElement('div');
+        const h = document.createElement('p');
+        h.className = 'text-xs font-semibold text-gold';
+        h.textContent = g.icon + ' ' + g.title;
+        block.appendChild(h);
+        const ul = document.createElement('ul');
+        ul.className = 'mt-1 space-y-1 text-sm text-ivory/90';
+        g.items.forEach((text) => {
+          const li = document.createElement('li');
+          li.className = 'flex gap-2';
+          const dot = document.createElement('span');
+          dot.className = 'text-goldBright';
+          dot.textContent = '•';
+          const span = document.createElement('span');
+          span.textContent = text;
+          li.appendChild(dot);
+          li.appendChild(span);
+          ul.appendChild(li);
+        });
+        block.appendChild(ul);
+        host.appendChild(block);
+      });
+    }
+
+    function renderRisk(alerts) {
+      const risk = el('weather-risk');
+      const list = el('risk-list');
+      const safe = el('weather-safe');
+      if (alerts.length && risk && list) {
+        list.innerHTML = '';
+        alerts.forEach((text) => {
+          const li = document.createElement('li');
+          li.textContent = '• ' + text;
+          list.appendChild(li);
+        });
+        risk.classList.remove('hidden');
+        if (safe) safe.classList.add('hidden');
+      } else if (safe) {
+        safe.classList.remove('hidden');
+      }
+    }
+
+    function renderForecast(daily) {
+      const host = el('forecast');
+      if (!host || !daily || !daily.time) return;
+      host.innerHTML = '';
+      daily.time.forEach((iso, i) => {
+        const dt = new Date(iso + 'T00:00:00');
+        const day = i === 0 ? T.today : weekdays[dt.getDay()];
+        const max = Math.round(daily.temperature_2m_max[i]);
+        const min = Math.round(daily.temperature_2m_min[i]);
+        const rp = daily.precipitation_probability_max ? daily.precipitation_probability_max[i] : null;
+        const cell = document.createElement('div');
+        cell.className = 'rounded-lg bg-ivory/5 py-2 px-1';
+        const dayEl = document.createElement('div');
+        dayEl.className = 'text-ivory/60';
+        dayEl.textContent = day;
+        const iconEl = document.createElement('div');
+        iconEl.className = 'text-base leading-6';
+        iconEl.textContent = iconFor(daily.weather_code[i]);
+        const maxEl = document.createElement('div');
+        maxEl.className = 'text-goldBright font-semibold';
+        maxEl.textContent = max + '°';
+        const minEl = document.createElement('div');
+        minEl.className = 'text-ivory/50';
+        minEl.textContent = min + '°';
+        cell.appendChild(dayEl);
+        cell.appendChild(iconEl);
+        cell.appendChild(maxEl);
+        cell.appendChild(minEl);
+        if (rp != null) {
+          const rpEl = document.createElement('div');
+          rpEl.className = 'text-sky-300';
+          rpEl.textContent = '💧' + Math.round(rp) + '%';
+          cell.appendChild(rpEl);
+        }
+        host.appendChild(cell);
+      });
+    }
+
+    const pad = (n) => String(n).padStart(2, '0');
+    const fmt = (date) => pad(date.getHours()) + ':' + pad(date.getMinutes());
+    const addMin = (date, m) => new Date(date.getTime() + m * 60000);
+    const setText = (id, value) => { const n = el(id); if (n) n.textContent = value; };
+
+    const url =
+      `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+      '&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,wind_gusts_10m' +
+      '&hourly=temperature_2m,precipitation_probability,uv_index,weather_code' +
+      '&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_probability_max,wind_speed_10m_max' +
+      '&timezone=Asia/Bangkok&wind_speed_unit=kmh&forecast_days=7';
+
+    fetch(url)
+      .then((r) => r.json())
+      .then((d) => {
+        if (!d || !d.current || !d.daily) throw new Error('bad');
+        const cur = d.current;
+
+        const hIdx = Math.max(0, d.hourly && d.hourly.time ? d.hourly.time.indexOf(cur.time) : 0);
+        const rainNow = d.hourly && d.hourly.precipitation_probability ? d.hourly.precipitation_probability[hIdx] : null;
+        const uvNow = d.hourly && d.hourly.uv_index ? d.hourly.uv_index[hIdx] : null;
+
+        const windB = beaufort(cur.wind_speed_10m);
+
+        // 当前天气
+        setText('cur-temp', Math.round(cur.temperature_2m) + '°');
+        setText('cur-cond', weatherText(cur.weather_code, 'title'));
+        setText('cur-wind', T.windLabel + ' ' + windB + T.windLevel + ' · ' + Math.round(cur.wind_speed_10m) + ' km/h');
+        setText('cur-icon', iconFor(cur.weather_code));
+
+        // 指标卡
+        setText('cur-feels', Math.round(cur.apparent_temperature) + '°');
+        setText('cur-rain', (rainNow != null ? Math.round(rainNow) + '%' : '—'));
+        setText('cur-uv', uvNow != null ? T.uvLevels[uvLevel(uvNow)] + ' ' + Math.round(uvNow) : '—');
+        setText('cur-humidity', Math.round(cur.relative_humidity_2m) + '%');
+
+        // 日落观赏指数
+        setText('sunset-index', iconFor(cur.weather_code) + ' ' + weatherText(cur.weather_code, 'short') + ' · ' + (T.goldenChanceLabel || '') + goldenChance(cur.weather_code) + '%');
+
+        // 日出 / 日落 / 蓝调
+        const sr = new Date(d.daily.sunrise[0]);
+        const ss = new Date(d.daily.sunset[0]);
+        setText('golden-time', fmt(sr) + ' – ' + fmt(addMin(sr, 90)));
+        setText('sunset-time', fmt(ss));
+        setText('blue-time', fmt(addMin(ss, 20)) + ' – ' + fmt(addMin(ss, 50)));
+
+        // 7 日预报
+        renderForecast(d.daily);
+
+        // 条件触发建议 + 风险提醒
+        const advice = buildAdvice({
+          code: cur.weather_code,
+          tMax: d.daily.temperature_2m_max[0],
+          tMin: d.daily.temperature_2m_min[0],
+          rainProb: d.daily.precipitation_probability_max ? d.daily.precipitation_probability_max[0] : null,
+          uv: d.daily.uv_index_max[0],
+          windMax: d.daily.wind_speed_10m_max[0],
+        });
+        renderRisk(advice.alerts);
+        renderAdvice(advice);
+
+        const statusEl = el('weather-status');
+        if (statusEl) statusEl.textContent = T.live;
+        const bodyEl = el('weather-body');
+        if (bodyEl) bodyEl.classList.remove('hidden');
+      })
+      .catch(() => {
+        const statusEl = el('weather-status');
+        if (statusEl) statusEl.textContent = T.error;
+        const bodyEl = el('weather-body');
+        if (bodyEl) bodyEl.classList.remove('hidden');
+      });
+  })();
+</script>

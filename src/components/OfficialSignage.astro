@@ -51,7 +51,7 @@ if (!data) return null;
                 <span class="font-medium text-ink block">{r.size}</span>
                 <span class="text-xs text-ink/50">{r.note}</span>
               </div>
-              <span class={`font-bold ${r.price === '严格禁止带入' ? 'text-red-600' : 'text-gold'}`}>{r.price}</span>
+              <span class={`font-bold ${r.price === data.forbiddenNote ? 'text-red-600' : 'text-gold'}`}>{r.price}</span>
             </div>
           ))}
         </div>
@@ -60,11 +60,11 @@ if (!data) return null;
 
     <!-- Foundation Info -->
     <div class="bg-teak text-ivory p-6 rounded-2xl text-sm leading-relaxed mb-6">
-      <p class="font-semibold mb-2">🔰 伊拉旺四面神基金会提示：</p>
+      <p class="font-semibold mb-2">{data.foundationLabel}</p>
       <p>{data.foundationInfo}</p>
     </div>
     <div class="bg-green-50 text-green-900 p-6 rounded-2xl text-sm leading-relaxed border border-green-200">
-      <p class="font-semibold mb-2">🌿 环保参拜倡议：</p>
+      <p class="font-semibold mb-2">{data.ecoLabel}</p>
       <p>{data.ecoNote}</p>
     </div>
   </div>

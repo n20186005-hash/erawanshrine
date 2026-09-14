@@ -1,0 +1,54 @@
+---
+import { siteConfig } from '../config';
+
+interface Props {
+  messages: Record<string, any>;
+  /** 「开放时间」按钮的落点：首页用页内锚点，二级页需指回首页 */
+  hoursHref?: string;
+}
+const { messages, hoursHref = '#map' } = Astro.props;
+const q = messages.quickBar;
+const hours = `${siteConfig.openingHours.opens} – ${siteConfig.openingHours.closes}`;
+---
+
+<!--
+  移动端悬浮快捷操作条
+  Search Console 数据：行动装置贡献 87.5% 的点击（560 曝光 / 7 点击，CTR 1.25%），
+  但桌面端 473 曝光 0 点击。移动端首屏之外提供三个最高频动作
+  （拨打 / 一键导航 / 开放时间）可降低跳出并提升到店转化。
+-->
+<div class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-gold/30 bg-teakDeep/95 text-ivory backdrop-blur-md md:hidden">
+  <a
+    href={`tel:${siteConfig.phone}`}
+    class="flex flex-col items-center justify-center gap-0.5 py-2.5 text-[11px] leading-tight active:bg-teak"
+  >
+    <span class="text-lg leading-none" aria-hidden="true">📞</span>
+    <span>{q.call}</span>
+  </a>
+  <a
+    href={siteConfig.mapsUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="flex flex-col items-center justify-center gap-0.5 border-x border-gold/20 py-2.5 text-[11px] leading-tight active:bg-teak"
+  >
+    <span class="text-lg leading-none" aria-hidden="true">🧭</span>
+    <span>{q.directions}</span>
+  </a>
+  <a
+    href={hoursHref}
+    class="flex flex-col items-center justify-center gap-0.5 py-2.5 text-[11px] leading-tight active:bg-teak"
+  >
+    <span class="text-lg leading-none" aria-hidden="true">🕑</span>
+    <span>{q.hours}</span>
+    <span class="text-[10px] font-semibold text-gold">{hours}</span>
+  </a>
+</div>
+
+<style is:global>
+  /* 固定底栏会遮住页脚最后一行，移动端预留出对应高度 */
+  @media (max-width: 767px) {
+    body {
+      padding-bottom: 3.5rem;
+    }
+  }
+</style>

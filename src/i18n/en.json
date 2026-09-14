@@ -1,7 +1,12 @@
 {
   "meta": {
-    "title": "Thao Maha Brahma (Erawan Shrine) — Guide to Bangkok's Four-Faced Brahma Shrine",
-    "description": "Guide to Thao Maha Brahma (Erawan Shrine / 四面佛), the four-faced Brahma shrine at Ratchadamri, Bangkok — history, legends, worship customs, getting there and visiting hours"
+    "title": "Erawan Shrine Bangkok (Thao Maha Brahma): Opening Hours, BTS & Map Guide",
+    "description": "The Shrine of Erawan (Thao Maha Brahma) at Ratchadamri, Bangkok — open daily 06:00–22:00, free entry. Opening hours, BTS Chit Lom directions, dance troupe rates and worship steps."
+  },
+  "quickBar": {
+    "call": "Call",
+    "directions": "Directions",
+    "hours": "Opening hours"
   },
   "header": {
     "nav": {
@@ -9,6 +14,7 @@
       "about": "About",
       "history": "History",
       "guide": "Visit Guide",
+      "prayer": "Chants & Prayer",
       "food": "Food",
       "gallery": "Gallery",
       "reviews": "Reviews",
@@ -21,8 +27,9 @@
     "titleAccent": "Erawan Shrine",
     "subtitle": "Thao Maha Brahma (Erawan Shrine / 四面佛) is a four-faced Brahma shrine at the Ratchadamri intersection — a center of faith and belief that has stood for over 60 years in the heart of Bangkok",
     "rating": "4.7",
-    "reviewCount": "6,888",
+    "reviewCount": "7,001",
     "category": "Sacred Shrine",
+    "h1City": "Bangkok, Thailand",
     "badge": "Bangkok · Ratchadamri",
     "cta1": "Plan your visit",
     "cta2": "View photos",
@@ -52,12 +59,83 @@
     "defaultSunset": "18:35",
     "defaultBlue": "18:55 – 19:25"
   },
+  "weather": {
+    "title": "Live weather & 7-day forecast",
+    "live": "Live",
+    "feelsLike": "Feels like",
+    "rainChance": "Rain chance",
+    "windLabel": "Wind force",
+    "windLevel": "",
+    "uvLabel": "UV",
+    "humidityLabel": "Humidity",
+    "forecastTitle": "7-day forecast",
+    "today": "Today",
+    "outfitTitle": "What to wear",
+    "playTitle": "What to do",
+    "packTitle": "What to bring",
+    "riskTitle": "Risk alert",
+    "noRisk": "No weather alerts — your itinerary can go ahead as planned",
+    "loading": "Loading weather…",
+    "error": "Weather data unavailable",
+    "uv0": "Low",
+    "uv1": "Moderate",
+    "uv2": "High",
+    "uv3": "Very high",
+    "rules": {
+      "rainLikely": "Rain is likely — bring rain gear",
+      "rainLight": "Light rain, slippery pavements — watch your step",
+      "heat": "Hot — try to avoid going out at midday",
+      "uv": "Strong UV — protect yourself from the sun",
+      "tempSwing": "Big day–night temperature swing — pack a light jacket you can add or remove",
+      "cold": "Chilly — dress warmly",
+      "windMid": "Fairly windy — secure your belongings",
+      "sunny": "Clear skies — great for outdoor sightseeing",
+      "cloudy": "Soft light — perfect for photos"
+    },
+    "playRules": {
+      "rainLikely": "Prefer indoor spots (malls, museums) and postpone open-air plans",
+      "rainLight": "Outdoor activities are less enjoyable — mix in indoor stops",
+      "rainHeavy": "Avoid long spells outdoors — duck into a nearby mall",
+      "thunder": "Stay indoors; avoid open ground, trees and the water's edge",
+      "heat": "Shorten outdoor time and rest in shade or air-conditioned malls",
+      "windMid": "Open-air facilities (viewpoints, Ferris wheels) may close temporarily",
+      "windHigh": "High-altitude and open-air attractions are likely to close",
+      "sunny": "Clear and bright — ideal for sightseeing and photos; skip the midday heat",
+      "cloudy": "No harsh sun — good for long strolls outdoors",
+      "fog": "Poor visibility — not ideal for viewpoints and distant views"
+    },
+    "packRules": {
+      "umbrella": "Umbrella / raincoat",
+      "foldingUmbrella": "Folding umbrella",
+      "rainCoat": "Raincoat (avoid long umbrellas in strong wind)",
+      "heat": "Sunscreen, plenty of drinking water, heat-relief items",
+      "uv": "Sunscreen, sunglasses, sun hat",
+      "cold": "Warm coat, scarf",
+      "windMid": "Hats blow off easily — skip loose long skirts",
+      "fog": "Face mask"
+    },
+    "alerts": {
+      "rainHeavy": "Heavy rain — avoid low-lying roads and flooded areas",
+      "thunder": "Beware of lightning — don't stay near water, open ground or under trees",
+      "windHigh": "Strong wind — stay clear of billboards, temporary structures and falling objects",
+      "fog": "Low visibility — watch for traffic hazards and travel delays",
+      "heat": "Extreme heat — guard against heatstroke and keep hydrated"
+    },
+    "alertsNature": {
+      "rainHeavy": "Heavy rain — avoid valleys, low-lying terrain and riverbeds",
+      "thunder": "Beware of lightning — don't hike, swim at the beach or shelter under trees",
+      "windHigh": "Strong wind — stay clear of seaside rocks, ridges and billboards"
+    }
+  },
   "about": {
     "label": "About",
     "heading": "What is Thao Maha Brahma (Erawan Shrine)?",
     "lead": "A four-faced Brahma shrine in central Bangkok believed to answer prayers for career, love, health and study",
     "paragraph1": "Thao Maha Brahma (Erawan Shrine) stands at the corner of Ratchadamri and Phloen Chit roads, Pathum Wan, opposite CentralWorld and the Grand Hyatt Erawan. It was built in 1956 during the construction of the Erawan Hotel to dispel misfortunes that struck the project.",
     "paragraph2": "The Brahma image is plaster over a wooden core, gilded in gold. The four faces represent creation, prosperity, protection and benevolence. Today it is one of Thailand's most famous sacred sites, free to visit daily 06:00–22:00.",
+    "entityIntro": "Welcome to {fullName} ({localName}), widely recognized as the central {shortName}. Located in the heart of {location}, this destination serves as a primary hub for travelers visiting the region.",
+    "breadcrumbTitle": "Geographic hierarchy",
+    "nearbyLandmarksText": "When visiting {fullName}, visitors can easily explore surrounding historical landmarks and points of interest, including {landmark1} and {landmark2}.",
     "quote": "Built as an act of faith, it has stood for over 60 years in the heart of the capital",
     "quoteAuthor": "Shrine caretaker",
     "stats": [
@@ -454,6 +532,22 @@
       {
         "q": "What should I wear?",
         "a": "Not as strict as temples, but dress modestly and remove hats while praying"
+      },
+      {
+        "q": "What time does Erawan Shrine close?",
+        "a": "The shrine opens at 06:00 and closes at 22:00 every day, including public holidays. The last thanks-giving dance round stops taking bookings about 30 minutes before closing."
+      },
+      {
+        "q": "How much does a thanks-giving dance troupe cost?",
+        "a": "Official foundation rates: 260 baht for 2 dancers, 360 baht for 4, 460 baht for 6 and 710 baht for 8, per performance. Book at the desk inside the shrine grounds only — outside troupes are not accepted."
+      },
+      {
+        "q": "Who manages Erawan Shrine?",
+        "a": "The shrine is operated by the Than Tao Mahaprom Foundation (มูลนิธิทุนท่านท้าวมหาพรหม), which runs the official offering stalls and the dance troupe booking desk inside the fenced area."
+      },
+      {
+        "q": "Where can I find official information about the shrine?",
+        "a": "The shrine is managed by the Than Tao Mahaprom Foundation; official tourism information about the site and district is published by the Tourism Authority of Thailand."
       }
     ],
     "nearby": {
@@ -523,6 +617,7 @@
     "intro": "Scenes, the image, rituals and dance troupes at the four-faced Brahma shrine",
     "historicalNote": "All images are general shrine scenes for education and travel guidance.",
     "credits": "Photos from visitors and open sources — see references at the end.",
+    "imageRights": "Image rights: all images displayed on this website remain the property and copyright of their original photographers.",
     "alts": [
       "Gilded Thao Maha Brahma image in the evening light",
       "The revered four-faced Brahma image",
@@ -548,8 +643,10 @@
     "label": "Reviews",
     "heading": "Voices of visitors",
     "intro": "Experiences from tourists and devotees who have prayed at Thao Maha Brahma (Erawan Shrine)",
-    "disclaimer": "Reviews are visitor experiences compiled as guidance, not official endorsement",
-    "declaration": "We are a non-profit educational guide with no stake in any business",
+    "disclaimer": "Synced from Google Maps user reviews, sync time September 2026; copyright belongs to the original authors and Google Maps.",
+    "declaration": "Reviews are visitor experiences compiled as guidance, not official endorsement; we are a non-profit educational guide with no stake in any business.",
+    "syncNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "syncLink": "See all reviews on Google Maps ↗",
     "featured": [
       {
         "text": "I come every year at Chinese New Year; the atmosphere is sacred and the dance troupes are always beautiful",
@@ -610,7 +707,7 @@
         "date": "2026-03"
       }
     ],
-    "viewLocation": "View on Google Maps"
+    "viewLocation": "See all reviews on Google Maps"
   },
   "mapSection": {
     "label": "Map & directions",
@@ -635,7 +732,9 @@
     ],
     "address": "494 Ratchadamri Rd, Lumphini, Pathum Wan, Bangkok 10330",
     "plusCode": "PGVR+P5 Bangkok",
-    "coords": "13.7443° N, 100.5397° E"
+    "coords": "13.7443° N, 100.5397° E",
+    "authorityIntro": "For official tourism information on the shrine and the district, visit",
+    "tourismLabel": "{country} / {province} Official Tourism Portal"
   },
   "footer": {
     "brand": {
@@ -689,6 +788,8 @@
     "disclaimerLead": "This site is for educational purposes",
     "unofficial": "Not the official website of Thao Maha Brahma (Erawan Shrine)",
     "dataSource": "Weather: Open-Meteo · coordinates 13.7443, 100.5397",
+    "imageRights": "Image rights: all images displayed on this website remain the property and copyright of their original photographers.",
+    "reviewSource": "Reviews: synced from Google Maps user reviews (September 2026).",
     "copyright": "© 2026 Thao Maha Brahma Guide. All rights reserved."
   },
   "sources": {
@@ -713,6 +814,11 @@
         "linkLabel": "Visit"
       }
     ],
+    "reviewsTitle": "Reviews",
+    "reviewsText": "Synced from Google Maps user reviews, sync time September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewsLinkLabel": "See all reviews on Google Maps",
+    "imagesTitle": "Image rights",
+    "imagesText": "All images displayed on this website remain the property and copyright of their original photographers.",
     "factTitle": "Quick facts",
     "factText": "Built in 1956; the current image is bronze gilded in gold. Free entry 06:00–22:00 daily. One of Thailand's most famous sacred sites.",
     "correctionTitle": "Found an error?",
@@ -753,6 +859,14 @@
           "p": "All content belongs to the authors unless another source is stated"
         },
         {
+          "h": "Image rights",
+          "p": "All images displayed on this website remain the property and copyright of their original photographers."
+        },
+        {
+          "h": "Reviews & third-party data",
+          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time September 2026). Copyright of the review content belongs to the original authors and Google Maps."
+        },
+        {
           "h": "Liability",
           "p": "Users are responsible for their own travel decisions"
         }
@@ -791,6 +905,238 @@
           "subStatus": "Off"
         }
       ]
+    }
+  },
+  "officialSignage": {
+    "label": "Official worship rules & thanks-giving rates",
+    "warnings": [
+      {
+        "title": "Lighting incense and candles is not permitted",
+        "desc": "Offerings may be placed but must not be lit (Bangkok PM2.5 and public-health policy)"
+      },
+      {
+        "title": "Releasing birds you bring yourself is prohibited",
+        "desc": "Violations carry a 500 baht fine"
+      }
+    ],
+    "danceRates": {
+      "title": "Thanks-giving dance (Lakhon Chatri)",
+      "rates": [
+        { "dancers": "2 dancers", "price": "260 THB" },
+        { "dancers": "4 dancers", "price": "360 THB" },
+        { "dancers": "6 dancers", "price": "460 THB" },
+        { "dancers": "8 dancers", "price": "710 THB" }
+      ],
+      "note": "Each performance lasts under 15 minutes, available 06:00–22:00. Bookings must be made with the foundation at the shrine — private outside troupes are not accepted."
+    },
+    "elephantRates": {
+      "title": "Thanks-giving wooden elephants",
+      "rates": [
+        { "size": "13–19 in", "price": "500 THB", "note": "Buy only at the official stall inside the shrine" },
+        { "size": "20–24 in", "price": "1,000 THB", "note": "Buy only at the official stall inside the shrine" },
+        { "size": "25–29 in", "price": "1,500 THB", "note": "Buy only at the official stall inside the shrine" },
+        { "size": "30–40 in", "price": "2,000 THB", "note": "Buy only at the official stall inside the shrine" },
+        { "size": "Over 40 in", "price": "Not allowed", "note": "Too large — it blocks space for worshippers" }
+      ]
+    },
+    "forbiddenNote": "Not allowed",
+    "foundationLabel": "🔰 Than Tao Mahaprom Foundation (มูลนิธิทุนท่านท้าวมหาพรหม) notice:",
+    "foundationInfo": "The official stalls run by the Erawan Shrine Foundation are inside the fence at the entrance, with prices clearly displayed. Do not buy marked-up offerings from roaming vendors outside.",
+    "ecoLabel": "🌿 Smoke-free worship initiative:",
+    "ecoNote": "Since 2018 the Bangkok Metropolitan Administration and the foundation have promoted smoke-free worship. Not lighting incense and candles protects visitors' airways and reduces air pollution in the city centre."
+  },
+  "inscriptions": {
+    "label": "On-site Inscriptions & Pali Transcripts",
+    "eyebrow": "Inscriptions & Chants",
+    "meaningLabel": "Meaning: ",
+    "history": {
+      "title": "Reading the shrine's official 1956 foundation inscription",
+      "date": "Foundation date: 9 November 1956 (B.E. 2499)",
+      "keyFigures": "Key figures: royal astrologer Rear Admiral Luang Suwichan Phaet, who advised building the shrine to settle the site's feng shui, and sculptor Chit Phimphukhuat of the Fine Arts Department, who designed the original gilt stucco image.",
+      "meaning": "Every 9 November is observed as Erawan Shrine Day, marked by a large blessing ceremony."
+    },
+    "chants": {
+      "title": "On-site notice inscriptions and Pali transcripts",
+      "moreLabel": "See the full chant & prayer guide (Thai script + Roman transliteration + four-face order)",
+      "steps": [
+        {
+          "step": "Passage 1: Theravada opening formula (Pali)",
+          "pali": "นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมา สัมพุทธัสสะ",
+          "roman": "Namo Tassa Bhavagato Arahato Samma Sambuddhassa",
+          "meaning": "Homage to the Blessed One, the Worthy One, the Fully Enlightened One — the opening formula recited before Thai Buddhist and Brahmin blessings."
+        },
+        {
+          "step": "Passage 2: Offering to the guardian deity Indra",
+          "roman1": "Ohm Sakkataywata Wuntanung Sukhita Maha-Lanpoh",
+          "roman2": "Toutiyumpi Sakkataywata Wuntanung Sukhita Maha-Lanpoh",
+          "meaning": "Pay respect to the deity and ask for peace and protection."
+        }
+      ]
+    },
+    "knowledge": {
+      "title": "Background: Phra Phrom vs Indra",
+      "text": "Phra Phrom (Brahma) is the creator god and the main image of this shrine; Indra rules the Trayastrimsa heaven and is a guardian deity who averts misfortune. The Ratchaprasong intersection is a sacred zone watched over by eight Hindu deities, and the Indra shrine in front of Amarin Plaza stands barely a hundred metres from the Erawan Shrine. That is why the on-site notice board also carries chants honouring and petitioning Indra — a sign of how inclusively these beliefs are blended."
+    }
+  },
+  "prayerEntry": {
+    "icon": "🙏",
+    "title": "About to pray? Learn the chant and the correct order first",
+    "desc": "The Phra Phrom katha in Thai script with Roman transliteration, the four faces clockwise, the 12-incense offering set and how to return a vow — all on one page.",
+    "label": "Erawan Shrine chant & prayer guide"
+  },
+  "prayer": {
+    "breadcrumb": "Chant & Prayer Guide",
+    "meta": {
+      "title": "Erawan Shrine Chant & Prayer Guide: How to Pray to the Four-Faced Brahma",
+      "description": "How to pray at Erawan Shrine (Thao Maha Brahma), Bangkok: the Phra Phrom katha in Thai script with Roman transliteration, the four faces clockwise, the 12-incense offering set, thanks-giving dance rates and on-site etiquette."
+    },
+    "hero": {
+      "eyebrow": "On-site chanting guide",
+      "title": "Erawan Shrine Chant & Prayer Guide",
+      "subtitle": "Thai script plus Roman transliteration, so you can follow along while standing at the shrine — with the four-face order, the offering set, how to return a vow and what not to do.",
+      "backHome": "Back to opening hours & getting there"
+    },
+    "facts": [
+      { "label": "Opening hours", "value": "Daily 06:00 – 22:00" },
+      { "label": "Entry", "value": "Free" },
+      { "label": "Time needed", "value": "15 – 30 min" }
+    ],
+    "tocLabel": "On this page",
+    "faqHeading": "Frequently asked questions",
+    "toc": [
+      { "label": "Chants & pronunciation", "href": "#chant" },
+      { "label": "The four faces", "href": "#faces" },
+      { "label": "Worship step by step", "href": "#steps" },
+      { "label": "Offerings & vows", "href": "#offerings" },
+      { "label": "Etiquette & taboos", "href": "#taboos" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "chant": {
+      "label": "Chants",
+      "heading": "The Phra Phrom katha and opening invocation",
+      "intro": "The shrine's official texts are short katha — all of them fit on one screen and can be chanted standing up. Pick whichever suits you: the short form if you are in a hurry, the full katha if you want to do it properly.",
+      "note": "These chants are Thai phonetic renderings of Sanskrit and Pali, and spellings differ slightly between sources (for example พรหมเรสสะยัม and พรหมเวสสะยัม) without changing the sound. Sincere focus matters more than exact wording, so do not worry about mispronouncing.",
+      "labels": {
+        "thai": "Thai script",
+        "roman": "Roman transliteration",
+        "pronunciation": "Reading guide",
+        "meaning": "Meaning",
+        "repeat": "Repetitions"
+      },
+      "blocks": [
+        {
+          "id": "namo",
+          "title": "1. Opening invocation: the triple homage (Namo Tassa)",
+          "desc": "The standard opening homage in Thai Buddhist and Brahmin rites, recited before any request.",
+          "thai": "นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมา สัมพุทธัสสะ",
+          "roman": "Namo Tassa Bhagavato Arahato Sammā Sambuddhassa",
+          "pronunciation": "NA-mo TAS-sa pa-ka-wa-to a-ra-ha-to SAM-ma sam-put-TAS-sa",
+          "meaning": "Homage to the Blessed One, the Worthy One, the Fully Enlightened One.",
+          "repeat": "3 times"
+        },
+        {
+          "id": "katha",
+          "title": "2. Main chant: the Phra Phrom katha (โอมปะระเมสะ นะมัสสะการัม)",
+          "desc": "The most widely circulated official katha for the Erawan shrine. Reading all twelve lines once counts as one round.",
+          "lines": [
+            { "thai": "โอมปะระเมสะ นะมัสสะการัม", "roman": "Om Paramesa Namassakaram" },
+            { "thai": "โองการะ นิสสะวะรัง", "roman": "Ongkara Nissawarang" },
+            { "thai": "พรหมเรสสะยัม ภูปัสสะวะวิษณุ", "roman": "Phromressayam Phupassawa Witsanu" },
+            { "thai": "ไวยะทานะโมโทติ", "roman": "Waiyathanamothoti" },
+            { "thai": "ลูกะปัม ทะระมา ยิกยานัง", "roman": "Lukapam Tharama Yikyanang" },
+            { "thai": "ยะไวยะลา คะมุลัม สะทา", "roman": "Ya Waiyala Khamulam Satha" },
+            { "thai": "นันตะระ วิมุสะตินัน", "roman": "Nantra Wimusatinan" },
+            { "thai": "นะมัตเต นะมัตเตเร", "roman": "Namatte Namattare" },
+            { "thai": "จะ อะการัง ตโถวาจะ", "roman": "Ja Akarang Thothowaja" },
+            { "thai": "เอตามา ตาระยัต ตะมัน ตะรามา", "roman": "Etama Tarayat Tamanta Tarama" },
+            { "thai": "กัตถะ นารัมลา จะสะระวะ ปะติตัม", "roman": "Kattha Naramla Jasarawa Patitam" },
+            { "thai": "สัมโภ พะกลโล ทิวะทิยัม มะตัมยะ", "roman": "Sambho Phakkalo Thiwathiyam Matamya" }
+          ],
+          "pronunciationNote": "Thai is a tonal language and the Roman line is the reliable reading aid. As an orientation, the opening line โอมปะระเมสะ นะมัสสะการัม sounds roughly like \"ohm pa-ra-ME-sa na-MAT-sa-ka-ram\".",
+          "meaning": "This is an act of homage and refuge to Brahma: it opens with โอม (Om), the primordial sound, followed by นะมัสสะการัม, \"I bow in reverence\", and continues as a request for blessing, protection and grace. Because the whole text is a Thai phonetic rendering of Sanskrit, a reliable word-by-word translation has been lost in transmission; the accepted sense is simply an earnest homage to Brahma asking for blessing and protection.",
+          "repeat": "3 or 9 times"
+        },
+        {
+          "id": "short",
+          "title": "3. Short form: the Phra Phrom heart mantra (โอม พรหมมายะ นะมะห์)",
+          "desc": "A single line — useful when you are short of time or cannot linger in the crowd.",
+          "thai": "โอม พรหมมายะ นะมะห์",
+          "roman": "Om Phrommaya Nama",
+          "pronunciation": "ohm prom-MA-ya na-MA",
+          "meaning": "Homage to Brahma.",
+          "repeat": "4 times"
+        }
+      ]
+    },
+    "faces": {
+      "label": "Worship order",
+      "heading": "Four faces clockwise — what to ask at each",
+      "intro": "Start with the face you find yourself looking at as you enter, then move clockwise. The order should not be reversed, and you should never walk against it.",
+      "focusLabel": "Pray for",
+      "items": [
+        { "order": "1", "position": "Front face (first)", "focus": "Career, study, status, advancement", "desc": "Job hunting, promotion, exams, starting a business — direction and prospects" },
+        { "order": "2", "position": "Second face (clockwise)", "focus": "Love, marriage, relationships, benefactors", "desc": "Partnership, family harmony and helpful people around you" },
+        { "order": "3", "position": "Third face (clockwise)", "focus": "Wealth, income, windfalls, investments", "desc": "Earnings, business and financial stability" },
+        { "order": "4", "position": "Fourth face (clockwise)", "focus": "Health, safety, family, averting misfortune", "desc": "Your body, your family's wellbeing and clearing bad luck" }
+      ],
+      "tip": "The four-face attributions are folk tradition and vary between communities. If you already follow a set order, pray in the way you know with a sincere mind — what matters is covering all four faces, not just one."
+    },
+    "steps": {
+      "label": "Step by step",
+      "heading": "How to worship on site: six steps",
+      "intro": "From buying incense to returning a vow — follow these the first time you go.",
+      "items": [
+        { "order": "1", "title": "Buy your offerings at the foundation stall inside the fence", "desc": "12 incense sticks, 4 garlands and 1 candle, with prices clearly displayed. Do not buy from roaming vendors outside the fence." },
+        { "order": "2", "title": "Wash your hands, settle your mind, chant the homage three times", "desc": "Recite Namo Tassa three times and let your mind quieten before making a wish — devotees consider focus far more important than expensive offerings." },
+        { "order": "3", "title": "Start at the front face and go clockwise", "desc": "At each face place 3 incense sticks and 1 garland, put your palms together and state your name, date of birth and your wish." },
+        { "order": "4", "title": "Place the candle on the face you care most about", "desc": "There is only one candle, so put it on the face that matters most for this visit. Under current rules incense and candles are not lit." },
+        { "order": "5", "title": "Return to the front face and chant the main katha", "desc": "Walk back round to the first face, chant the katha 3 times (or 9), bow with palms together and you are done." },
+        { "order": "6", "title": "Come back to give thanks when the wish is granted", "desc": "Devotees believe a promise made must be kept. See \"Offerings & vows\" below for the options." }
+      ]
+    },
+    "offerings": {
+      "label": "Offerings & vows",
+      "heading": "Offering set and how to return a vow",
+      "setTitle": "Standard worship set",
+      "columns": { "item": "Item", "spec": "Quantity", "note": "Notes" },
+      "set": [
+        { "item": "Incense", "spec": "12 sticks", "note": "3 per face" },
+        { "item": "Garlands", "spec": "4", "note": "1 per face" },
+        { "item": "Candle", "spec": "1", "note": "Placed on the face you care most about. Some stalls sell sets with 4 candles — one per face is also acceptable" }
+      ],
+      "elephantTitle": "Wooden elephants as thanks",
+      "elephantNote": "Wooden elephants are the most common thanks-offering, and the larger the size the greater the thanks. Buy them at the foundation stall inside the fence; sizes over 40 inches are not accepted.",
+      "danceTitle": "Thanks-giving dance (ละครชาตรี)",
+      "danceNote": "Hiring a dance troupe once your wish is granted is the shrine's most famous form of thanks. Rates are set and posted by the foundation, and bookings must be made inside the shrine — outside private troupes are not accepted.",
+      "danceFlow": "The person giving thanks kneels in front of the troupe, the lead dancer announces their name and what was granted, and the dancers perform to traditional Pi Phat music. Each round lasts under 15 minutes."
+    },
+    "taboos": {
+      "label": "Etiquette",
+      "heading": "What not to do at the shrine",
+      "items": [
+        { "title": "Incense and candles are never lit", "desc": "Under the city and foundation smoke-free initiative, offerings may be placed but not lit." },
+        { "title": "Do not release birds you brought yourself", "desc": "This is an explicit current rule, with a 500 baht fine for violations." },
+        { "title": "Walk clockwise, never against the flow", "desc": "Going anticlockwise is considered disrespectful and blocks other worshippers." },
+        { "title": "Dress modestly and remove your hat to pray", "desc": "Less strict than a temple, but avoid very revealing clothing." },
+        { "title": "Do not pose with your back to the image", "desc": "Folk belief holds that turning your back on the image is disrespectful. Also avoid photographing people mid-prayer." },
+        { "title": "Folk custom: avoid beef before worshipping", "desc": "This circulates among devotees and is not an official rule. If it matters to you, skip beef the day before." },
+        { "title": "Wishes should be fair and harm no one", "desc": "Devotees widely hold that a request that profits by harming others will not be answered." },
+        { "title": "Keep the promise you made", "desc": "Whatever form of thanks you promised while wishing must be carried out — this is the single most important principle here." }
+      ]
+    },
+    "faqs": [
+      { "q": "How many times should I chant the Erawan Shrine prayer?", "a": "Recite the Namo Tassa homage 3 times, the main Phra Phrom katha 3 or 9 times, and the short heart mantra 4 times. If you are short of time, four rounds of the short mantra is enough — focus matters more than the count." },
+      { "q": "Can I chant if I do not speak Thai?", "a": "Yes. The text is a Thai phonetic rendering of Sanskrit and Pali, so simply follow the Roman transliteration. Devotees generally hold that sincerity and focus matter more than perfect pronunciation." },
+      { "q": "What should I pray for at each of the four faces?", "a": "Starting from the face you meet as you enter and going clockwise: career and study, then love and relationships, then wealth, then health and safety. These attributions are folk tradition and vary between communities, so simply make sure you cover all four faces." },
+      { "q": "Do I have to come back and give thanks?", "a": "In the prevailing belief, yes — the form of thanks you promised while making the wish must be carried out. Common options are a wooden elephant, hiring a dance troupe, or a donation, depending on how big the wish was and what you can afford." },
+      { "q": "How long does a prayer visit take?", "a": "Around 15 to 30 minutes for the worship itself. In the evening, when thanks-giving troupes perform back to back, expect to stay longer and to find it more crowded." },
+      { "q": "Are the offerings sold on site a rip-off?", "a": "The foundation stalls inside the fence display fixed prices and are the safe place to buy. Vendors outside the fence often sell the same set at several times the price — do not buy from them." }
+    ],
+    "cta": {
+      "homeTitle": "Still planning the trip?",
+      "homeDesc": "Opening hours, BTS directions, nearby landmarks and the full visit guide are on the home page.",
+      "homeLabel": "Back to opening hours & getting there",
+      "mapLabel": "View the shrine on the map"
     }
   }
 }

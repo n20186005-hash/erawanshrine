@@ -1,9 +1,24 @@
 ---
+import { entity, fill, breadcrumbTrail } from '../i18n/entity';
+
 interface Props {
   messages: Record<string, any>;
 }
 const { messages } = Astro.props;
 const about = messages.about;
+
+// 实体语义绑定：把 {占位符} 替换为实体数据，并高亮官方全称 / 域名含义
+const emphasize = (text: string, terms: string[]) =>
+  [...terms]
+    .sort((a, b) => b.length - a.length)
+    .reduce((acc, term) => acc.split(term).join(`<strong>${term}</strong>`), text);
+
+const entityIntroHtml = emphasize(fill(about.entityIntro), [entity.fullName, entity.shortName]);
+const nearbyHtml = emphasize(fill(about.nearbyLandmarksText), [
+  entity.fullName,
+  entity.shortName,
+  ...entity.nearbyLandmarks,
+]);
 ---
 
 <section id="about" class="py-20 bg-ivory text-ink">
@@ -14,8 +29,26 @@ const about = messages.about;
     <div class="grid lg:grid-cols-12 gap-10 mt-10">
       <div class="lg:col-span-7 space-y-4 text-ink/85">
         <p class="text-lg text-teak font-medium">{about.lead}</p>
+        <p set:html={entityIntroHtml}></p>
+
+        <!-- 地理归属层级（面包屑） -->
+        <nav aria-label={about.breadcrumbTitle} class="rounded-xl bg-white/60 border border-gold/30 px-4 py-3">
+          <span class="text-[11px] uppercase tracking-wider text-gold">{about.breadcrumbTitle}</span>
+          <ol class="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+            {breadcrumbTrail.map((name, i) => (
+              <li class="flex items-center gap-2">
+                {i > 0 && <span aria-hidden="true" class="text-gold">→</span>}
+                {i === 0
+                  ? <span class="font-semibold text-teak">{name}</span>
+                  : <span class="text-ink/70">{name}</span>}
+              </li>
+            ))}
+          </ol>
+        </nav>
+
         <p>{about.paragraph1}</p>
         <p>{about.paragraph2}</p>
+        <p set:html={nearbyHtml}></p>
         {about.neutrality && (
           <div class="mt-4 p-4 rounded-xl bg-gold/10 border border-gold/20 text-teak text-sm">
             <span class="font-bold mr-1">💡 客观提示：</span>{about.neutrality}
@@ -29,7 +62,7 @@ const about = messages.about;
 
       <div class="lg:col-span-5 space-y-8">
         <div class="grid grid-cols-3 gap-3">
-          {about.stats.map((s) => (
+          {about.stats.map((s: { value: string; label: string }) => (
             <div class="text-center rounded-xl bg-teak text-ivory p-4">
               <div class="font-display text-2xl text-goldBright">{s.value}</div>
               <div class="text-xs text-ivory/70 mt-1 leading-tight">{s.label}</div>
@@ -38,7 +71,7 @@ const about = messages.about;
         </div>
 
         <div class="space-y-3">
-          {about.highlights.map((h) => (
+          {about.highlights.map((h: { tag: string; title: string; desc: string }) => (
             <div class="flex gap-4 rounded-xl border border-gold/30 bg-white/40 p-4">
               <span class="font-display text-gold text-xl mt-0.5">{h.tag}</span>
               <div>

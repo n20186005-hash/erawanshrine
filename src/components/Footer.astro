@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '../config';
+import { pagePath } from '../i18n/pages';
 
 interface Props {
   lang: any;
@@ -8,6 +9,19 @@ interface Props {
 const { lang, messages } = Astro.props;
 const footer = messages.footer;
 const mapsUrl = siteConfig.mapsUrl;
+
+/**
+ * 页脚导航的锚点都指向首页区块。在二级页上 #about 不会滚到任何地方，
+ * 因此统一补上语言首页前缀，并显式加入经文献页入口（双向内链）。
+ */
+const homeBase = `/${lang}/`;
+const navItems = [
+  { label: messages.header.nav.home, href: homeBase },
+  { label: messages.header.nav.prayer, href: pagePath('prayer', lang) },
+  ...footer.navItems
+    .filter((n: any) => n.href !== '#home')
+    .map((n: any) => ({ label: n.label, href: `${homeBase}${n.href}` })),
+];
 ---
 
 <footer class="bg-teakDeep text-ivory pt-16 pb-8">
@@ -22,7 +36,7 @@ const mapsUrl = siteConfig.mapsUrl;
       <div>
         <div class="text-xs uppercase tracking-wider text-gold mb-3">{footer.navTitle}</div>
         <ul class="grid grid-cols-2 gap-2 text-sm">
-          {footer.navItems.map((n) => (
+          {navItems.map((n) => (
             <li><a href={n.href} class="text-ivory/80 hover:text-goldBright transition-colors">{n.label}</a></li>
           ))}
         </ul>
@@ -63,9 +77,9 @@ const mapsUrl = siteConfig.mapsUrl;
     </div>
 
     <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs">
-      <a href={`/${lang}/privacy-policy`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.privacy}</a>
-      <a href={`/${lang}/terms-of-service`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.terms}</a>
-      <a href={`/${lang}/cookie-settings`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.cookies}</a>
+      <a href={`/${lang}/privacy-policy/`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.privacy}</a>
+      <a href={`/${lang}/terms-of-service/`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.terms}</a>
+      <a href={`/${lang}/cookie-settings/`} class="text-ivory/60 hover:text-goldBright underline-offset-2 hover:underline">{footer.cookies}</a>
     </div>
 
     <div class="ornament my-10 opacity-60"></div>
@@ -74,6 +88,11 @@ const mapsUrl = siteConfig.mapsUrl;
       <p>{footer.disclaimerLead}</p>
       <p class="text-ivory/70">{footer.unofficial}</p>
       <p>{footer.dataSource}</p>
+      <p>
+        {footer.reviewSource}{' '}
+        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="text-goldBright underline-offset-2 hover:underline">{messages.reviews.viewLocation} ↗</a>
+      </p>
+      <p>{footer.imageRights}</p>
       <p class="pt-2 text-ivory/40">{footer.copyright}</p>
     </div>
   </div>

@@ -1,26 +1,40 @@
 ---
 import { siteConfig } from '../config';
 import { languages, languagesList, type Lang } from '../i18n/ui';
+import { pagePath, type PageKey } from '../i18n/pages';
 
 interface Props {
   lang: Lang;
   messages: Record<string, any>;
+  /** 当前页面：决定锚点是否需要补语言前缀，以及语言切换跳转到哪一页 */
+  page?: PageKey;
 }
-const { lang, messages } = Astro.props;
+const { lang, messages, page = 'home' } = Astro.props;
 const h = messages.header;
 
+const homeBase = `/${lang}/`;
+
+/**
+ * 导航里的锚点都指向首页区块。
+ * 在首页上保留纯锚点（#about）以便平滑滚动；在二级页上必须补语言前缀，
+ * 否则点击后原地不动。
+ */
+const anchor = (hash: string) => (page === 'home' ? hash : `${homeBase}${hash}`);
+
 const navItems = [
-  { label: h.home, href: '#home' },
-  { label: h.about, href: '#about' },
-  { label: h.history, href: '#history' },
-  { label: h.guide, href: '#guide' },
-  { label: h.food, href: '#food' },
-  { label: h.gallery, href: '#gallery' },
-  { label: h.reviews, href: '#reviews' },
-  { label: h.map, href: '#map' },
+  { label: h.home, href: page === 'home' ? '#home' : homeBase },
+  { label: h.about, href: anchor('#about') },
+  { label: h.history, href: anchor('#history') },
+  { label: h.guide, href: anchor('#guide') },
+  { label: h.prayer, href: pagePath('prayer', lang) },
+  { label: h.food, href: anchor('#food') },
+  { label: h.gallery, href: anchor('#gallery') },
+  { label: h.reviews, href: anchor('#reviews') },
+  { label: h.map, href: anchor('#map') },
 ];
 
-const switchTo = (target: Lang) => `/${target}/`;
+/** 语言切换要留在同一页面：从泰文经文页切到中文，应到达中文经文页而非中文首页 */
+const switchTo = (target: Lang) => pagePath(page, target);
 ---
 
 <header class="fixed top-0 inset-x-0 z-50 bg-teak/90 backdrop-blur-md border-b border-gold/20">
@@ -29,7 +43,7 @@ const switchTo = (target: Lang) => `/${target}/`;
       {siteConfig.name[lang]}
     </a>
 
-    <nav class="hidden md:flex items-center md:gap-4 lg:gap-7 text-sm text-ivory/80">
+    <nav class="hidden md:flex items-center gap-3 lg:gap-5 text-xs lg:text-sm text-ivory/80">
       {navItems.map((item) => (
         <a href={item.href} class="hover:text-goldBright transition-colors whitespace-nowrap">{item.label}</a>
       ))}
