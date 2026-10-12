@@ -6,8 +6,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,8 +16,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,8 +26,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -36,8 +36,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/mantra/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -46,8 +46,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/mantra/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,9 +56,69 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/katha/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/mantra/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/mantra/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/th/katha/"/>
-    <lastmod>2026-09-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/mantra/"/>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/ton-thang/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/ton-thang/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/getting-there/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/getting-there/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/ton-thang/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/getting-there/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/getting-there/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/ton-thang/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/getting-there/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/getting-there/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/khuea-wai/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/khuea-wai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/offerings-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/khuea-wai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/offerings-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/khuea-wai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/offerings-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/offerings-guide/"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

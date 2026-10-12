@@ -49,9 +49,14 @@ const nearbyHtml = emphasize(fill(about.nearbyLandmarksText), [
         <p>{about.paragraph1}</p>
         <p>{about.paragraph2}</p>
         <p set:html={nearbyHtml}></p>
+        {about.independent && (
+          <div class="mt-4 p-4 rounded-xl bg-teak/5 border border-teak/20 text-teak text-sm">
+            <span class="font-bold mr-1">{about.independentLabel ?? ''}</span>{about.independent}
+          </div>
+        )}
         {about.neutrality && (
           <div class="mt-4 p-4 rounded-xl bg-gold/10 border border-gold/20 text-teak text-sm">
-            <span class="font-bold mr-1">💡 客观提示：</span>{about.neutrality}
+            <span class="font-bold mr-1">{about.neutralityLabel ?? ''}</span>{about.neutrality}
           </div>
         )}
         <blockquote class="border-l-4 border-gold pl-5 italic text-teak font-display text-xl my-6">

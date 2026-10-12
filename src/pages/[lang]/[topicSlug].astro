@@ -1,0 +1,70 @@
+---
+import { languagesList, htmlLang, getI18n } from '../../i18n/ui';
+import { pageSlug, pageUrl, type TopicKey } from '../../i18n/pages';
+import { entity } from '../../i18n/entity';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import MobileQuickBar from '../../components/MobileQuickBar.astro';
+import TopicPage from '../../components/TopicPage.astro';
+
+/** 「交通 / 供品」二级内容页。经文页走 [prayerSlug].astro，避免路径规则冲突。 */
+const topicKeys: TopicKey[] = ['gettingThere', 'offerings'];
+
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  for (const lang of languagesList) {
+    for (const key of topicKeys) {
+      paths.push({ params: { lang, topicSlug: pageSlug[key][lang] } });
+    }
+  }
+  return paths;
+}
+
+const { lang, messages } = await getI18n(Astro.url);
+const topic = (Object.keys(pageSlug) as (keyof typeof pageSlug)[])
+  .filter((k) => k !== 'home' && k !== 'prayer')
+  .find((k) => pageSlug[k][lang] === Astro.params.topicSlug) as TopicKey;
+const t = messages.topics[topic];
+const origin = siteConfig.domain;
+const selfUrl = pageUrl(origin, topic, lang);
+const homeUrl = pageUrl(origin, 'home', lang);
+
+/** 面包屑：首页 → 当前专题 */
+const breadcrumbs = [
+  { name: entity.fullName, url: homeUrl },
+  { name: messages.topicLinks.items.find((i: any) => i.key === topic)?.title ?? t.hero.title, url: selfUrl },
+];
+
+/** Article：声明本页是围绕同一实体撰写的专题内容页 */
+const articleJsonLd = {
+  '@type': 'Article',
+  '@id': `${selfUrl}#article`,
+  headline: t.hero.title,
+  description: t.meta.description,
+  inLanguage: htmlLang[lang],
+  mainEntityOfPage: { '@id': `${selfUrl}#webpage` },
+  isPartOf: { '@id': `${origin}/#website` },
+  about: { '@id': `${origin}/#attraction` },
+  publisher: { '@id': `${origin}/#attraction` },
+};
+---
+
+<BaseLayout
+  lang={lang}
+  title={t.meta.title}
+  description={t.meta.description}
+  messages={messages}
+  pageType="article"
+  page={topic}
+  faqs={t.faqs}
+  breadcrumbs={breadcrumbs}
+  extraJsonLd={[articleJsonLd]}
+  ogType="article"
+>
+  <Header lang={lang} messages={messages} page={topic} />
+  <TopicPage lang={lang} topic={topic} messages={messages} />
+  <Footer lang={lang} messages={messages} />
+  <MobileQuickBar messages={messages} hoursHref={`${homeUrl}#map`} />
+</BaseLayout>

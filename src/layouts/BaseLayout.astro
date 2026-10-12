@@ -3,7 +3,7 @@ import '../styles/global.css';
 import { siteConfig } from '../config';
 import { htmlLang, languagesList, type Lang } from '../i18n/ui';
 import { entity, breadcrumbTrail } from '../i18n/entity';
-import { pageAlternates, type PageKey } from '../i18n/pages';
+import { pageAlternates, pageUrl, type PageKey } from '../i18n/pages';
 
 interface Props {
   lang: Lang;
@@ -111,15 +111,9 @@ const jsonLd = {
         longitude: entity.longitude,
       },
       hasMap: entity.mapsShareUrl,
-      // 评分与评价数（同步自 Google 地图，与页面展示一致）
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: siteConfig.rating,
-        bestRating: 5,
-        worstRating: 1,
-        // siteConfig.reviewCount 是 "7,001" 这类展示字符串，结构化数据需纯数字
-        reviewCount: Number(siteConfig.reviewCount.replace(/[^0-9]/g, '')),
-      },
+      // 注：不输出 AggregateRating / Review 结构化数据。
+      // 本站评分仅作为页面展示快照，评价来自 Google 地图第三方；
+      // 把第三方评分写进结构化数据有误导搜索引擎的风险，故只展示不标记。
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -253,7 +247,7 @@ const jsonLd = {
         <link rel="alternate" hreflang={htmlLang[alt.lang]} href={alt.href} />
       ))}
     {isIndexable && (
-      <link rel="alternate" hreflang="x-default" href={pageAlternates(origin, page)[0].href} />
+      <link rel="alternate" hreflang="x-default" href={pageUrl(origin, page, 'en')} />
     )}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

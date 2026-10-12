@@ -1,7 +1,7 @@
 import { languagesList, type Lang } from './ui';
 
 /** 站内页面标识 */
-export type PageKey = 'home' | 'prayer';
+export type PageKey = 'home' | 'prayer' | 'gettingThere' | 'offerings';
 
 /**
  * 各语言下二级内容页的 URL 片段。
@@ -12,7 +12,13 @@ export type PageKey = 'home' | 'prayer';
 export const pageSlug: Record<PageKey, Record<Lang, string>> = {
   home: { th: '', en: '', zh: '' },
   prayer: { th: 'katha', en: 'mantra', zh: 'mantra' },
+  gettingThere: { th: 'ton-thang', en: 'getting-there', zh: 'getting-there' },
+  offerings: { th: 'khuea-wai', en: 'offerings-guide', zh: 'offerings-guide' },
 };
+
+/** 可枚举的二级内容页（首页之外） */
+export const topicKeys = ['prayer', 'gettingThere', 'offerings'] as const;
+export type TopicKey = (typeof topicKeys)[number];
 
 /** 某页面在指定语言下的站内路径，例如 /th/katha/ —— 与目录式输出的结尾斜杠保持一致 */
 export const pagePath = (page: PageKey, lang: Lang): string => {

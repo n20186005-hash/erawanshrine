@@ -22,6 +22,11 @@ const navItems = [
     .filter((n: any) => n.href !== '#home')
     .map((n: any) => ({ label: n.label, href: `${homeBase}${n.href}` })),
 ];
+
+/** 专题二级页（交通 / 供品）入口，避免与首页锚点混在一起 */
+const topicLinks = (messages.topicLinks?.items ?? [])
+  .filter((i: any) => i.key !== 'prayer')
+  .map((i: any) => ({ label: i.title, href: pagePath(i.key, lang) }));
 ---
 
 <footer class="bg-teakDeep text-ivory pt-16 pb-8">
@@ -37,6 +42,9 @@ const navItems = [
         <div class="text-xs uppercase tracking-wider text-gold mb-3">{footer.navTitle}</div>
         <ul class="grid grid-cols-2 gap-2 text-sm">
           {navItems.map((n) => (
+            <li><a href={n.href} class="text-ivory/80 hover:text-goldBright transition-colors">{n.label}</a></li>
+          ))}
+          {topicLinks.map((n) => (
             <li><a href={n.href} class="text-ivory/80 hover:text-goldBright transition-colors">{n.label}</a></li>
           ))}
         </ul>

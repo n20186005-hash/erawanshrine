@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Erawan Shrine Bangkok (Thao Maha Brahma): Opening Hours, BTS & Map Guide",
-    "description": "The Shrine of Erawan (Thao Maha Brahma) at Ratchadamri, Bangkok — open daily 06:00–22:00, free entry. Opening hours, BTS Chit Lom directions, dance troupe rates and worship steps."
+    "title": "Erawan Shrine Bangkok – Opening Hours, BTS & Prayer Guide",
+    "description": "Plan your visit to Erawan Shrine in Bangkok. Check opening hours (6 AM–10 PM), free admission, BTS Chit Lom directions, prayer etiquette and offerings."
   },
   "quickBar": {
     "call": "Call",
@@ -27,7 +27,7 @@
     "titleAccent": "Erawan Shrine",
     "subtitle": "Thao Maha Brahma (Erawan Shrine / 四面佛) is a four-faced Brahma shrine at the Ratchadamri intersection — a center of faith and belief that has stood for over 60 years in the heart of Bangkok",
     "rating": "4.7",
-    "reviewCount": "7,001",
+    "reviewCount": "7,054",
     "category": "Sacred Shrine",
     "h1City": "Bangkok, Thailand",
     "badge": "Bangkok · Ratchadamri",
@@ -132,8 +132,10 @@
     "heading": "What is Thao Maha Brahma (Erawan Shrine)?",
     "lead": "A four-faced Brahma shrine in central Bangkok believed to answer prayers for career, love, health and study",
     "paragraph1": "Thao Maha Brahma (Erawan Shrine) stands at the corner of Ratchadamri and Phloen Chit roads, Pathum Wan, opposite CentralWorld and the Grand Hyatt Erawan. It was built in 1956 during the construction of the Erawan Hotel to dispel misfortunes that struck the project.",
-    "paragraph2": "The Brahma image is plaster over a wooden core, gilded in gold. The four faces represent creation, prosperity, protection and benevolence. Today it is one of Thailand's most famous sacred sites, free to visit daily 06:00–22:00.",
+    "paragraph2": "The image worshipped today is bronze, gilded in gold; the original 1956 image was plaster over a wooden core and was recast after the 2006 attack (see History below). The four faces represent creation, prosperity, protection and benevolence. Today it is one of Thailand's most famous sacred sites, free to visit daily 06:00–22:00.",
     "entityIntro": "Welcome to {fullName} ({localName}), widely recognized as the central {shortName}. Located in the heart of {location}, this destination serves as a primary hub for travelers visiting the region.",
+    "independentLabel": "Independent visitor guide",
+    "independent": "This is an independent visitor information website about Erawan Shrine. It is not operated by or affiliated with the shrine's management foundation (Than Tao Mahaprom Foundation).",
     "breadcrumbTitle": "Geographic hierarchy",
     "nearbyLandmarksText": "When visiting {fullName}, visitors can easily explore surrounding historical landmarks and points of interest, including {landmark1} and {landmark2}.",
     "quote": "Built as an act of faith, it has stood for over 60 years in the heart of the capital",
@@ -173,7 +175,9 @@
       "tag": "Editor's tip",
       "text": "Come at dawn or in the evening to avoid heat and crowds. 18:00–20:00 has beautiful light and several dance troupes performing together",
       "ctaLabel": "See visit guide"
-    }
+    },
+    "neutralityLabel": "Note:",
+    "neutrality": "Although Brahma is a Hindu deity, the shrine is maintained by Thai Brahmin ritual and is revered equally by Buddhists, Hindus and visitors from around the world."
   },
   "rituals": {
     "label": "Worship",
@@ -184,8 +188,8 @@
     "steps": [
       {
         "order": "1",
-        "title": "Light 3 incense, joss powder, 1 pair of candles",
-        "desc": "Buy offerings at the stall, light 3 incense sticks with joss powder and candles, and calm your mind"
+        "title": "Prepare the offering set (incense is placed, not lit)",
+        "desc": "Buy the standard set at the foundation stall inside the fence — 12 incense sticks, 4 garlands and 1 candle. Under the smoke-free worship policy, offerings are placed but never lit"
       },
       {
         "order": "2",
@@ -211,7 +215,7 @@
       },
       {
         "title": "Incense, candles & joss powder",
-        "desc": "3 incense sticks and a candle pair are used for prayer; joss powder is sprinkled"
+        "desc": "12 incense sticks, 4 garlands and 1 candle form the standard set. Offerings are placed but never lit — the shrine has been smoke-free since 2018"
       },
       {
         "title": "Fruit & ceremonial items",
@@ -312,6 +316,7 @@
     "fees": {
       "tag": "💰",
       "title": "Costs",
+      "priceNote": "Prices below were checked against the foundation's posted notices in October 2026 and may change — confirm on site.",
       "items": [
         {
           "title": "Entry",
@@ -322,8 +327,8 @@
           "desc": "Flowers, incense, candles from ~20 baht"
         },
         {
-          "title": "Dance troupe",
-          "desc": "Hireable from ~2,000 baht up"
+          "title": "Thanks-giving dance",
+          "desc": "From 260 baht (2 dancers) per round, at the foundation's posted rates"
         }
       ]
     },
@@ -641,72 +646,12 @@
   },
   "reviews": {
     "label": "Reviews",
-    "heading": "Voices of visitors",
-    "intro": "Experiences from tourists and devotees who have prayed at Thao Maha Brahma (Erawan Shrine)",
-    "disclaimer": "Synced from Google Maps user reviews, sync time September 2026; copyright belongs to the original authors and Google Maps.",
-    "declaration": "Reviews are visitor experiences compiled as guidance, not official endorsement; we are a non-profit educational guide with no stake in any business.",
-    "syncNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "heading": "Visitor rating",
+    "intro": "The rating below is a snapshot of Google Maps user reviews for Thao Maha Brahma (Erawan Shrine), synced in October 2026. We do not republish individual reviews — read the full, current list on Google Maps.",
+    "disclaimer": "Rating and review count synced from Google Maps user reviews, sync time October 2026; copyright belongs to the original authors and Google Maps.",
+    "declaration": "This is an independent visitor information website; the rating is shown for reference only and is not an endorsement by the shrine's management foundation.",
+    "syncNote": "Rating and review count synced from Google Maps user reviews · October 2026 · ",
     "syncLink": "See all reviews on Google Maps ↗",
-    "featured": [
-      {
-        "text": "I come every year at Chinese New Year; the atmosphere is sacred and the dance troupes are always beautiful",
-        "source": "Somchai Wongsuwan · Bangkok"
-      },
-      {
-        "text": "非常灵验的许愿地，四面分别代表不同愿望，绕圈祈福很有仪式感",
-        "source": "Lin Wei · Shanghai"
-      }
-    ],
-    "items": [
-      {
-        "text": "First visit; impressed by the gilded image, staff were kind",
-        "rating": "4.5",
-        "name": "Anong · Chiang Mai",
-        "date": "2025-12"
-      },
-      {
-        "text": "A must-visit spiritual spot in Bangkok. The dance troupes are mesmerizing.",
-        "rating": "5.0",
-        "name": "James Carter · London",
-        "date": "2025-11"
-      },
-      {
-        "text": "Crowded in the evening but the light is gorgeous for photos",
-        "rating": "4.5",
-        "name": "Piyawat · Bangkok",
-        "date": "2026-01"
-      },
-      {
-        "text": "許願很靈，還願時請了舞蹈團，現場氣氛莊嚴又熱鬧",
-        "rating": "5.0",
-        "name": "Mei Chen · Taipei",
-        "date": "2025-10"
-      },
-      {
-        "text": "Free and easy to reach, but very hot at midday",
-        "rating": "4.0",
-        "name": "Somchai · Nakhon Pathom",
-        "date": "2025-09"
-      },
-      {
-        "text": "Conveniently located next to CentralWorld, easy to combine with shopping.",
-        "rating": "4.5",
-        "name": "Sarah Lim · Singapore",
-        "date": "2025-12"
-      },
-      {
-        "text": "夜のライトアップが美しく、踊りの奉納も見応えがあった",
-        "rating": "4.5",
-        "name": "Kenji Tanaka · Tokyo",
-        "date": "2026-02"
-      },
-      {
-        "text": "Brought my child to pray for studies; safe and pleasant atmosphere",
-        "rating": "5.0",
-        "name": "Napas · Samut Prakan",
-        "date": "2026-03"
-      }
-    ],
     "viewLocation": "See all reviews on Google Maps"
   },
   "mapSection": {
@@ -786,10 +731,10 @@
     "terms": "Terms of Use",
     "cookies": "Cookie Settings",
     "disclaimerLead": "This site is for educational purposes",
-    "unofficial": "Not the official website of Thao Maha Brahma (Erawan Shrine)",
+    "unofficial": "This is an independent visitor information website about Erawan Shrine. It is not operated by or affiliated with the shrine's management foundation (Than Tao Mahaprom Foundation).",
     "dataSource": "Weather: Open-Meteo · coordinates 13.7443, 100.5397",
     "imageRights": "Image rights: all images displayed on this website remain the property and copyright of their original photographers.",
-    "reviewSource": "Reviews: synced from Google Maps user reviews (September 2026).",
+    "reviewSource": "Reviews: rating synced from Google Maps user reviews (October 2026).",
     "copyright": "© 2026 Thao Maha Brahma Guide. All rights reserved."
   },
   "sources": {
@@ -815,7 +760,7 @@
       }
     ],
     "reviewsTitle": "Reviews",
-    "reviewsText": "Synced from Google Maps user reviews, sync time September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewsText": "Rating and review count synced from Google Maps user reviews, sync time October 2026; copyright belongs to the original authors and Google Maps. Individual reviews are not republished on this site.",
     "reviewsLinkLabel": "See all reviews on Google Maps",
     "imagesTitle": "Image rights",
     "imagesText": "All images displayed on this website remain the property and copyright of their original photographers.",
@@ -864,7 +809,7 @@
         },
         {
           "h": "Reviews & third-party data",
-          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time September 2026). Copyright of the review content belongs to the original authors and Google Maps."
+          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time October 2026). Individual reviews are not republished on this site; copyright of the review content belongs to the original authors and Google Maps."
         },
         {
           "h": "Liability",
@@ -908,7 +853,7 @@
     }
   },
   "officialSignage": {
-    "label": "Official worship rules & thanks-giving rates",
+    "label": "On-site worship rules & posted rates",
     "warnings": [
       {
         "title": "Lighting incense and candles is not permitted",
@@ -927,7 +872,7 @@
         { "dancers": "6 dancers", "price": "460 THB" },
         { "dancers": "8 dancers", "price": "710 THB" }
       ],
-      "note": "Each performance lasts under 15 minutes, available 06:00–22:00. Bookings must be made with the foundation at the shrine — private outside troupes are not accepted."
+      "note": "Each performance lasts under 15 minutes, available 06:00–22:00. Rates compiled from the foundation's posted notices, checked October 2026; prices may change. Bookings must be made with the foundation at the shrine — private outside troupes are not accepted."
     },
     "elephantRates": {
       "title": "Thanks-giving wooden elephants",
@@ -1137,6 +1082,403 @@
       "homeDesc": "Opening hours, BTS directions, nearby landmarks and the full visit guide are on the home page.",
       "homeLabel": "Back to opening hours & getting there",
       "mapLabel": "View the shrine on the map"
+    }
+  },
+  "interactiveGuide": {
+    "heading": "Interactive worship guide",
+    "intro": "Tap each face to see what to pray for and the offering placed at that side",
+    "centerLabel": "Shrine",
+    "clockwise": "↻ Clockwise",
+    "themeLabel": "Pray for",
+    "offeringLabel": "Offering",
+    "faces": [
+      {
+        "btn": "Face 1 (front)",
+        "title": "Face 1 — front, facing the entrance",
+        "theme": "Career, study, status, advancement",
+        "offering": "3 incense sticks, 1 garland, 1 candle — placed, never lit"
+      },
+      {
+        "btn": "Face 2 (clockwise)",
+        "title": "Face 2 — clockwise",
+        "theme": "Love, relationships, marriage, benefactors",
+        "offering": "3 incense sticks, 1 garland, 1 candle — placed, never lit"
+      },
+      {
+        "btn": "Face 3 (back)",
+        "title": "Face 3 — back",
+        "theme": "Wealth, income, windfalls, investments",
+        "offering": "3 incense sticks, 1 garland, 1 candle — placed, never lit"
+      },
+      {
+        "btn": "Face 4 (clockwise)",
+        "title": "Face 4 — clockwise",
+        "theme": "Health, safety, family harmony, averting misfortune",
+        "offering": "3 incense sticks, 1 garland, 1 candle — placed, never lit"
+      }
+    ],
+    "linkTitle": "Want the chant and the correct order?",
+    "linkDesc": "The Phra Phrom katha in Thai script with Roman transliteration, the four-face order, the offering set and how to return a vow — all on one page.",
+    "linkLabel": "Erawan Shrine chant & prayer guide"
+  },
+  "topicLinks": {
+    "label": "Go deeper",
+    "heading": "Hours, transport, offerings & prayer — page by page",
+    "lead": "The questions visitors ask most, each answered on its own dedicated page.",
+    "readMore": "Read more",
+    "items": [
+      {
+        "key": "gettingThere",
+        "title": "Getting there",
+        "desc": "BTS Chit Lom exits, the skywalk route, airports and taxis — step by step."
+      },
+      {
+        "key": "offerings",
+        "title": "Offerings & rates",
+        "desc": "The offering set, wooden elephant prices and the foundation's posted thanks-giving dance rates."
+      },
+      {
+        "key": "prayer",
+        "title": "Chant & prayer guide",
+        "desc": "The Phra Phrom katha with Roman transliteration, the four-face order and how to return a vow."
+      }
+    ]
+  },
+  "topics": {
+    "gettingThere": {
+      "meta": {
+        "title": "How to Get to Erawan Shrine: BTS Chit Lom, Skywalk & Airport Transfers",
+        "description": "Step-by-step directions to Erawan Shrine in Bangkok: BTS Chit Lom Exit 1, the Ratchaprasong skywalk, MRT, taxis and transfers from Suvarnabhumi and Don Mueang airports."
+      },
+      "hero": {
+        "eyebrow": "Getting there",
+        "title": "How to get to Erawan Shrine",
+        "subtitle": "The shrine sits on the traffic island at Ratchadamri and Phloen Chit, opposite CentralWorld. The BTS Sukhumvit Line is the easiest way in — here is every option, from the airport to the kerb."
+      },
+      "facts": [
+        { "label": "Nearest station", "value": "BTS Chit Lom (Exit 1)" },
+        { "label": "Walk from Exit 1", "value": "About 5 minutes" },
+        { "label": "Address", "value": "494 Ratchadamri Rd, Pathum Wan" }
+      ],
+      "toc": [
+        { "label": "By BTS", "href": "#bts" },
+        { "label": "Skywalk route", "href": "#skywalk" },
+        { "label": "Other lines & buses", "href": "#other-lines" },
+        { "label": "From the airports", "href": "#airports" },
+        { "label": "Taxi & parking", "href": "#taxi-parking" },
+        { "label": "FAQ", "href": "#faq" }
+      ],
+      "sections": [
+        {
+          "id": "bts",
+          "heading": "By BTS Skytrain",
+          "lead": "The Sukhumvit Line runs directly overhead. Chit Lom station is the closest; Siam is a short skywalk walk away.",
+          "items": [
+            {
+              "title": "BTS Chit Lom — Exit 1 (recommended)",
+              "desc": "Leave by Exit 1 and walk south along Ratchadamri Road towards CentralWorld. The shrine is on the traffic island at the Phloen Chit corner, about 5 minutes on the flat. Follow the crowd — this is the route almost every visitor takes."
+            },
+            {
+              "title": "BTS Chit Lom — Exit 4 / skywalk",
+              "desc": "Exit 4 connects to the elevated Ratchaprasong walkway (see the skywalk route below). No traffic lights to cross, useful with luggage or in the rain."
+            },
+            {
+              "title": "BTS Siam",
+              "desc": "One stop north. Cross to CentralWorld on the elevated walkway and continue south — about 10 minutes in total, and often less crowded than Chit Lom concourse."
+            },
+            {
+              "title": "BTS Phloen Chit",
+              "desc": "One stop north of Chit Lom. Walk south on the skywalk or along Ratchadamri — about 12 minutes. Only worth it if your hotel is on that side."
+            }
+          ]
+        },
+        {
+          "id": "skywalk",
+          "heading": "The Ratchaprasong skywalk route (no road crossing)",
+          "lead": "Ratchaprasong is one of Bangkok's busiest intersections. The elevated walkway keeps you off the roads entirely.",
+          "steps": [
+            "From Chit Lom station, follow the signs for CentralWorld / skywalk up to the elevated concourse (Exit 4).",
+            "Walk south over the Ratchaprasong intersection on the skywalk — you pass above the roads, with views down onto the shrine.",
+            "Descend at the CentralWorld corner near Gaysorn Village; the shrine is on the traffic island directly below.",
+            "Total time from platform to shrine: about 8–10 minutes, fully step-free with escalators and lifts."
+          ]
+        },
+        {
+          "id": "other-lines",
+          "heading": "Other lines & buses",
+          "lead": "No rail line stops closer than Chit Lom, but there are workable combinations.",
+          "items": [
+            {
+              "title": "MRT Blue Line — Lumphini station",
+              "desc": "About 1.5 km south. Take a taxi or motorcycle taxi for the last stretch (10–15 minutes), or bus 77/165 along Ratchadamri."
+            },
+            {
+              "title": "MRT Blue Line — Si Lom station",
+              "desc": "Walk or taxi north to Sala Daeng, then BTS Silom Line one stop to Siam and the skywalk south — usually slower than a direct taxi."
+            },
+            {
+              "title": "Chao Phraya Express Boat",
+              "desc": "Get off at Sathorn pier, then BTS Silom Line to Siam and the skywalk — about 50 minutes door to door, and the slowest option. Nice only if you are already on the river."
+            },
+            {
+              "title": "BMTA buses",
+              "desc": "Lines along Ratchadamri and Phloen Chit stop near the intersection (e.g. 13, 16, 77, 165). Fares are cheap but traffic on this corridor is heavy at peak hours."
+            }
+          ]
+        },
+        {
+          "id": "airports",
+          "heading": "From Suvarnabhumi (BKK) and Don Mueang (DMK)",
+          "lead": "Both airports connect to the BTS network; budget roughly an hour door to door from BKK and 40–60 minutes from DMK.",
+          "items": [
+            {
+              "title": "From Suvarnabhumi (BKK)",
+              "desc": "Airport Rail Link to Phaya Thai (about 30 minutes), transfer to the BTS Sukhumvit Line and ride to Chit Lom (about 10 minutes), then Exit 1 and walk 5 minutes. Total fare is roughly 100 baht and the whole trip takes about an hour."
+            },
+            {
+              "title": "From Don Mueang (DMK)",
+              "desc": "Take the A1 shuttle bus to BTS Mo Chit (about 30 minutes), then the Sukhumvit Line south to Chit Lom. Alternatively a taxi via the tollway takes 40–50 minutes and around 300–400 baht depending on traffic."
+            },
+            {
+              "title": "Taxi or ride-hailing from either airport",
+              "desc": "About 300–450 baht from BKK and 250–400 baht from DMK, plus tolls. Use the official taxi queues or an app; set the destination as 'Erawan Shrine' or 'CentralWorld' and ask to be dropped at the Ratchadamri corner."
+            },
+            {
+              "title": "Late-night arrivals",
+              "desc": "BTS trains stop around midnight; after that a taxi or ride-hailing is the only practical option. The shrine itself is closed to visitors after 22:00."
+            }
+          ]
+        },
+        {
+          "id": "taxi-parking",
+          "heading": "By taxi, ride-hailing & car",
+          "lead": "The shrine is on a traffic island, so drop-off points matter more than the entrance.",
+          "items": [
+            {
+              "title": "Where taxis can stop",
+              "desc": "Drivers drop passengers at the Ratchadamri/Phloen Chit corner by CentralWorld. Ask for 'ศาลท้าวมหาพรหม' or 'Erawan Shrine'; most drivers know the corner even if they say the shrine is 'inside' the island."
+            },
+            {
+              "title": "Parking",
+              "desc": "No parking at the shrine itself. Use CentralWorld, Gaysorn Village or Amarin Plaza car parks and walk over via the skywalk or the ground-level crossing."
+            },
+            {
+              "title": "Traffic warnings",
+              "desc": "Ratchaprasong gridlocks at rush hour (08:00–09:30 and 17:30–20:00). If your time is tight, the BTS is faster and cheaper than sitting in a car."
+            },
+            {
+              "title": "Walking from nearby hotels",
+              "desc": "The Grand Hyatt Erawan is next door, and the Siam/Chit Lom hotel area is 5–15 minutes on foot. The skywalk makes the walk safe and shaded."
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Which BTS station is closest to Erawan Shrine?",
+          "a": "BTS Chit Lom on the Sukhumvit Line, Exit 1 — about a 5-minute walk. Siam station also works via the CentralWorld skywalk, about 10 minutes."
+        },
+        {
+          "q": "How do I walk from BTS Chit Lom to the shrine?",
+          "a": "Leave by Exit 1, walk south along Ratchadamri Road towards CentralWorld, and the shrine is on the traffic island at the Phloen Chit corner. There is no need to cross the big intersection at street level if you use Exit 4 and the skywalk."
+        },
+        {
+          "q": "Can I reach Erawan Shrine by MRT subway?",
+          "a": "Not directly. The nearest MRT station is Lumphini (Blue Line), about 1.5 km away — take a taxi or bus for the last stretch. The BTS Sukhumvit Line is the practical choice."
+        },
+        {
+          "q": "How do I get from Suvarnabhumi Airport to Erawan Shrine?",
+          "a": "Airport Rail Link to Phaya Thai, transfer to the BTS Sukhumvit Line to Chit Lom, then walk from Exit 1. The trip takes about an hour; a taxi is about 300–450 baht plus tolls."
+        },
+        {
+          "q": "How do I get from Don Mueang Airport to Erawan Shrine?",
+          "a": "Take the A1 shuttle bus to BTS Mo Chit and ride the Sukhumvit Line to Chit Lom, or take a taxi via the tollway for 40–50 minutes."
+        },
+        {
+          "q": "Is there parking at Erawan Shrine?",
+          "a": "No. The shrine occupies a traffic island. Park at CentralWorld, Gaysorn Village or Amarin Plaza and walk over via the skywalk."
+        }
+      ],
+      "cta": {
+        "homeTitle": "Back to the full visitor guide",
+        "homeDesc": "Opening hours, worship steps, photography tips and the FAQ are on the home page.",
+        "homeLabel": "Opening hours & visit guide",
+        "mapLabel": "View the shrine on the map",
+        "relatedTitle": "Read next",
+        "related": [
+          {
+            "key": "offerings",
+            "title": "Offerings & rates",
+            "desc": "What to buy, what it costs, and the posted thanks-giving dance rates."
+          },
+          {
+            "key": "prayer",
+            "title": "Chant & prayer guide",
+            "desc": "The Phra Phrom katha, the four-face order and how to return a vow."
+          }
+        ]
+      }
+    },
+    "offerings": {
+      "meta": {
+        "title": "Erawan Shrine Offerings & Dance Prices: What to Buy and What It Costs",
+        "description": "What to offer at Erawan Shrine and what it costs: the 12-incense offering set, garlands, candles, wooden elephants and the foundation's posted thanks-giving dance rates, checked October 2026."
+      },
+      "hero": {
+        "eyebrow": "Offerings & rates",
+        "title": "Offerings, wooden elephants & thanks-giving dance rates",
+        "subtitle": "Entry to Erawan Shrine is free; what you spend on offerings and thanks-giving is up to you. Here is exactly what the foundation's stalls sell and what the posted rates are."
+      },
+      "facts": [
+        { "label": "Entry", "value": "Free" },
+        { "label": "Offering set", "value": "From about 20 baht" },
+        { "label": "Thanks-giving dance", "value": "From 260 baht per round" }
+      ],
+      "toc": [
+        { "label": "Standard offering set", "href": "#set" },
+        { "label": "Where to buy", "href": "#where-to-buy" },
+        { "label": "Thanks-giving dance rates", "href": "#dance" },
+        { "label": "Wooden elephants", "href": "#elephants" },
+        { "label": "Avoiding scams", "href": "#scams" },
+        { "label": "FAQ", "href": "#faq" }
+      ],
+      "sections": [
+        {
+          "id": "set",
+          "heading": "The standard offering set",
+          "lead": "One set covers a full clockwise round. Offerings are placed at each face — under the smoke-free policy nothing is lit.",
+          "table": {
+            "columns": ["Item", "Quantity", "Notes"],
+            "rows": [
+              ["Incense", "12 sticks", "3 sticks at each of the four faces — placed, never lit"],
+              ["Garlands", "4", "1 at each face; jasmine and ylang are the usual flowers"],
+              ["Candle", "1", "Placed on the face you care most about; some stalls sell sets of 4"],
+              ["Joss powder", "1 small pack", "Dabbed on the offering table or your palms"],
+              ["Red cloth", "1 strip", "Tied to the shrine railing as part of the wish"]
+            ]
+          },
+          "note": "Prices start from about 20 baht for a basic set; fuller sets with all of the above cost more. Everything is sold at fixed prices at the foundation's stall inside the fence."
+        },
+        {
+          "id": "where-to-buy",
+          "heading": "Where to buy — and what to avoid",
+          "lead": "Buying in the right place is the single best way to avoid overpaying at this shrine.",
+          "items": [
+            {
+              "title": "The foundation stall inside the fence",
+              "desc": "Located just inside the entrance. Fixed prices are displayed, the sets are complete, and this is also where thanks-giving dances are booked. This is the only place you need."
+            },
+            {
+              "title": "Roaming vendors outside the fence",
+              "desc": "They sell similar sets at several times the official price, sometimes with pressure to buy. Decline politely and walk to the stall inside."
+            },
+            {
+              "title": "Bringing your own flowers",
+              "desc": "You may bring flowers bought elsewhere, but complete sets are cheapest and simplest from the foundation stall."
+            }
+          ]
+        },
+        {
+          "id": "dance",
+          "heading": "Thanks-giving dance (Lakhon Chatri) rates",
+          "lead": "Hiring a dance troupe is the shrine's most famous way of returning a vow. Rates are set and posted by the foundation and must be booked inside the shrine.",
+          "table": {
+            "columns": ["Performance", "Rate", "Notes"],
+            "rows": [
+              ["2 dancers", "260 THB", "Smallest troupe, under 15 minutes"],
+              ["4 dancers", "360 THB", "The most commonly booked option"],
+              ["6 dancers", "460 THB", "Popular for major wishes"],
+              ["8 dancers", "710 THB", "Largest standard troupe"],
+              ["Larger troupes", "By arrangement", "Ask at the booking desk inside the shrine"]
+            ]
+          },
+          "note": "Rates compiled from the foundation's posted notices, checked October 2026; prices may change. Each round lasts under 15 minutes and runs during opening hours (06:00–22:00). Private troupes from outside are not accepted."
+        },
+        {
+          "id": "elephants",
+          "heading": "Wooden elephants for returning a vow",
+          "lead": "Wooden elephants are the most common thanks-offering; size is read as the weight of the gratitude.",
+          "table": {
+            "columns": ["Size", "Price", "Notes"],
+            "rows": [
+              ["13–19 in", "500 THB", "Buy only at the official stall inside the shrine"],
+              ["20–24 in", "1,000 THB", "Buy only at the official stall inside the shrine"],
+              ["25–29 in", "1,500 THB", "Buy only at the official stall inside the shrine"],
+              ["30–40 in", "2,000 THB", "Buy only at the official stall inside the shrine"],
+              ["Over 40 in", "Not allowed", "Too large — it blocks space for worshippers"]
+            ]
+          },
+          "note": "Prices compiled from the foundation's posted notices, checked October 2026; prices may change."
+        },
+        {
+          "id": "scams",
+          "heading": "Common scams around the shrine",
+          "lead": "The shrine area attracts touts. A few simple rules keep the visit trouble-free.",
+          "items": [
+            {
+              "title": "'Lucky strings' and blessing demands",
+              "desc": "People may approach offering to tie a string on your wrist for luck, then ask for a large donation. Decline politely and walk away; blessings are not sold here."
+            },
+            {
+              "title": "Marked-up offerings outside the fence",
+              "desc": "The same garlands and incense cost several times more from vendors outside. Buy inside the fence only."
+            },
+            {
+              "title": "Paid 'official' photos",
+              "desc": "Anyone charging for photographs of the shrine is not connected to the foundation. Taking photos is free."
+            },
+            {
+              "title": "Bird release requests",
+              "desc": "Releasing birds you brought yourself is explicitly prohibited, with a 500 baht fine. Do not buy birds for release."
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How much does it cost to make an offering at Erawan Shrine?",
+          "a": "Entry is free and a basic offering set of flowers, incense and candles starts from about 20 baht at the foundation's stall inside the fence. What you spend beyond that is voluntary."
+        },
+        {
+          "q": "How much is a thanks-giving dance at Erawan Shrine?",
+          "a": "The foundation's posted rates are 260 baht for 2 dancers, 360 for 4, 460 for 6 and 710 for 8, per round of under 15 minutes. Book at the desk inside the shrine; outside troupes are not accepted. Rates checked October 2026."
+        },
+        {
+          "q": "Do I have to light the incense and candles?",
+          "a": "No. Under the smoke-free worship policy observed since 2018, offerings are placed but never lit. This applies to incense, candles and joss powder."
+        },
+        {
+          "q": "Can I bring my own offerings?",
+          "a": "Yes, though complete sets are cheapest from the foundation stall inside the fence. Anything you bring must still comply with the smoke-free rule and the size limits on wooden elephants."
+        },
+        {
+          "q": "How big can the wooden elephant be?",
+          "a": "Up to 40 inches. The foundation's stalls sell sizes from 13 inches (500 baht) to 40 inches (2,000 baht); anything larger is not allowed because it blocks space for worshippers."
+        },
+        {
+          "q": "Are the prices on this page guaranteed?",
+          "a": "They were compiled from the foundation's posted notices and checked in October 2026. Prices can change — confirm at the stall or booking desk on the day of your visit."
+        }
+      ],
+      "cta": {
+        "homeTitle": "Back to the full visitor guide",
+        "homeDesc": "Opening hours, worship steps, photography tips and the FAQ are on the home page.",
+        "homeLabel": "Opening hours & visit guide",
+        "mapLabel": "View the shrine on the map",
+        "relatedTitle": "Read next",
+        "related": [
+          {
+            "key": "gettingThere",
+            "title": "Getting there",
+            "desc": "BTS Chit Lom exits, the skywalk route, airports and taxis — step by step."
+          },
+          {
+            "key": "prayer",
+            "title": "Chant & prayer guide",
+            "desc": "The Phra Phrom katha, the four-face order and how to return a vow."
+          }
+        ]
+      }
     }
   }
 }

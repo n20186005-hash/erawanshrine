@@ -52,12 +52,12 @@ export const siteConfig = {
 
   // 评分与评价数（同步自 Google 地图用户评价）
   rating: 4.7,
-  reviewCount: '7,001',
-  reviewSyncMonth: '2026-09', // 评分 / 评价数同步月份（ISO）
+  reviewCount: '7,054',
+  reviewSyncMonth: '2026-10', // 评分 / 评价数同步月份（ISO）
   reviewSyncLabel: {
-    th: 'กันยายน 2026',
-    en: 'September 2026',
-    zh: '2026 年 9 月',
+    th: 'ตุลาคม 2026',
+    en: 'October 2026',
+    zh: '2026 年 10 月',
   },
 
   // 实际坐标（用于天气 / 日落 API 与地图嵌入）—— 四面佛（Erawan Shrine，曼谷叻猜南蒂路）

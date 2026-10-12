@@ -16,3 +16,11 @@ https://www.erawanshrine.org/*  https://erawanshrine.org/:splat  301
 /th/cookie-settings   /th/cookie-settings/   301
 /en/cookie-settings   /en/cookie-settings/   301
 /zh/cookie-settings   /zh/cookie-settings/   301
+
+# 新增专题二级页：结尾斜杠统一
+/th/ton-thang         /th/ton-thang/         301
+/en/getting-there     /en/getting-there/     301
+/zh/getting-there     /zh/getting-there/     301
+/th/khuea-wai         /th/khuea-wai/         301
+/en/offerings-guide   /en/offerings-guide/   301
+/zh/offerings-guide   /zh/offerings-guide/   301
