@@ -3,6 +3,7 @@
 # 说明：Search Console 数据显示 www 与非 www 同时被收录且权重分散，
 #       统一后将 www.erawanshrine.org 的全部权重 301 归并到规范域名。
 # 语法兼容 Cloudflare Pages 与 Netlify 的 _redirects 文件。
+https://www.erawanshrine.org/  https://erawanshrine.org/th/  301
 https://www.erawanshrine.org/*  https://erawanshrine.org/:splat  301
 
 # 结尾斜杠统一：Search Console 中出现「带斜杠 / 不带斜杠」两套 URL 同时收录，
@@ -24,3 +25,6 @@ https://www.erawanshrine.org/*  https://erawanshrine.org/:splat  301
 /th/khuea-wai         /th/khuea-wai/         301
 /en/offerings-guide   /en/offerings-guide/   301
 /zh/offerings-guide   /zh/offerings-guide/   301
+
+# 根路径直接跳至泰语默认站，不经客户端 HTML 中转页
+/  /th/  301
