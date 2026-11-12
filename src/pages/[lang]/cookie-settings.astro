@@ -32,14 +32,39 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
           </div>
           <p class="mt-2 text-stone-700">{c.p}</p>
           <p class="mt-2 text-sm text-stone-500">{c.sub} · {c.subStatus}</p>
+          {!c.active && <label class="mt-3 flex items-center gap-2 text-sm text-stone-700"><input type="checkbox" class="cookie-category accent-amber-700" data-category={c.h.toLowerCase().includes('market') || c.h.includes('营销') || c.h.includes('การตลาด') ? 'marketing' : 'analytics'} />{c.status}</label>}
         </section>
       ))}
     </div>
     <p class="mt-6 text-sm text-stone-500">{legal.consent}</p>
     <div class="mt-4 flex gap-3">
-      <button class="rounded-full bg-amber-600 px-5 py-2 text-sm font-medium text-white">{legal.save}</button>
-      <button class="rounded-full border border-stone-300 px-5 py-2 text-sm font-medium text-stone-700">{legal.rejectAll}</button>
+      <button id="cookie-save" type="button" class="rounded-full bg-amber-600 px-5 py-2 text-sm font-medium text-white">{legal.save}</button>
+      <button id="cookie-reject" type="button" class="rounded-full border border-stone-300 px-5 py-2 text-sm font-medium text-stone-700">{legal.rejectAll}</button>
     </div>
+    <p id="cookie-feedback" class="mt-3 text-sm text-emerald-700" role="status" aria-live="polite"></p>
   </main>
   <Footer lang={lang} messages={m} />
 </BaseLayout>
+
+<script>
+  const storageKey = 'erawan-cookie-preferences';
+  const choices = Array.from(document.querySelectorAll<HTMLInputElement>('.cookie-category'));
+  const feedback = document.getElementById('cookie-feedback');
+  try {
+    const previous = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if (previous) choices.forEach(input => { input.checked = Boolean(previous[input.dataset.category || '']); });
+  } catch { /* Storage may be unavailable in private browsing. */ }
+  const save = (reject = false) => {
+    if (reject) choices.forEach(input => { input.checked = false; });
+    const preference = { essential: true, analytics: false, marketing: false, updatedAt: new Date().toISOString() };
+    choices.forEach(input => { if (input.dataset.category === 'analytics' || input.dataset.category === 'marketing') preference[input.dataset.category] = input.checked; });
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(preference));
+      if (feedback) feedback.textContent = document.documentElement.lang === 'zh' ? '偏好已保存在此浏览器。' : document.documentElement.lang === 'th' ? 'บันทึกตัวเลือกในเบราว์เซอร์แล้ว' : 'Preferences saved in this browser.';
+    } catch {
+      if (feedback) feedback.textContent = document.documentElement.lang === 'zh' ? '浏览器阻止了保存，请检查隐私设置。' : document.documentElement.lang === 'th' ? 'เบราว์เซอร์ไม่อนุญาตให้บันทึก' : 'Your browser prevented saving these preferences.';
+    }
+  };
+  document.getElementById('cookie-save')?.addEventListener('click', () => save());
+  document.getElementById('cookie-reject')?.addEventListener('click', () => save(true));
+</script>
