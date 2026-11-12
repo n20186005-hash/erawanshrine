@@ -775,78 +775,110 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "updated": "Last updated: July 2026",
+      "updated": "Last updated: November 12, 2026",
       "sections": [
         {
-          "h": "Information we collect",
-          "p": "This site does not collect personal data directly, except what you submit in a form (if any)"
+          "h": "Scope and operator",
+          "p": "This independent Erawan Shrine visitor guide provides educational and travel information and is not operated by a government agency or the shrine's management body. This policy describes data handling on this website."
         },
         {
-          "h": "Cookies",
-          "p": "We use cookies to remember your language and improve your experience"
+          "h": "Information you choose to provide",
+          "p": "You can browse the guide without opening an account. If you email us, we receive your email address and the information you send, and use it to respond to your request. Avoid including sensitive personal information."
         },
         {
-          "h": "Contact",
-          "p": "For questions, contact us at n20186005@gmail.com"
+          "h": "Technical access information",
+          "p": "Our hosting and security providers may process standard connection information, such as IP address, device or browser information, requested pages and timestamps, to serve pages, protect the site and investigate errors. Their retention practices are governed by their own terms."
+        },
+        {
+          "h": "Cookies and browser storage",
+          "p": "The cookie preferences page lets you manage optional categories. Your choice may be saved in your browser's local storage. Language-related browser preferences may also be used. Please see Cookie Settings for details."
+        },
+        {
+          "h": "Maps and external websites",
+          "p": "Links to Google Maps, tourism authorities and other third-party websites lead to services with separate privacy practices. If you follow such a link, the provider may collect information under its own policy."
+        },
+        {
+          "h": "Use, sharing and retention",
+          "p": "We do not sell personal information. Messages sent to us are retained only for as long as reasonably necessary to answer and handle the request. Technical data may be processed by infrastructure providers as necessary for hosting and security."
+        },
+        {
+          "h": "Your choices and questions",
+          "p": "You may clear this site's local storage in your browser and change optional cookie choices at any time. For questions or requests about information sent to us, email n20186005@gmail.com."
+        },
+        {
+          "h": "Updates",
+          "p": "We may revise this notice as site functionality changes. The revision date on this page identifies the current version."
         }
       ]
     },
     "terms": {
       "title": "Terms of Use",
-      "updated": "Last updated: July 2026",
+      "updated": "Last updated: November 12, 2026",
       "sections": [
         {
-          "h": "Usage",
-          "p": "Content is for education; information may be incomplete or outdated"
+          "h": "About this guide",
+          "p": "This website is an independent educational travel guide to Erawan Shrine. It is not an official shrine, government, or management organization website."
         },
         {
-          "h": "Copyright",
-          "p": "All content belongs to the authors unless another source is stated"
+          "h": "Information and accuracy",
+          "p": "We aim to present useful history, access, worship etiquette and travel information. Opening times, routes, customs, fees and on-site rules can change. Check official announcements and local signage before visiting."
         },
         {
-          "h": "Image rights",
-          "p": "All images displayed on this website remain the property and copyright of their original photographers."
+          "h": "Responsible use",
+          "p": "You may use this site for personal research and trip planning. Please do not misuse, disrupt, scrape aggressively, impersonate the operator or reproduce substantial original text without permission."
         },
         {
-          "h": "Reviews & third-party data",
-          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time November 11, 2026). Individual reviews are not republished on this site; copyright of the review content belongs to the original authors and Google Maps."
+          "h": "Content and photography",
+          "p": "Original editorial text is protected by its respective rights holders. Photographs remain the property and copyright of their original photographers; image display does not transfer any rights to visitors."
         },
         {
-          "h": "Liability",
-          "p": "Users are responsible for their own travel decisions"
+          "h": "Ratings and external data",
+          "p": "Displayed Google Maps ratings and review counts are snapshots identified by their update date, not a live feed. Individual user reviews are not republished here. Third-party names, maps and links remain subject to the respective providers' terms."
+        },
+        {
+          "h": "External links",
+          "p": "External resources are provided for convenience and independent verification. We do not control their availability, security, accuracy or privacy practices."
+        },
+        {
+          "h": "Travel and worship decisions",
+          "p": "Follow posted rules and instructions at the site, respect worshippers and local customs, and use your own judgment. No guarantee is made that all information is current or suitable for your circumstances."
+        },
+        {
+          "h": "Changes and contact",
+          "p": "We may revise these terms and site content. Questions or corrections may be sent to n20186005@gmail.com."
         }
       ]
     },
     "cookies": {
       "title": "Cookie Settings",
-      "updated": "Last updated: July 2026",
-      "intro": "We use cookies to remember your language and improve your experience on the site",
-      "consent": "Using this site means you accept the use of cookies as described below",
+      "updated": "Last updated: November 12, 2026",
+      "intro": "Manage optional browser-storage preferences for this independent visitor guide. The controls below save your choice in this browser. They do not turn off cookies or tracking on unrelated websites.",
+      "consent": "Essential storage needed to remember your choices remains enabled. Optional analytics and marketing categories default to off and are not activated by this preference page itself.",
       "save": "Save settings",
       "rejectAll": "Reject all",
       "categories": [
         {
-          "h": "Essential cookies",
+          "h": "Essential storage",
           "status": "Always on",
           "active": true,
-          "p": "Required for the site to work, e.g. remembering your language",
+          "p": "Stores your selected preference and supports basic site functions.",
           "sub": "Cannot be disabled",
           "subStatus": "Required"
         },
         {
-          "h": "Analytics cookies",
+          "h": "Analytics",
           "status": "Optional",
           "active": false,
-          "p": "Help us understand usage to improve content",
-          "sub": "Anonymous",
+          "p": "If analytics features are added, they should respect this choice; the preference page does not load an analytics service.",
+          "sub": "Not activated here",
           "subStatus": "Off"
         },
         {
-          "h": "Marketing cookies",
+          "h": "Marketing",
           "status": "Optional",
           "active": false,
-          "p": "Used for relevant content (none on this site currently)",
-          "sub": "Not in use",
+          "p": "No marketing cookies are enabled by this preference page.",
+          "sub": "Not activated here",
           "subStatus": "Off"
         }
       ]
@@ -867,21 +899,53 @@
     "danceRates": {
       "title": "Thanks-giving dance (Lakhon Chatri)",
       "rates": [
-        { "dancers": "2 dancers", "price": "260 THB" },
-        { "dancers": "4 dancers", "price": "360 THB" },
-        { "dancers": "6 dancers", "price": "460 THB" },
-        { "dancers": "8 dancers", "price": "710 THB" }
+        {
+          "dancers": "2 dancers",
+          "price": "260 THB"
+        },
+        {
+          "dancers": "4 dancers",
+          "price": "360 THB"
+        },
+        {
+          "dancers": "6 dancers",
+          "price": "460 THB"
+        },
+        {
+          "dancers": "8 dancers",
+          "price": "710 THB"
+        }
       ],
       "note": "Each performance lasts under 15 minutes, available 06:00–22:00. Rates compiled from the foundation's posted notices, checked October 2026; prices may change. Bookings must be made with the foundation at the shrine — private outside troupes are not accepted."
     },
     "elephantRates": {
       "title": "Thanks-giving wooden elephants",
       "rates": [
-        { "size": "13–19 in", "price": "500 THB", "note": "Buy only at the official stall inside the shrine" },
-        { "size": "20–24 in", "price": "1,000 THB", "note": "Buy only at the official stall inside the shrine" },
-        { "size": "25–29 in", "price": "1,500 THB", "note": "Buy only at the official stall inside the shrine" },
-        { "size": "30–40 in", "price": "2,000 THB", "note": "Buy only at the official stall inside the shrine" },
-        { "size": "Over 40 in", "price": "Not allowed", "note": "Too large — it blocks space for worshippers" }
+        {
+          "size": "13–19 in",
+          "price": "500 THB",
+          "note": "Buy only at the official stall inside the shrine"
+        },
+        {
+          "size": "20–24 in",
+          "price": "1,000 THB",
+          "note": "Buy only at the official stall inside the shrine"
+        },
+        {
+          "size": "25–29 in",
+          "price": "1,500 THB",
+          "note": "Buy only at the official stall inside the shrine"
+        },
+        {
+          "size": "30–40 in",
+          "price": "2,000 THB",
+          "note": "Buy only at the official stall inside the shrine"
+        },
+        {
+          "size": "Over 40 in",
+          "price": "Not allowed",
+          "note": "Too large — it blocks space for worshippers"
+        }
       ]
     },
     "forbiddenNote": "Not allowed",
@@ -942,19 +1006,46 @@
       "backHome": "Back to opening hours & getting there"
     },
     "facts": [
-      { "label": "Opening hours", "value": "Daily 06:00 – 22:00" },
-      { "label": "Entry", "value": "Free" },
-      { "label": "Time needed", "value": "15 – 30 min" }
+      {
+        "label": "Opening hours",
+        "value": "Daily 06:00 – 22:00"
+      },
+      {
+        "label": "Entry",
+        "value": "Free"
+      },
+      {
+        "label": "Time needed",
+        "value": "15 – 30 min"
+      }
     ],
     "tocLabel": "On this page",
     "faqHeading": "Frequently asked questions",
     "toc": [
-      { "label": "Chants & pronunciation", "href": "#chant" },
-      { "label": "The four faces", "href": "#faces" },
-      { "label": "Worship step by step", "href": "#steps" },
-      { "label": "Offerings & vows", "href": "#offerings" },
-      { "label": "Etiquette & taboos", "href": "#taboos" },
-      { "label": "FAQ", "href": "#faq" }
+      {
+        "label": "Chants & pronunciation",
+        "href": "#chant"
+      },
+      {
+        "label": "The four faces",
+        "href": "#faces"
+      },
+      {
+        "label": "Worship step by step",
+        "href": "#steps"
+      },
+      {
+        "label": "Offerings & vows",
+        "href": "#offerings"
+      },
+      {
+        "label": "Etiquette & taboos",
+        "href": "#taboos"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
     ],
     "chant": {
       "label": "Chants",
@@ -984,18 +1075,54 @@
           "title": "2. Main chant: the Phra Phrom katha (โอมปะระเมสะ นะมัสสะการัม)",
           "desc": "The most widely circulated official katha for the Erawan shrine. Reading all twelve lines once counts as one round.",
           "lines": [
-            { "thai": "โอมปะระเมสะ นะมัสสะการัม", "roman": "Om Paramesa Namassakaram" },
-            { "thai": "โองการะ นิสสะวะรัง", "roman": "Ongkara Nissawarang" },
-            { "thai": "พรหมเรสสะยัม ภูปัสสะวะวิษณุ", "roman": "Phromressayam Phupassawa Witsanu" },
-            { "thai": "ไวยะทานะโมโทติ", "roman": "Waiyathanamothoti" },
-            { "thai": "ลูกะปัม ทะระมา ยิกยานัง", "roman": "Lukapam Tharama Yikyanang" },
-            { "thai": "ยะไวยะลา คะมุลัม สะทา", "roman": "Ya Waiyala Khamulam Satha" },
-            { "thai": "นันตะระ วิมุสะตินัน", "roman": "Nantra Wimusatinan" },
-            { "thai": "นะมัตเต นะมัตเตเร", "roman": "Namatte Namattare" },
-            { "thai": "จะ อะการัง ตโถวาจะ", "roman": "Ja Akarang Thothowaja" },
-            { "thai": "เอตามา ตาระยัต ตะมัน ตะรามา", "roman": "Etama Tarayat Tamanta Tarama" },
-            { "thai": "กัตถะ นารัมลา จะสะระวะ ปะติตัม", "roman": "Kattha Naramla Jasarawa Patitam" },
-            { "thai": "สัมโภ พะกลโล ทิวะทิยัม มะตัมยะ", "roman": "Sambho Phakkalo Thiwathiyam Matamya" }
+            {
+              "thai": "โอมปะระเมสะ นะมัสสะการัม",
+              "roman": "Om Paramesa Namassakaram"
+            },
+            {
+              "thai": "โองการะ นิสสะวะรัง",
+              "roman": "Ongkara Nissawarang"
+            },
+            {
+              "thai": "พรหมเรสสะยัม ภูปัสสะวะวิษณุ",
+              "roman": "Phromressayam Phupassawa Witsanu"
+            },
+            {
+              "thai": "ไวยะทานะโมโทติ",
+              "roman": "Waiyathanamothoti"
+            },
+            {
+              "thai": "ลูกะปัม ทะระมา ยิกยานัง",
+              "roman": "Lukapam Tharama Yikyanang"
+            },
+            {
+              "thai": "ยะไวยะลา คะมุลัม สะทา",
+              "roman": "Ya Waiyala Khamulam Satha"
+            },
+            {
+              "thai": "นันตะระ วิมุสะตินัน",
+              "roman": "Nantra Wimusatinan"
+            },
+            {
+              "thai": "นะมัตเต นะมัตเตเร",
+              "roman": "Namatte Namattare"
+            },
+            {
+              "thai": "จะ อะการัง ตโถวาจะ",
+              "roman": "Ja Akarang Thothowaja"
+            },
+            {
+              "thai": "เอตามา ตาระยัต ตะมัน ตะรามา",
+              "roman": "Etama Tarayat Tamanta Tarama"
+            },
+            {
+              "thai": "กัตถะ นารัมลา จะสะระวะ ปะติตัม",
+              "roman": "Kattha Naramla Jasarawa Patitam"
+            },
+            {
+              "thai": "สัมโภ พะกลโล ทิวะทิยัม มะตัมยะ",
+              "roman": "Sambho Phakkalo Thiwathiyam Matamya"
+            }
           ],
           "pronunciationNote": "Thai is a tonal language and the Roman line is the reliable reading aid. As an orientation, the opening line โอมปะระเมสะ นะมัสสะการัม sounds roughly like \"ohm pa-ra-ME-sa na-MAT-sa-ka-ram\".",
           "meaning": "This is an act of homage and refuge to Brahma: it opens with โอม (Om), the primordial sound, followed by นะมัสสะการัม, \"I bow in reverence\", and continues as a request for blessing, protection and grace. Because the whole text is a Thai phonetic rendering of Sanskrit, a reliable word-by-word translation has been lost in transmission; the accepted sense is simply an earnest homage to Brahma asking for blessing and protection.",
@@ -1019,10 +1146,30 @@
       "intro": "Start with the face you find yourself looking at as you enter, then move clockwise. The order should not be reversed, and you should never walk against it.",
       "focusLabel": "Pray for",
       "items": [
-        { "order": "1", "position": "Front face (first)", "focus": "Career, study, status, advancement", "desc": "Job hunting, promotion, exams, starting a business — direction and prospects" },
-        { "order": "2", "position": "Second face (clockwise)", "focus": "Love, marriage, relationships, benefactors", "desc": "Partnership, family harmony and helpful people around you" },
-        { "order": "3", "position": "Third face (clockwise)", "focus": "Wealth, income, windfalls, investments", "desc": "Earnings, business and financial stability" },
-        { "order": "4", "position": "Fourth face (clockwise)", "focus": "Health, safety, family, averting misfortune", "desc": "Your body, your family's wellbeing and clearing bad luck" }
+        {
+          "order": "1",
+          "position": "Front face (first)",
+          "focus": "Career, study, status, advancement",
+          "desc": "Job hunting, promotion, exams, starting a business — direction and prospects"
+        },
+        {
+          "order": "2",
+          "position": "Second face (clockwise)",
+          "focus": "Love, marriage, relationships, benefactors",
+          "desc": "Partnership, family harmony and helpful people around you"
+        },
+        {
+          "order": "3",
+          "position": "Third face (clockwise)",
+          "focus": "Wealth, income, windfalls, investments",
+          "desc": "Earnings, business and financial stability"
+        },
+        {
+          "order": "4",
+          "position": "Fourth face (clockwise)",
+          "focus": "Health, safety, family, averting misfortune",
+          "desc": "Your body, your family's wellbeing and clearing bad luck"
+        }
       ],
       "tip": "The four-face attributions are folk tradition and vary between communities. If you already follow a set order, pray in the way you know with a sincere mind — what matters is covering all four faces, not just one."
     },
@@ -1031,23 +1178,63 @@
       "heading": "How to worship on site: six steps",
       "intro": "From buying incense to returning a vow — follow these the first time you go.",
       "items": [
-        { "order": "1", "title": "Buy your offerings at the foundation stall inside the fence", "desc": "12 incense sticks, 4 garlands and 1 candle, with prices clearly displayed. Do not buy from roaming vendors outside the fence." },
-        { "order": "2", "title": "Wash your hands, settle your mind, chant the homage three times", "desc": "Recite Namo Tassa three times and let your mind quieten before making a wish — devotees consider focus far more important than expensive offerings." },
-        { "order": "3", "title": "Start at the front face and go clockwise", "desc": "At each face place 3 incense sticks and 1 garland, put your palms together and state your name, date of birth and your wish." },
-        { "order": "4", "title": "Place the candle on the face you care most about", "desc": "There is only one candle, so put it on the face that matters most for this visit. Under current rules incense and candles are not lit." },
-        { "order": "5", "title": "Return to the front face and chant the main katha", "desc": "Walk back round to the first face, chant the katha 3 times (or 9), bow with palms together and you are done." },
-        { "order": "6", "title": "Come back to give thanks when the wish is granted", "desc": "Devotees believe a promise made must be kept. See \"Offerings & vows\" below for the options." }
+        {
+          "order": "1",
+          "title": "Buy your offerings at the foundation stall inside the fence",
+          "desc": "12 incense sticks, 4 garlands and 1 candle, with prices clearly displayed. Do not buy from roaming vendors outside the fence."
+        },
+        {
+          "order": "2",
+          "title": "Wash your hands, settle your mind, chant the homage three times",
+          "desc": "Recite Namo Tassa three times and let your mind quieten before making a wish — devotees consider focus far more important than expensive offerings."
+        },
+        {
+          "order": "3",
+          "title": "Start at the front face and go clockwise",
+          "desc": "At each face place 3 incense sticks and 1 garland, put your palms together and state your name, date of birth and your wish."
+        },
+        {
+          "order": "4",
+          "title": "Place the candle on the face you care most about",
+          "desc": "There is only one candle, so put it on the face that matters most for this visit. Under current rules incense and candles are not lit."
+        },
+        {
+          "order": "5",
+          "title": "Return to the front face and chant the main katha",
+          "desc": "Walk back round to the first face, chant the katha 3 times (or 9), bow with palms together and you are done."
+        },
+        {
+          "order": "6",
+          "title": "Come back to give thanks when the wish is granted",
+          "desc": "Devotees believe a promise made must be kept. See \"Offerings & vows\" below for the options."
+        }
       ]
     },
     "offerings": {
       "label": "Offerings & vows",
       "heading": "Offering set and how to return a vow",
       "setTitle": "Standard worship set",
-      "columns": { "item": "Item", "spec": "Quantity", "note": "Notes" },
+      "columns": {
+        "item": "Item",
+        "spec": "Quantity",
+        "note": "Notes"
+      },
       "set": [
-        { "item": "Incense", "spec": "12 sticks", "note": "3 per face" },
-        { "item": "Garlands", "spec": "4", "note": "1 per face" },
-        { "item": "Candle", "spec": "1", "note": "Placed on the face you care most about. Some stalls sell sets with 4 candles — one per face is also acceptable" }
+        {
+          "item": "Incense",
+          "spec": "12 sticks",
+          "note": "3 per face"
+        },
+        {
+          "item": "Garlands",
+          "spec": "4",
+          "note": "1 per face"
+        },
+        {
+          "item": "Candle",
+          "spec": "1",
+          "note": "Placed on the face you care most about. Some stalls sell sets with 4 candles — one per face is also acceptable"
+        }
       ],
       "elephantTitle": "Wooden elephants as thanks",
       "elephantNote": "Wooden elephants are the most common thanks-offering, and the larger the size the greater the thanks. Buy them at the foundation stall inside the fence; sizes over 40 inches are not accepted.",
@@ -1059,23 +1246,65 @@
       "label": "Etiquette",
       "heading": "What not to do at the shrine",
       "items": [
-        { "title": "Incense and candles are never lit", "desc": "Under the city and foundation smoke-free initiative, offerings may be placed but not lit." },
-        { "title": "Do not release birds you brought yourself", "desc": "This is an explicit current rule, with a 500 baht fine for violations." },
-        { "title": "Walk clockwise, never against the flow", "desc": "Going anticlockwise is considered disrespectful and blocks other worshippers." },
-        { "title": "Dress modestly and remove your hat to pray", "desc": "Less strict than a temple, but avoid very revealing clothing." },
-        { "title": "Do not pose with your back to the image", "desc": "Folk belief holds that turning your back on the image is disrespectful. Also avoid photographing people mid-prayer." },
-        { "title": "Folk custom: avoid beef before worshipping", "desc": "This circulates among devotees and is not an official rule. If it matters to you, skip beef the day before." },
-        { "title": "Wishes should be fair and harm no one", "desc": "Devotees widely hold that a request that profits by harming others will not be answered." },
-        { "title": "Keep the promise you made", "desc": "Whatever form of thanks you promised while wishing must be carried out — this is the single most important principle here." }
+        {
+          "title": "Incense and candles are never lit",
+          "desc": "Under the city and foundation smoke-free initiative, offerings may be placed but not lit."
+        },
+        {
+          "title": "Do not release birds you brought yourself",
+          "desc": "This is an explicit current rule, with a 500 baht fine for violations."
+        },
+        {
+          "title": "Walk clockwise, never against the flow",
+          "desc": "Going anticlockwise is considered disrespectful and blocks other worshippers."
+        },
+        {
+          "title": "Dress modestly and remove your hat to pray",
+          "desc": "Less strict than a temple, but avoid very revealing clothing."
+        },
+        {
+          "title": "Do not pose with your back to the image",
+          "desc": "Folk belief holds that turning your back on the image is disrespectful. Also avoid photographing people mid-prayer."
+        },
+        {
+          "title": "Folk custom: avoid beef before worshipping",
+          "desc": "This circulates among devotees and is not an official rule. If it matters to you, skip beef the day before."
+        },
+        {
+          "title": "Wishes should be fair and harm no one",
+          "desc": "Devotees widely hold that a request that profits by harming others will not be answered."
+        },
+        {
+          "title": "Keep the promise you made",
+          "desc": "Whatever form of thanks you promised while wishing must be carried out — this is the single most important principle here."
+        }
       ]
     },
     "faqs": [
-      { "q": "How many times should I chant the Erawan Shrine prayer?", "a": "Recite the Namo Tassa homage 3 times, the main Phra Phrom katha 3 or 9 times, and the short heart mantra 4 times. If you are short of time, four rounds of the short mantra is enough — focus matters more than the count." },
-      { "q": "Can I chant if I do not speak Thai?", "a": "Yes. The text is a Thai phonetic rendering of Sanskrit and Pali, so simply follow the Roman transliteration. Devotees generally hold that sincerity and focus matter more than perfect pronunciation." },
-      { "q": "What should I pray for at each of the four faces?", "a": "Starting from the face you meet as you enter and going clockwise: career and study, then love and relationships, then wealth, then health and safety. These attributions are folk tradition and vary between communities, so simply make sure you cover all four faces." },
-      { "q": "Do I have to come back and give thanks?", "a": "In the prevailing belief, yes — the form of thanks you promised while making the wish must be carried out. Common options are a wooden elephant, hiring a dance troupe, or a donation, depending on how big the wish was and what you can afford." },
-      { "q": "How long does a prayer visit take?", "a": "Around 15 to 30 minutes for the worship itself. In the evening, when thanks-giving troupes perform back to back, expect to stay longer and to find it more crowded." },
-      { "q": "Are the offerings sold on site a rip-off?", "a": "The foundation stalls inside the fence display fixed prices and are the safe place to buy. Vendors outside the fence often sell the same set at several times the price — do not buy from them." }
+      {
+        "q": "How many times should I chant the Erawan Shrine prayer?",
+        "a": "Recite the Namo Tassa homage 3 times, the main Phra Phrom katha 3 or 9 times, and the short heart mantra 4 times. If you are short of time, four rounds of the short mantra is enough — focus matters more than the count."
+      },
+      {
+        "q": "Can I chant if I do not speak Thai?",
+        "a": "Yes. The text is a Thai phonetic rendering of Sanskrit and Pali, so simply follow the Roman transliteration. Devotees generally hold that sincerity and focus matter more than perfect pronunciation."
+      },
+      {
+        "q": "What should I pray for at each of the four faces?",
+        "a": "Starting from the face you meet as you enter and going clockwise: career and study, then love and relationships, then wealth, then health and safety. These attributions are folk tradition and vary between communities, so simply make sure you cover all four faces."
+      },
+      {
+        "q": "Do I have to come back and give thanks?",
+        "a": "In the prevailing belief, yes — the form of thanks you promised while making the wish must be carried out. Common options are a wooden elephant, hiring a dance troupe, or a donation, depending on how big the wish was and what you can afford."
+      },
+      {
+        "q": "How long does a prayer visit take?",
+        "a": "Around 15 to 30 minutes for the worship itself. In the evening, when thanks-giving troupes perform back to back, expect to stay longer and to find it more crowded."
+      },
+      {
+        "q": "Are the offerings sold on site a rip-off?",
+        "a": "The foundation stalls inside the fence display fixed prices and are the safe place to buy. Vendors outside the fence often sell the same set at several times the price — do not buy from them."
+      }
     ],
     "cta": {
       "homeTitle": "Still planning the trip?",
@@ -1156,17 +1385,44 @@
         "subtitle": "The shrine sits on the traffic island at Ratchadamri and Phloen Chit, opposite CentralWorld. The BTS Sukhumvit Line is the easiest way in — here is every option, from the airport to the kerb."
       },
       "facts": [
-        { "label": "Nearest station", "value": "BTS Chit Lom (Exit 1)" },
-        { "label": "Walk from Exit 1", "value": "About 5 minutes" },
-        { "label": "Address", "value": "494 Ratchadamri Rd, Pathum Wan" }
+        {
+          "label": "Nearest station",
+          "value": "BTS Chit Lom (Exit 1)"
+        },
+        {
+          "label": "Walk from Exit 1",
+          "value": "About 5 minutes"
+        },
+        {
+          "label": "Address",
+          "value": "494 Ratchadamri Rd, Pathum Wan"
+        }
       ],
       "toc": [
-        { "label": "By BTS", "href": "#bts" },
-        { "label": "Skywalk route", "href": "#skywalk" },
-        { "label": "Other lines & buses", "href": "#other-lines" },
-        { "label": "From the airports", "href": "#airports" },
-        { "label": "Taxi & parking", "href": "#taxi-parking" },
-        { "label": "FAQ", "href": "#faq" }
+        {
+          "label": "By BTS",
+          "href": "#bts"
+        },
+        {
+          "label": "Skywalk route",
+          "href": "#skywalk"
+        },
+        {
+          "label": "Other lines & buses",
+          "href": "#other-lines"
+        },
+        {
+          "label": "From the airports",
+          "href": "#airports"
+        },
+        {
+          "label": "Taxi & parking",
+          "href": "#taxi-parking"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        }
       ],
       "sections": [
         {
@@ -1330,17 +1586,44 @@
         "subtitle": "Entry to Erawan Shrine is free; what you spend on offerings and thanks-giving is up to you. Here is exactly what the foundation's stalls sell and what the posted rates are."
       },
       "facts": [
-        { "label": "Entry", "value": "Free" },
-        { "label": "Offering set", "value": "From about 20 baht" },
-        { "label": "Thanks-giving dance", "value": "From 260 baht per round" }
+        {
+          "label": "Entry",
+          "value": "Free"
+        },
+        {
+          "label": "Offering set",
+          "value": "From about 20 baht"
+        },
+        {
+          "label": "Thanks-giving dance",
+          "value": "From 260 baht per round"
+        }
       ],
       "toc": [
-        { "label": "Standard offering set", "href": "#set" },
-        { "label": "Where to buy", "href": "#where-to-buy" },
-        { "label": "Thanks-giving dance rates", "href": "#dance" },
-        { "label": "Wooden elephants", "href": "#elephants" },
-        { "label": "Avoiding scams", "href": "#scams" },
-        { "label": "FAQ", "href": "#faq" }
+        {
+          "label": "Standard offering set",
+          "href": "#set"
+        },
+        {
+          "label": "Where to buy",
+          "href": "#where-to-buy"
+        },
+        {
+          "label": "Thanks-giving dance rates",
+          "href": "#dance"
+        },
+        {
+          "label": "Wooden elephants",
+          "href": "#elephants"
+        },
+        {
+          "label": "Avoiding scams",
+          "href": "#scams"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        }
       ],
       "sections": [
         {
@@ -1348,13 +1631,37 @@
           "heading": "The standard offering set",
           "lead": "One set covers a full clockwise round. Offerings are placed at each face — under the smoke-free policy nothing is lit.",
           "table": {
-            "columns": ["Item", "Quantity", "Notes"],
+            "columns": [
+              "Item",
+              "Quantity",
+              "Notes"
+            ],
             "rows": [
-              ["Incense", "12 sticks", "3 sticks at each of the four faces — placed, never lit"],
-              ["Garlands", "4", "1 at each face; jasmine and ylang are the usual flowers"],
-              ["Candle", "1", "Placed on the face you care most about; some stalls sell sets of 4"],
-              ["Joss powder", "1 small pack", "Dabbed on the offering table or your palms"],
-              ["Red cloth", "1 strip", "Tied to the shrine railing as part of the wish"]
+              [
+                "Incense",
+                "12 sticks",
+                "3 sticks at each of the four faces — placed, never lit"
+              ],
+              [
+                "Garlands",
+                "4",
+                "1 at each face; jasmine and ylang are the usual flowers"
+              ],
+              [
+                "Candle",
+                "1",
+                "Placed on the face you care most about; some stalls sell sets of 4"
+              ],
+              [
+                "Joss powder",
+                "1 small pack",
+                "Dabbed on the offering table or your palms"
+              ],
+              [
+                "Red cloth",
+                "1 strip",
+                "Tied to the shrine railing as part of the wish"
+              ]
             ]
           },
           "note": "Prices start from about 20 baht for a basic set; fuller sets with all of the above cost more. Everything is sold at fixed prices at the foundation's stall inside the fence."
@@ -1383,13 +1690,37 @@
           "heading": "Thanks-giving dance (Lakhon Chatri) rates",
           "lead": "Hiring a dance troupe is the shrine's most famous way of returning a vow. Rates are set and posted by the foundation and must be booked inside the shrine.",
           "table": {
-            "columns": ["Performance", "Rate", "Notes"],
+            "columns": [
+              "Performance",
+              "Rate",
+              "Notes"
+            ],
             "rows": [
-              ["2 dancers", "260 THB", "Smallest troupe, under 15 minutes"],
-              ["4 dancers", "360 THB", "The most commonly booked option"],
-              ["6 dancers", "460 THB", "Popular for major wishes"],
-              ["8 dancers", "710 THB", "Largest standard troupe"],
-              ["Larger troupes", "By arrangement", "Ask at the booking desk inside the shrine"]
+              [
+                "2 dancers",
+                "260 THB",
+                "Smallest troupe, under 15 minutes"
+              ],
+              [
+                "4 dancers",
+                "360 THB",
+                "The most commonly booked option"
+              ],
+              [
+                "6 dancers",
+                "460 THB",
+                "Popular for major wishes"
+              ],
+              [
+                "8 dancers",
+                "710 THB",
+                "Largest standard troupe"
+              ],
+              [
+                "Larger troupes",
+                "By arrangement",
+                "Ask at the booking desk inside the shrine"
+              ]
             ]
           },
           "note": "Rates compiled from the foundation's posted notices, checked October 2026; prices may change. Each round lasts under 15 minutes and runs during opening hours (06:00–22:00). Private troupes from outside are not accepted."
@@ -1399,13 +1730,37 @@
           "heading": "Wooden elephants for returning a vow",
           "lead": "Wooden elephants are the most common thanks-offering; size is read as the weight of the gratitude.",
           "table": {
-            "columns": ["Size", "Price", "Notes"],
+            "columns": [
+              "Size",
+              "Price",
+              "Notes"
+            ],
             "rows": [
-              ["13–19 in", "500 THB", "Buy only at the official stall inside the shrine"],
-              ["20–24 in", "1,000 THB", "Buy only at the official stall inside the shrine"],
-              ["25–29 in", "1,500 THB", "Buy only at the official stall inside the shrine"],
-              ["30–40 in", "2,000 THB", "Buy only at the official stall inside the shrine"],
-              ["Over 40 in", "Not allowed", "Too large — it blocks space for worshippers"]
+              [
+                "13–19 in",
+                "500 THB",
+                "Buy only at the official stall inside the shrine"
+              ],
+              [
+                "20–24 in",
+                "1,000 THB",
+                "Buy only at the official stall inside the shrine"
+              ],
+              [
+                "25–29 in",
+                "1,500 THB",
+                "Buy only at the official stall inside the shrine"
+              ],
+              [
+                "30–40 in",
+                "2,000 THB",
+                "Buy only at the official stall inside the shrine"
+              ],
+              [
+                "Over 40 in",
+                "Not allowed",
+                "Too large — it blocks space for worshippers"
+              ]
             ]
           },
           "note": "Prices compiled from the foundation's posted notices, checked October 2026; prices may change."
