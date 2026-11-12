@@ -27,7 +27,7 @@
     "titleAccent": "Erawan Shrine",
     "subtitle": "Thao Maha Brahma (Erawan Shrine / 四面佛) is a four-faced Brahma shrine at the Ratchadamri intersection — a center of faith and belief that has stood for over 60 years in the heart of Bangkok",
     "rating": "4.7",
-    "reviewCount": "7,054",
+    "reviewCount": "7,110",
     "category": "Sacred Shrine",
     "h1City": "Bangkok, Thailand",
     "badge": "Bangkok · Ratchadamri",
@@ -647,10 +647,10 @@
   "reviews": {
     "label": "Reviews",
     "heading": "Visitor rating",
-    "intro": "The rating below is a snapshot of Google Maps user reviews for Thao Maha Brahma (Erawan Shrine), synced in October 2026. We do not republish individual reviews — read the full, current list on Google Maps.",
-    "disclaimer": "Rating and review count synced from Google Maps user reviews, sync time October 2026; copyright belongs to the original authors and Google Maps.",
+    "intro": "The rating below is a snapshot of Google Maps user reviews for Thao Maha Brahma (Erawan Shrine), synced in November 11, 2026. We do not republish individual reviews — read the full, current list on Google Maps.",
+    "disclaimer": "Rating and review count synced from Google Maps user reviews, sync time November 11, 2026; copyright belongs to the original authors and Google Maps.",
     "declaration": "This is an independent visitor information website; the rating is shown for reference only and is not an endorsement by the shrine's management foundation.",
-    "syncNote": "Rating and review count synced from Google Maps user reviews · October 2026 · ",
+    "syncNote": "Rating and review count synced from Google Maps user reviews · November 11, 2026 · ",
     "syncLink": "See all reviews on Google Maps ↗",
     "viewLocation": "See all reviews on Google Maps"
   },
@@ -734,7 +734,7 @@
     "unofficial": "This is an independent visitor information website about Erawan Shrine. It is not operated by or affiliated with the shrine's management foundation (Than Tao Mahaprom Foundation).",
     "dataSource": "Weather: Open-Meteo · coordinates 13.7443, 100.5397",
     "imageRights": "Image rights: all images displayed on this website remain the property and copyright of their original photographers.",
-    "reviewSource": "Reviews: rating synced from Google Maps user reviews (October 2026).",
+    "reviewSource": "Reviews: rating synced from Google Maps user reviews (November 11, 2026).",
     "copyright": "© 2026 Thao Maha Brahma Guide. All rights reserved."
   },
   "sources": {
@@ -760,7 +760,7 @@
       }
     ],
     "reviewsTitle": "Reviews",
-    "reviewsText": "Rating and review count synced from Google Maps user reviews, sync time October 2026; copyright belongs to the original authors and Google Maps. Individual reviews are not republished on this site.",
+    "reviewsText": "Rating and review count synced from Google Maps user reviews, sync time November 11, 2026; copyright belongs to the original authors and Google Maps. Individual reviews are not republished on this site.",
     "reviewsLinkLabel": "See all reviews on Google Maps",
     "imagesTitle": "Image rights",
     "imagesText": "All images displayed on this website remain the property and copyright of their original photographers.",
@@ -809,7 +809,7 @@
         },
         {
           "h": "Reviews & third-party data",
-          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time October 2026). Individual reviews are not republished on this site; copyright of the review content belongs to the original authors and Google Maps."
+          "p": "Rating scores and review counts are synced from Google Maps user reviews (sync time November 11, 2026). Individual reviews are not republished on this site; copyright of the review content belongs to the original authors and Google Maps."
         },
         {
           "h": "Liability",
