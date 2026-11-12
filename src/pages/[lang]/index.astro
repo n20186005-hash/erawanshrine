@@ -13,10 +13,8 @@ import OfficialSignage from '../../components/OfficialSignage.astro';
 import PrayerCTA from '../../components/PrayerCTA.astro';
 import TopicLinks from '../../components/TopicLinks.astro';
 import NearbyHighlights from '../../components/NearbyHighlights.astro';
-import Sources from '../../components/Sources.astro';
   import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
-import Reviews from '../../components/Reviews.astro';
 import MapSection from '../../components/MapSection.astro';
 import MobileQuickBar from '../../components/MobileQuickBar.astro';
 import Footer from '../../components/Footer.astro';
@@ -45,8 +43,6 @@ const { lang, messages } = await getI18n(Astro.url);
     <Guide messages={messages} />
     <Food messages={messages} />
     <Gallery messages={messages} />
-    <Reviews messages={messages} />
-    <Sources messages={messages} />
     <MapSection lang={lang} messages={messages} />
   </main>
   <Footer lang={lang} messages={messages} />
