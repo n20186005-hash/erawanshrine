@@ -6,7 +6,7 @@ interface Props {
   lang: Lang;
   messages: Record<string, any>;
 }
-const { lang } = Astro.props;
+const { lang, messages } = Astro.props;
 const copy = {
   en: {
     copyright: `© 2026 ${siteConfig.name.en} · All rights reserved.`,
@@ -23,8 +23,15 @@ const copy = {
 }[lang];
 ---
 <footer class="bg-teakDeep text-ivory py-8">
-  <div class="max-w-7xl mx-auto px-5 text-center text-sm text-ivory/75 space-y-3">
-    <p>{copy.copyright}</p>
-    <p>{copy.independent}</p>
+  <div class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 text-sm text-ivory/75">
+    <div class="space-y-2">
+      <p>{copy.copyright}</p>
+      <p>{copy.independent}</p>
+    </div>
+    <nav aria-label="Legal pages" class="flex flex-wrap gap-x-5 gap-y-2 lg:justify-end shrink-0 text-ivory/80">
+      <a class="hover:text-goldBright underline-offset-4 hover:underline" href={`/${lang}/privacy-policy/`}>{messages.footer.privacy}</a>
+      <a class="hover:text-goldBright underline-offset-4 hover:underline" href={`/${lang}/terms-of-service/`}>{messages.footer.terms}</a>
+      <a class="hover:text-goldBright underline-offset-4 hover:underline" href={`/${lang}/cookie-settings/`}>{messages.footer.cookies}</a>
+    </nav>
   </div>
 </footer>
