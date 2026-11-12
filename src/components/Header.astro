@@ -25,7 +25,11 @@ const anchor = (hash: string) => (page === 'home' ? hash : `${homeBase}${hash}`)
 const navItems = [
   { label: h.home, href: page === 'home' ? '#home' : homeBase },
   { label: h.about, href: anchor('#about') },
+  { label: {en:'Site notices',th:'ป้ายข้อมูล',zh:'现场公告'}[lang], href: anchor('#official-signage') },
+  { label: {en:'Worship & rituals',th:'พิธีสักการะ',zh:'参拜礼仪'}[lang], href: anchor('#rituals') },
+  { label: {en:'Interactive guide',th:'คู่มือเชิงโต้ตอบ',zh:'互动指南'}[lang], href: anchor('#interactive-guide') },
   { label: h.history, href: anchor('#history') },
+  { label: {en:'Inscriptions',th:'จารึก',zh:'碑文铭刻'}[lang], href: anchor('#inscriptions') },
   { label: h.guide, href: anchor('#guide') },
   { label: {en:'Nearby',th:'ใกล้เคียง',zh:'周边景点'}[lang], href: `/${lang}/nearby/` },
   { label: h.prayer, href: pagePath('prayer', lang) },
@@ -46,12 +50,6 @@ const switchTo = (target: Lang) => languagePath ? languagePath(target) : pagePat
       {siteConfig.name[lang]}
     </a>
 
-    <nav class="hidden 2xl:flex items-center gap-3 text-xs text-ivory/80">
-      {navItems.map((item) => (
-        <a href={item.href} class="hover:text-goldBright transition-colors whitespace-nowrap">{item.label}</a>
-      ))}
-    </nav>
-
     <div class="flex items-center gap-2">
       <div class="flex items-center rounded-full border border-gold/30 overflow-hidden text-xs">
         {languagesList.map((l) => (
@@ -63,7 +61,7 @@ const switchTo = (target: Lang) => languagePath ? languagePath(target) : pagePat
           </a>
         ))}
       </div>
-      <button id="menu-btn" class="2xl:hidden text-ivory p-2" aria-label="Menu">
+      <button id="menu-btn" class="md:hidden text-ivory p-2" aria-label="Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M4 7h16M4 12h16M4 17h16" />
         </svg>
@@ -71,7 +69,15 @@ const switchTo = (target: Lang) => languagePath ? languagePath(target) : pagePat
     </div>
   </div>
 
-  <nav id="mobile-menu" class="hidden 2xl:hidden border-t border-gold/20 bg-teakDeep">
+  <nav aria-label="Site sections" class="hidden md:block border-t border-gold/15 bg-teakDeep/90">
+    <div class="max-w-7xl mx-auto px-5 flex items-center gap-5 overflow-x-auto whitespace-nowrap py-2.5 text-xs lg:text-sm text-ivory/85">
+      {navItems.map(item => (
+        <a href={item.href} class="shrink-0 hover:text-goldBright transition-colors">{item.label}</a>
+      ))}
+    </div>
+  </nav>
+
+  <nav id="mobile-menu" class="hidden md:hidden border-t border-gold/20 bg-teakDeep max-h-[70vh] overflow-y-auto">
     <div class="max-w-7xl mx-auto px-5 py-3 grid grid-cols-2 gap-2 text-sm text-ivory/80">
       {navItems.map((item) => (
         <a href={item.href} class="py-1.5 hover:text-goldBright transition-colors">{item.label}</a>
