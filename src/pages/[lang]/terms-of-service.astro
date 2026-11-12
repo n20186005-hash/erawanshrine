@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import th from '../../i18n/th.json';
 import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
@@ -15,7 +17,8 @@ const legal = m.legal.terms;
 const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: legal.title };
 ---
 <BaseLayout lang={lang} title={meta.title} description={meta.description} messages={m} pageType="legal">
-  <main class="mx-auto max-w-3xl px-4 py-24">
+  <Header lang={lang} messages={m} />
+  <main class="mx-auto max-w-3xl px-4 pt-32 pb-20">
     <a href={`/${lang}/`} class="text-amber-600 hover:underline">← {m.header.home}</a>
     <h1 class="mt-4 text-3xl font-bold text-stone-800">{legal.title}</h1>
     <p class="mt-2 text-sm text-stone-500">{legal.updated}</p>
@@ -28,4 +31,5 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
       ))}
     </div>
   </main>
+  <Footer lang={lang} messages={m} />
 </BaseLayout>
