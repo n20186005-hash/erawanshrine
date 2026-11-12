@@ -57,7 +57,7 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
   const save = (reject = false) => {
     if (reject) choices.forEach(input => { input.checked = false; });
     const preference = { essential: true, analytics: false, marketing: false, updatedAt: new Date().toISOString() };
-    choices.forEach(input => { if (input.dataset.category === 'analytics' || input.dataset.category === 'marketing') preference[input.dataset.category] = input.checked; });
+    choices.forEach(input => { if (input.dataset.category === 'analytics') preference.analytics = input.checked; if (input.dataset.category === 'marketing') preference.marketing = input.checked; });
     try {
       localStorage.setItem(storageKey, JSON.stringify(preference));
       if (feedback) feedback.textContent = document.documentElement.lang === 'zh' ? '偏好已保存在此浏览器。' : document.documentElement.lang === 'th' ? 'บันทึกตัวเลือกในเบราว์เซอร์แล้ว' : 'Preferences saved in this browser.';
