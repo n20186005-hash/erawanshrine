@@ -1,12 +1,10 @@
 ---
-import { siteConfig } from '../config';
 
 interface Props {
   messages: Record<string, any>;
 }
 const { messages } = Astro.props;
 const s = messages.sources;
-const mapsUrl = siteConfig.mapsUrl;
 ---
 
 <section id="sources" class="py-16 bg-teakDeep text-ivory">
