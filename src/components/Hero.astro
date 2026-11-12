@@ -39,6 +39,9 @@ const coordsLabel = hero.coordsLabel;
         <a href="#gallery" class="inline-flex items-center gap-2 border border-gold/50 text-ivory px-6 py-3 rounded-full hover:border-goldBright hover:text-goldBright transition-colors">
           {hero.cta2}
         </a>
+        <a href={`/${lang}/nearby/`} class="inline-flex items-center gap-2 border border-gold/50 text-ivory px-6 py-3 rounded-full hover:border-goldBright hover:text-goldBright transition-colors">
+          {{en:'Explore all 30 nearby places',th:'เที่ยวต่อ 30 สถานที่ใกล้เคียง',zh:'查看全部 30 个周边景点'}[lang]}
+        </a>
       </div>
 
       {hero.quickNav && (
