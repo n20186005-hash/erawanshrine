@@ -1,0 +1,22 @@
+---
+import { languagesList, getI18n } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Reviews from '../../components/Reviews.astro';
+
+export function getStaticPaths() {
+  return languagesList.map(lang => ({ params: { lang } }));
+}
+const { lang, messages } = await getI18n(Astro.url);
+const title = messages.reviews.heading;
+const alternates = languagesList.map(l => ({ lang: l, href: `${siteConfig.domain}/${l}/reviews/` }));
+---
+<BaseLayout lang={lang} messages={messages} title={`${title} | ${siteConfig.name[lang]}`} description={messages.reviews.intro} alternateUrls={alternates} pageType="article">
+  <Header lang={lang} messages={messages} page="gettingThere" languagePath={l => `/${l}/reviews/`} />
+  <main class="pt-16 min-h-screen bg-teakDeep">
+    <Reviews messages={messages} />
+  </main>
+  <Footer lang={lang} messages={messages} />
+</BaseLayout>
