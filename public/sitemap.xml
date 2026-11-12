@@ -121,4 +121,934 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/centralworld/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/centralworld/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/centralworld/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/centralworld/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/centralworld/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/gaysorn-village/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/gaysorn-village/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/gaysorn-village/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/gaysorn-village/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/gaysorn-village/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/amarin-plaza/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/amarin-plaza/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/amarin-plaza/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/amarin-plaza/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/amarin-plaza/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/erawan-bangkok/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/erawan-bangkok/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/erawan-bangkok/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/erawan-bangkok/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/erawan-bangkok/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/pathum-wanaram/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/pathum-wanaram/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/pathum-wanaram/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pathum-wanaram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pathum-wanaram/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/siam-paragon/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/siam-paragon/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/siam-paragon/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-paragon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-paragon/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/siam-square/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/siam-square/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/siam-square/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-square/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-square/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/siam-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/siam-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/siam-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/siam-discovery/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/siam-discovery/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/siam-discovery/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-discovery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-discovery/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/mbk-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/mbk-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/mbk-center/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/mbk-center/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/mbk-center/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/bangkok-art-culture-centre/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/bangkok-art-culture-centre/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/bangkok-art-culture-centre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/bangkok-art-culture-centre/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/jim-thompson-house/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/jim-thompson-house/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/jim-thompson-house/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/jim-thompson-house/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/jim-thompson-house/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/lumphini-park/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/lumphini-park/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/lumphini-park/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lumphini-park/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lumphini-park/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/chit-lom-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/chit-lom-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/chit-lom-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/chit-lom-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/chit-lom-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/ratchadamri-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/ratchadamri-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/ratchadamri-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchadamri-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchadamri-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/siam-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/siam-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/siam-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/siam-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/siam-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/pratunam-market/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/pratunam-market/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/pratunam-market/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/pratunam-market/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/pratunam-market/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/platinum-fashion-mall/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/platinum-fashion-mall/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/platinum-fashion-mall/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/platinum-fashion-mall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/platinum-fashion-mall/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/big-c-ratchadamri/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/big-c-ratchadamri/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/big-c-ratchadamri/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/big-c-ratchadamri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/big-c-ratchadamri/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/central-embassy/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/central-embassy/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/central-embassy/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-embassy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-embassy/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/central-chidlom/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/central-chidlom/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/central-chidlom/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/central-chidlom/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/central-chidlom/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/lakshmi-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/lakshmi-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/lakshmi-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/lakshmi-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/lakshmi-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/trimurti-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/trimurti-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/trimurti-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/trimurti-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/trimurti-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/ganesh-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/ganesh-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/ganesh-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ganesh-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ganesh-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/indra-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/indra-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/indra-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/indra-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/indra-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/narayana-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/narayana-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/narayana-shrine/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/narayana-shrine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/narayana-shrine/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/ratchaprasong-skywalk/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/ratchaprasong-skywalk/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/ratchaprasong-skywalk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/ratchaprasong-skywalk/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/grand-hyatt-erawan/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/grand-hyatt-erawan/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/grand-hyatt-erawan/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/grand-hyatt-erawan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/grand-hyatt-erawan/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/phloen-chit-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/phloen-chit-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/phloen-chit-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/phloen-chit-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/phloen-chit-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/th/nearby/national-stadium-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/en/nearby/national-stadium-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://erawanshrine.org/zh/nearby/national-stadium-bts/</loc>
+    <xhtml:link rel="alternate" hreflang="th" href="https://erawanshrine.org/th/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://erawanshrine.org/zh/nearby/national-stadium-bts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erawanshrine.org/en/nearby/national-stadium-bts/"/>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

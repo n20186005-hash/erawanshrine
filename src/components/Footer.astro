@@ -1,9 +1,10 @@
 ---
 import { siteConfig } from '../config';
 import { pagePath } from '../i18n/pages';
+import type { Lang } from '../i18n/ui';
 
 interface Props {
-  lang: any;
+  lang: Lang;
   messages: Record<string, any>;
 }
 const { lang, messages } = Astro.props;
@@ -27,6 +28,7 @@ const navItems = [
 const topicLinks = (messages.topicLinks?.items ?? [])
   .filter((i: any) => i.key !== 'prayer')
   .map((i: any) => ({ label: i.title, href: pagePath(i.key, lang) }));
+topicLinks.push({label: {th:'สถานที่ใกล้เคียง',en:'Nearby places',zh:'周边景点'}[lang] ?? 'Nearby places',href:`/${lang}/nearby/`});
 ---
 
 <footer class="bg-teakDeep text-ivory pt-16 pb-8">

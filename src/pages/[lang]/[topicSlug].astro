@@ -10,12 +10,10 @@ import MobileQuickBar from '../../components/MobileQuickBar.astro';
 import TopicPage from '../../components/TopicPage.astro';
 
 /** 「交通 / 供品」二级内容页。经文页走 [prayerSlug].astro，避免路径规则冲突。 */
-const topicKeys: TopicKey[] = ['gettingThere', 'offerings'];
-
 export async function getStaticPaths() {
   const paths: any[] = [];
   for (const lang of languagesList) {
-    for (const key of topicKeys) {
+    for (const key of ['gettingThere', 'offerings'] as TopicKey[]) {
       paths.push({ params: { lang, topicSlug: pageSlug[key][lang] } });
     }
   }

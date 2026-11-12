@@ -8,8 +8,9 @@ interface Props {
   messages: Record<string, any>;
   /** 当前页面：决定锚点是否需要补语言前缀，以及语言切换跳转到哪一页 */
   page?: PageKey;
+  languagePath?: (lang: Lang) => string;
 }
-const { lang, messages, page = 'home' } = Astro.props;
+const { lang, messages, page = 'home', languagePath } = Astro.props;
 const h = messages.header;
 
 const homeBase = `/${lang}/`;
@@ -34,7 +35,7 @@ const navItems = [
 ];
 
 /** 语言切换要留在同一页面：从泰文经文页切到中文，应到达中文经文页而非中文首页 */
-const switchTo = (target: Lang) => pagePath(page, target);
+const switchTo = (target: Lang) => languagePath ? languagePath(target) : pagePath(page, target);
 ---
 
 <header class="fixed top-0 inset-x-0 z-50 bg-teak/90 backdrop-blur-md border-b border-gold/20">

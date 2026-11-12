@@ -18,6 +18,8 @@ interface Props {
   pageType?: 'attraction' | 'article' | 'legal';
   /** 站点页面标识，决定 hreflang 指向哪些同页多语言地址（见 i18n/pages.ts） */
   page?: PageKey;
+  /** Explicit equivalents for routes outside the small PageKey registry. */
+  alternateUrls?: { lang: Lang; href: string }[];
   /** 覆盖默认 FAQ —— 二级内容页应输出与自身主题匹配的问答 */
   faqs?: { q: string; a: string }[];
   /** 覆盖默认面包屑（需给绝对地址） */
@@ -33,6 +35,7 @@ const {
   messages,
   pageType = 'attraction',
   page = 'home',
+  alternateUrls,
   faqs: faqsProp,
   breadcrumbs: breadcrumbsProp,
   extraJsonLd = [],
@@ -243,11 +246,11 @@ const jsonLd = {
       识别为 /zh/mantra/ 的泰文版本。法务页已 noindex，不输出 hreflang。
     */}
     {isIndexable &&
-      pageAlternates(origin, page).map((alt) => (
+      (alternateUrls ?? pageAlternates(origin, page)).map((alt) => (
         <link rel="alternate" hreflang={htmlLang[alt.lang]} href={alt.href} />
       ))}
     {isIndexable && (
-      <link rel="alternate" hreflang="x-default" href={pageUrl(origin, page, 'en')} />
+      <link rel="alternate" hreflang="x-default" href={alternateUrls?.find(a => a.lang === 'en')?.href ?? pageUrl(origin, page, 'en')} />
     )}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

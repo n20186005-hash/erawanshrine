@@ -1,0 +1,23 @@
+---
+import { languagesList, getI18n, type Lang } from '../../../i18n/ui';
+import { nearbyPlaces, localizedPlace } from '../../../data/nearby';
+import { siteConfig } from '../../../config';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+export function getStaticPaths() { return languagesList.map(lang => ({ params: {lang} })); }
+const { lang, messages } = await getI18n(Astro.url);
+const copy = {
+  en: { title:'Places near Erawan Shrine', lead:'Explore temples, shrines, markets, museums, stations and shopping landmarks around Ratchaprasong. Each stop has its own visitor guide and location search.', view:'Read visitor guide', home:'Erawan Shrine' },
+  th: { title:'สถานที่ใกล้ศาลเอราวัณ', lead:'สำรวจวัด ศาล ตลาด พิพิธภัณฑ์ สถานีรถไฟฟ้า และแหล่งช้อปปิ้งรอบราชประสงค์ พร้อมข้อมูลรายสถานที่', view:'อ่านคู่มือสถานที่', home:'ศาลเอราวัณ' },
+  zh: { title:'四面佛周边景点与步行指南', lead:'探索拉差帕颂周边的寺庙、神坛、市场、博物馆、车站和购物地标；每处均有独立介绍及地图入口。', view:'查看景点指南', home:'四面佛' },
+}[lang as Lang];
+---
+<BaseLayout lang={lang} messages={messages} title={`${copy.title} | Erawan Shrine`} description={copy.lead} pageType="article" alternateUrls={languagesList.map(l=>({lang:l,href:`${siteConfig.domain}/${l}/nearby/`}))} breadcrumbs={[{name:copy.home,url:`${siteConfig.domain}/${lang}/`},{name:copy.title,url:`${siteConfig.domain}/${lang}/nearby/`}] }>
+  <Header lang={lang} messages={messages} page="gettingThere" languagePath={(l)=>`/${l}/nearby/`} />
+  <main class="bg-ivory min-h-screen text-ink">
+    <section class="bg-teak pt-28 pb-14 text-ivory"><div class="max-w-6xl mx-auto px-5"><a href={`/${lang}/`} class="text-goldBright">← {copy.home}</a><h1 class="font-display text-4xl text-goldBright mt-6">{copy.title}</h1><p class="mt-5 max-w-3xl leading-relaxed">{copy.lead}</p></div></section>
+    <section class="max-w-6xl mx-auto px-5 py-14"><div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{nearbyPlaces.map(place => { const p=localizedPlace(place,lang);return <a class="block bg-white rounded-2xl border border-gold/30 p-6 hover:border-gold" href={`/${lang}/nearby/${place[0]}/`}><h2 class="text-xl font-display text-teak">{p.title}</h2><p class="mt-3 text-ink/70 text-sm">{p.focus}</p><span class="inline-block mt-5 text-gold font-semibold text-sm">{copy.view} →</span></a> })}</div></section>
+  </main>
+  <Footer lang={lang} messages={messages} />
+</BaseLayout>

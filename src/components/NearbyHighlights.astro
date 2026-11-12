@@ -1,0 +1,20 @@
+---
+import { nearbyPlaces, localizedPlace } from '../data/nearby';
+import type { Lang } from '../i18n/ui';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+interface Props { lang: Lang }
+const {lang}=Astro.props;
+const l={en:{title:'Explore nearby Bangkok',lead:'Combine the Erawan Shrine with neighbouring sacred sites, culture, greenery and shopping. Choose a specific stop for practical directions and visitor notes.',view:'View guide',all:'Explore all 30 nearby places'},th:{title:'เที่ยวต่อรอบศาลเอราวัณ',lead:'จัดเส้นทางจากศาลเอราวัณไปยังศาลใกล้เคียง ศิลปวัฒนธรรม สวนสาธารณะ และแหล่งช้อปปิ้ง',view:'อ่านคู่มือ',all:'ดูสถานที่ใกล้เคียงทั้งหมด 30 แห่ง'},zh:{title:'四面佛周边游览',lead:'从四面佛延伸探索附近神坛、艺术文化、城市绿地和购物地标。点击各景点查看独立游览信息及地图。',view:'查看指南',all:'探索全部 30 处周边地点'}}[lang];
+const featured=['pathum-wanaram','centralworld','siam-discovery','pratunam-market','platinum-fashion-mall','bangkok-art-culture-centre'];
+---
+<section id="nearby" class="py-16 bg-ivory text-ink border-t border-gold/20">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="font-display text-3xl md:text-4xl text-teak">{l.title}</h2>
+    <p class="mt-4 max-w-3xl text-ink/70 leading-relaxed">{l.lead}</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-9">
+      {featured.map(slug=>{const place=nearbyPlaces.find(p=>p[0]===slug)!;const info=localizedPlace(place,lang);const photo=existsSync(join(process.cwd(),'public','nearby',`${slug}.jpg`));return <a href={`/${lang}/nearby/${slug}/`} class="rounded-2xl overflow-hidden bg-white border border-gold/25 hover:border-gold transition-colors group">{photo && <div class="h-40 bg-teak/10 overflow-hidden"><img src={`/nearby/${slug}.jpg`} alt={info.title} loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>}<div class="p-5"><h3 class="font-display text-xl text-teak">{info.title}</h3><p class="mt-2 text-sm text-ink/70">{info.focus}</p><span class="inline-block mt-4 text-gold font-semibold text-sm">{l.view} →</span></div></a>})}
+    </div>
+    <a href={`/${lang}/nearby/`} class="inline-flex mt-9 rounded-full bg-teak text-ivory px-6 py-3 font-semibold hover:bg-teakDeep">{l.all} →</a>
+  </div>
+</section>

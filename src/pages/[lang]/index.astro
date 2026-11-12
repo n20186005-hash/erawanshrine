@@ -12,6 +12,7 @@ import InteractiveGuide from '../../components/InteractiveGuide.astro';
 import OfficialSignage from '../../components/OfficialSignage.astro';
 import PrayerCTA from '../../components/PrayerCTA.astro';
 import TopicLinks from '../../components/TopicLinks.astro';
+import NearbyHighlights from '../../components/NearbyHighlights.astro';
 import Sources from '../../components/Sources.astro';
   import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
@@ -38,6 +39,7 @@ const { lang, messages } = await getI18n(Astro.url);
     <Ecosystem messages={messages} />
     <InteractiveGuide lang={lang} messages={messages} />
     <TopicLinks lang={lang} messages={messages} />
+    <NearbyHighlights lang={lang} />
     <History messages={messages} />
     <Inscriptions lang={lang} messages={messages} />
     <Guide messages={messages} />
