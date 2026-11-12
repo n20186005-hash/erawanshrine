@@ -23,20 +23,15 @@ const homeBase = `/${lang}/`;
 const anchor = (hash: string) => (page === 'home' ? hash : `${homeBase}${hash}`);
 
 const navItems = [
-  { label: h.home, href: page === 'home' ? '#home' : homeBase },
   { label: h.about, href: anchor('#about') },
-  { label: {en:'Site notices',th:'ป้ายข้อมูล',zh:'现场公告'}[lang], href: anchor('#official-signage') },
-  { label: {en:'Worship & rituals',th:'พิธีสักการะ',zh:'参拜礼仪'}[lang], href: anchor('#rituals') },
-  { label: {en:'Interactive guide',th:'คู่มือเชิงโต้ตอบ',zh:'互动指南'}[lang], href: anchor('#interactive-guide') },
+  { label: {en:'Notices',th:'ประกาศ',zh:'公告'}[lang], href: anchor('#official-signage') },
+  { label: {en:'Worship etiquette',th:'มารยาทในการสักการะ',zh:'参拜礼仪'}[lang], href: anchor('#rituals') },
   { label: h.history, href: anchor('#history') },
   { label: {en:'Inscriptions',th:'จารึก',zh:'碑文铭刻'}[lang], href: anchor('#inscriptions') },
-  { label: h.guide, href: anchor('#guide') },
-  { label: {en:'Nearby',th:'ใกล้เคียง',zh:'周边景点'}[lang], href: `/${lang}/nearby/` },
+  { label: {en:'Nearby attractions',th:'สถานที่ใกล้เคียง',zh:'周边景点'}[lang], href: `/${lang}/nearby/` },
   { label: h.prayer, href: pagePath('prayer', lang) },
   { label: h.food, href: anchor('#food') },
   { label: h.gallery, href: anchor('#gallery') },
-  { label: {en:'Visitor reviews',th:'คะแนนผู้เยี่ยมชม',zh:'游客评分'}[lang], href: `/${lang}/reviews/` },
-  { label: {en:'References',th:'ข้อมูลอ้างอิง',zh:'资料与参考来源'}[lang], href: `/${lang}/sources/` },
   { label: h.map, href: anchor('#map') },
 ];
 
